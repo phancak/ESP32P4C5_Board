@@ -1,0 +1,122 @@
+(kicad_sch
+	(version 20231120)
+	(generator "eeschema")
+	(generator_version "8.0")
+	(uuid "3c73f232-fe9b-42f8-8c4e-fe18a3dff7fe")
+	(paper "A4")
+	(lib_symbols)
+	(text_box "INTERFACE NOTES:\n- SPI2 IOMUX, DMA\n- SPI3 GPIOMATRIX, NODMA\n- I2S1 GPIOMATRIX\n- I2S2 GPIOMATRIX\n- I2C0 GPIOMATRIX CSI and P4 to C5\n- I2C1 GPIOMATRIX External Interface\n- UART0 IOMUX DEBUG\n- UART1 IOMUX External Interface\n- UART2\n- UART3\n- UART4\n- I3C\n- PARLIO\n  - PSSI_PDCK (Parallel Data Clock) to parlio_tx_clk_pad_out\n  - PSSI_RDY (Ready / Flow Control) to \n  - PSSI_DE (Data Enable) to parlio_tx_data15_pad_out MSB\n  - PSSI_D0 through PSSI_D7 (8-bit Data Bus) to parlio_tx_data0_pad_out 0 to 7\n  Connect suitable pins to the PSSI/SPI header then setup pins with ESP32P4 signals\n- DSI (LCD)\n  - LCD Choice: CTP ST7701S FT5316 D310FPC9362 CST128 (MIPI 2 LANE)\n- SDIO\n  - HS Communication between the P4 and C5 (Slave)\n  - INT pin deddicated as interrupt from C5 to P4 (Not part of SDIO)\n\nSERIES TERMINATION\n- CSI, DSI, SDIO (near P4), UART0, UART1, NOT I2C\nSDIO\n- Array Series termination on SDIO DATA 0-3\n- Individual series termination on CLK, CMD\n- PU on the SDIO INT (Interrupt) pin (Open Drain)"
+		(exclude_from_sim no)
+		(at 113.03 29.464 0)
+		(size 73.152 128.905)
+		(stroke
+			(width 0)
+			(type dash)
+		)
+		(fill
+			(type none)
+		)
+		(effects
+			(font
+				(size 1 1)
+			)
+			(justify left top)
+		)
+		(uuid "254c2e72-0440-4444-976b-7ef33e415564")
+	)
+	(text_box "POWER MANAGEMENT NOTES:\n- The input power goes through three stages \n  1. a) External Power: LM73100RPWR, 2.7 - 23 V, 5.5 A Integrated Ideal Diode with Input Reverse Polarity and Overvoltage Protection\n     b) USB POWER: SS34-E3/57T Diode\n  2. TPS259531DSGR 2.7V to 18V, 4-A, 34-mΩ eFuse With Fast Overvoltage Protection\n  3. TPS62442RQRR, 2.75-V to 6-V, Dual-Channel Step-Down Converter with Adjustable Frequency\n\n- Stage Description:\n  1. The power is sourced from the imediatelly connected power source without relying on jumpers to manual selection. The diodes prevent current from flowing back to a source in case of multiple ppower sources being conected.\n     The ideal diode was used for thhe external power source to limit power loss inherent in a regular diode as the eternal power source will at times be a battery.   \n     The ideal diode includes ppolarity protection (not required on the USB sources)\n  2. The eFuse provides overvoltage protection, undervoltage lockout, and limits inrussh current.\n  3. SMPS that outputs two power rails. The first is dedicated and controlled by the ESP32P4 core. The second is general 3.3V power rail used by all other components.\n"
+		(exclude_from_sim no)
+		(at 27.305 29.845 0)
+		(size 77.851 55.499)
+		(stroke
+			(width 0)
+			(type dash)
+		)
+		(fill
+			(type none)
+		)
+		(effects
+			(font
+				(size 1 1)
+			)
+			(justify left top)
+		)
+		(uuid "6064f732-fe0b-4c1f-b077-2f11f169ae3e")
+	)
+	(text_box "ESP32C5 SETUP NOTES:\n1. Set GPIO0 through GPIO MATRIX to GPIO (From 32K XTAL)\n2. Set GPIO1 through GPIO MATRIX to GPI1 (From 32K XTAL)\n3. To enable programming through the JTAG pins eFuse 2: EFUSE_DIS_USB_JTAG has to be set to 1 (default 0)\n   - Set BOOT pins to Joint Download Boot 1 mode (to download through JTAG pins)\n   - In Joint Download Boot 1 mode, the USB Serial/JTAG controller is forcibly disabled, and the JTAG signal only comes from JTAG pins."
+		(exclude_from_sim no)
+		(at 194.564 29.21 0)
+		(size 77.216 63.5)
+		(stroke
+			(width 0)
+			(type dash)
+		)
+		(fill
+			(type none)
+		)
+		(effects
+			(font
+				(size 1 1)
+			)
+			(justify left top)
+		)
+		(uuid "7c53a797-9a5a-487d-93ce-3285865f5cd0")
+	)
+	(text_box "ESP32C5 HARDWARE CONSIDERATIONS:\n- The C5 does not have a USB connector\n  - Programming is to be done through JTAG pins\n  - To enable programming through the JTAG pins eFuse 2: EFUSE_DIS_USB_JTAG has to be set to 1 (default 0)\n- BOOT CONFIGURATION\n  - GPIO26_BOOT is pulled to GND (for all boot configurations) \n  - GPIO27_BOOT and GPIO28_BOOT have PU R with a pull-down BTN\n  - Solder bridge allows for either both to be pulled LOW or only the GPIO28_BOOT"
+		(exclude_from_sim no)
+		(at 27.432 117.602 0)
+		(size 77.724 61.722)
+		(stroke
+			(width 0)
+			(type dash)
+		)
+		(fill
+			(type none)
+		)
+		(effects
+			(font
+				(size 1 1)
+			)
+			(justify left top)
+		)
+		(uuid "bfebffbf-548c-45ae-bf04-975b07e3741a")
+	)
+	(text_box "ESP32P4 SETUP NOTES:\n1. The PARLIO (Parallel interface) pins are set as general PARLIO IO to be set up with specific pin functtiin throuugh the GPIO Matrix. The function of each PARLIO pin can be determined based on the target device.\n2. GPIO45 is to be set up as CINT (SDIO Interrupt) for the ESP32C5 to let the P4 know of available information on the SDIO bus.\n3. The W25Q256JWPIQ flash memory is a 1.8V device and is powered as well as logic I/O from VDDO_FLASH (PIN71). Set up logic 1.8V output before connecting. Set the EFUSE_0PXA_TIEH_SEL_0 register.\n   (DO NOT solder on the flash until the flash votage is set to 1.8V)\n4. VDD_HP_n is CORE power with 1.3V MAX. Set to 1.2V (as per reference)\n"
+		(exclude_from_sim no)
+		(at 194.564 99.314 0)
+		(size 77.216 58.928)
+		(stroke
+			(width 0)
+			(type dash)
+		)
+		(fill
+			(type none)
+		)
+		(effects
+			(font
+				(size 1 1)
+			)
+			(justify left top)
+		)
+		(uuid "c5525fcd-ec5a-424a-b892-f0cac960f291")
+	)
+	(text_box "PROJECT REQUIREMENTS/GOALS:\n- Provide link to WIFI to other connected MCUs/PCBs\n- Function as a simple server\n- High Speed connection to expansion PCBs (8Bit Serial)\n- High Speed USB connector\n\nSECONDARY GOALS:\n- Motor control through PWM pins\n- Camera streaming (MIPI 2LANE)\n- LCD with touch screen (MIPI 2LANE)\n"
+		(exclude_from_sim no)
+		(at 27.432 92.202 0)
+		(size 77.724 20.32)
+		(stroke
+			(width 0)
+			(type dash)
+		)
+		(fill
+			(type none)
+		)
+		(effects
+			(font
+				(size 1 1)
+			)
+			(justify left top)
+		)
+		(uuid "cb9e3134-1938-43e3-b9a6-572fb83d52c3")
+	)
+)
