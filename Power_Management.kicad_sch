@@ -4160,9 +4160,9 @@
 		)
 		(uuid "2b1dea17-580f-40b4-97b6-c1a72c5e53b1")
 	)
-	(text "TPS259531DSGR\nOUTPUT VOLTAGE CLAMP: 5.7 V (typ)\nUNDERVOLTAGE LOCKOUT: Vsupply = VUVLO * (R1 + R2) / R2"
+	(text "TPS259531DSGR\nOUTPUT VOLTAGE CLAMP: 5.7 V (typ)\nUNDERVOLTAGE LOCKOUT: Vsupply = VUVLO * (R1 + R2) / R2\nACTIVE CURRENT LIMITING: RILM = 2000/(ILIMIT - 0.04), for 4A RILM = 495Ohms"
 		(exclude_from_sim no)
-		(at 231.902 66.548 0)
+		(at 201.168 72.136 0)
 		(effects
 			(font
 				(size 1 1)
@@ -6407,7 +6407,7 @@
 				)
 			)
 		)
-		(property "Value" "546R"
+		(property "Value" "480R"
 			(at 245.872 58.674 0)
 			(effects
 				(font

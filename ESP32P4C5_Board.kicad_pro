@@ -515,7 +515,7 @@
         "microvia_diameter": 0.3,
         "microvia_drill": 0.1,
         "name": "BOOT",
-        "pcb_color": "rgb(0, 0, 132)",
+        "pcb_color": "rgba(0, 0, 0, 0.000)",
         "schematic_color": "rgb(0, 0, 132)",
         "track_width": 0.25,
         "via_diameter": 0.8,
@@ -532,7 +532,7 @@
         "microvia_diameter": 0.3,
         "microvia_drill": 0.1,
         "name": "CSI_CAMERA",
-        "pcb_color": "rgb(255, 153, 0)",
+        "pcb_color": "rgba(0, 0, 0, 0.000)",
         "schematic_color": "rgb(255, 153, 0)",
         "track_width": 0.25,
         "via_diameter": 0.8,
@@ -549,7 +549,7 @@
         "microvia_diameter": 0.3,
         "microvia_drill": 0.1,
         "name": "DCDC",
-        "pcb_color": "rgb(255, 255, 194)",
+        "pcb_color": "rgba(0, 0, 0, 0.000)",
         "schematic_color": "rgb(255, 153, 0)",
         "track_width": 0.25,
         "via_diameter": 0.8,
@@ -566,7 +566,7 @@
         "microvia_diameter": 0.3,
         "microvia_drill": 0.1,
         "name": "DEBUG_JTAG",
-        "pcb_color": "rgb(0, 0, 255)",
+        "pcb_color": "rgba(0, 0, 0, 0.000)",
         "schematic_color": "rgb(0, 0, 255)",
         "track_width": 0.25,
         "via_diameter": 0.8,
@@ -583,7 +583,7 @@
         "microvia_diameter": 0.3,
         "microvia_drill": 0.1,
         "name": "DSI_LCD",
-        "pcb_color": "rgb(204, 102, 0)",
+        "pcb_color": "rgba(0, 0, 0, 0.000)",
         "schematic_color": "rgb(204, 102, 0)",
         "track_width": 0.25,
         "via_diameter": 0.8,
@@ -600,7 +600,7 @@
         "microvia_diameter": 0.3,
         "microvia_drill": 0.1,
         "name": "FLASH",
-        "pcb_color": "rgb(0, 194, 194)",
+        "pcb_color": "rgba(0, 0, 0, 0.000)",
         "schematic_color": "rgb(0, 132, 132)",
         "track_width": 0.25,
         "via_diameter": 0.8,
@@ -617,7 +617,7 @@
         "microvia_diameter": 0.3,
         "microvia_drill": 0.1,
         "name": "GND",
-        "pcb_color": "rgb(132, 132, 132)",
+        "pcb_color": "rgba(0, 0, 0, 0.000)",
         "schematic_color": "rgb(132, 132, 132)",
         "track_width": 0.25,
         "via_diameter": 0.8,
@@ -634,7 +634,7 @@
         "microvia_diameter": 0.3,
         "microvia_drill": 0.1,
         "name": "I2C",
-        "pcb_color": "rgb(72, 0, 0)",
+        "pcb_color": "rgba(0, 0, 0, 0.000)",
         "schematic_color": "rgb(255, 0, 255)",
         "track_width": 0.25,
         "via_diameter": 0.8,
@@ -651,7 +651,7 @@
         "microvia_diameter": 0.3,
         "microvia_drill": 0.1,
         "name": "PSSI",
-        "pcb_color": "rgb(0, 194, 0)",
+        "pcb_color": "rgba(0, 0, 0, 0.000)",
         "schematic_color": "rgb(0, 132, 0)",
         "track_width": 0.25,
         "via_diameter": 0.8,
@@ -685,7 +685,7 @@
         "microvia_diameter": 0.3,
         "microvia_drill": 0.1,
         "name": "PWR3V3",
-        "pcb_color": "rgb(171, 0, 0)",
+        "pcb_color": "rgba(0, 0, 0, 0.000)",
         "schematic_color": "rgb(255, 0, 0)",
         "track_width": 0.25,
         "via_diameter": 0.8,
@@ -702,7 +702,7 @@
         "microvia_diameter": 0.3,
         "microvia_drill": 0.1,
         "name": "RESET",
-        "pcb_color": "rgb(132, 132, 0)",
+        "pcb_color": "rgba(0, 0, 0, 0.000)",
         "schematic_color": "rgb(132, 132, 0)",
         "track_width": 0.25,
         "via_diameter": 0.8,
@@ -719,7 +719,7 @@
         "microvia_diameter": 0.3,
         "microvia_drill": 0.1,
         "name": "RF",
-        "pcb_color": "rgb(255, 255, 0)",
+        "pcb_color": "rgba(0, 0, 0, 0.000)",
         "schematic_color": "rgb(194, 194, 0)",
         "track_width": 0.25,
         "via_diameter": 0.8,
@@ -736,7 +736,7 @@
         "microvia_diameter": 0.3,
         "microvia_drill": 0.1,
         "name": "SDIO",
-        "pcb_color": "rgb(0, 255, 0)",
+        "pcb_color": "rgba(0, 0, 0, 0.000)",
         "schematic_color": "rgb(0, 255, 0)",
         "track_width": 0.15,
         "via_diameter": 0.45,
@@ -753,7 +753,7 @@
         "microvia_diameter": 0.3,
         "microvia_drill": 0.1,
         "name": "SPI",
-        "pcb_color": "rgb(0, 132, 0)",
+        "pcb_color": "rgba(0, 0, 0, 0.000)",
         "schematic_color": "rgb(0, 194, 0)",
         "track_width": 0.25,
         "via_diameter": 0.8,
@@ -770,7 +770,7 @@
         "microvia_diameter": 0.3,
         "microvia_drill": 0.1,
         "name": "UART",
-        "pcb_color": "rgb(194, 0, 194)",
+        "pcb_color": "rgba(0, 0, 0, 0.000)",
         "schematic_color": "rgb(132, 0, 132)",
         "track_width": 0.25,
         "via_diameter": 0.8,
@@ -787,7 +787,7 @@
         "microvia_diameter": 0.3,
         "microvia_drill": 0.1,
         "name": "USB",
-        "pcb_color": "rgb(0, 255, 255)",
+        "pcb_color": "rgba(0, 0, 0, 0.000)",
         "schematic_color": "rgb(0, 194, 194)",
         "track_width": 0.235,
         "via_diameter": 0.8,
@@ -838,14 +838,6 @@
         "pattern": "*UART*"
       },
       {
-        "netclass": "PWR1V2",
-        "pattern": "*SMPS_OUT1_1V2+*"
-      },
-      {
-        "netclass": "PWR3V3",
-        "pattern": "*SMPS_OUT2_3V3+*"
-      },
-      {
         "netclass": "RF",
         "pattern": "*ANT*"
       },
@@ -871,7 +863,7 @@
       },
       {
         "netclass": "PWR3V3",
-        "pattern": "*ESP_*"
+        "pattern": "*ESP_3V3"
       },
       {
         "netclass": "CSI_CAMERA",
@@ -912,6 +904,10 @@
       {
         "netclass": "DCDC",
         "pattern": "*DCDC"
+      },
+      {
+        "netclass": "PWR1V2",
+        "pattern": "*ESP_VDD_HP"
       }
     ]
   },
