@@ -4987,12 +4987,6 @@
 		(uuid "03c0df71-66eb-4195-bd04-c545f01261a8")
 	)
 	(junction
-		(at 34.29 45.72)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "08dd5497-95b1-4e21-99eb-642c9b0ffe07")
-	)
-	(junction
 		(at 199.39 81.28)
 		(diameter 0)
 		(color 0 0 0 0)
@@ -6064,6 +6058,16 @@
 	)
 	(wire
 		(pts
+			(xy 30.48 45.72) (xy 30.48 44.45)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "4490c745-5c48-49eb-9c61-6ced8913f2fb")
+	)
+	(wire
+		(pts
 			(xy 241.3 123.19) (xy 241.3 142.24)
 		)
 		(stroke
@@ -6514,16 +6518,6 @@
 	)
 	(wire
 		(pts
-			(xy 34.29 45.72) (xy 38.1 45.72)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "7152ce0f-e548-4323-9603-f87976f7aa39")
-	)
-	(wire
-		(pts
 			(xy 43.18 168.91) (xy 29.21 168.91)
 		)
 		(stroke
@@ -6674,7 +6668,7 @@
 	)
 	(wire
 		(pts
-			(xy 34.29 45.72) (xy 34.29 48.26)
+			(xy 34.29 43.18) (xy 34.29 48.26)
 		)
 		(stroke
 			(width 0)
@@ -7254,6 +7248,16 @@
 	)
 	(wire
 		(pts
+			(xy 38.1 45.72) (xy 30.48 45.72)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "b420dfa3-ed65-4049-a458-083aceb5f25b")
+	)
+	(wire
+		(pts
 			(xy 222.25 44.45) (xy 234.95 44.45)
 		)
 		(stroke
@@ -7321,16 +7325,6 @@
 			(type default)
 		)
 		(uuid "ba24dc7b-6672-449a-892e-05ba52b09534")
-	)
-	(wire
-		(pts
-			(xy 34.29 43.18) (xy 34.29 45.72)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "bb16f00a-84fd-4ba9-812c-88de66a642db")
 	)
 	(wire
 		(pts
@@ -8439,6 +8433,16 @@
 			(justify left bottom)
 		)
 		(uuid "150ec6c6-5b50-424c-be61-690686801afe")
+	)
+	(label "ANT"
+		(at 200.66 139.7 180)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right bottom)
+		)
+		(uuid "15f322da-9a33-4be4-a33b-a35526ee9b2f")
 	)
 	(label "GPIO8_SDIO_DATA0"
 		(at 36.83 91.44 0)
@@ -12416,6 +12420,72 @@
 			(project "ESP32P4C5_Board"
 				(path "/d4a17687-8854-438f-9913-a6ddcff1a679/e64b2c4a-3136-4c33-ae85-e0f033842593"
 					(reference "C83")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "power:+3.3V")
+		(at 30.48 44.45 0)
+		(mirror y)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "aaea489d-2712-40a7-95f9-5d680251d216")
+		(property "Reference" "#PWR060"
+			(at 30.48 48.26 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "ESP_3V3"
+			(at 27.94 40.386 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 30.48 44.45 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 30.48 44.45 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"+3.3V\""
+			(at 30.48 44.45 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "788a0910-0f71-4a25-80c1-5c250717264a")
+		)
+		(instances
+			(project "ESP32P4C5_Board"
+				(path "/d4a17687-8854-438f-9913-a6ddcff1a679/e64b2c4a-3136-4c33-ae85-e0f033842593"
+					(reference "#PWR060")
 					(unit 1)
 				)
 			)
