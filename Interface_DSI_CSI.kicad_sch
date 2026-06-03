@@ -4,6 +4,12 @@
 	(generator_version "8.0")
 	(uuid "bc9c55d4-6b6e-4192-bc4b-c2a2b4271d2a")
 	(paper "A4")
+	(title_block
+		(title "ESP32P4C5_BOARD")
+		(date "2026-06-01")
+		(rev "A")
+		(company "Peter Hancak")
+	)
 	(lib_symbols
 		(symbol "Personal_Projects:FPC_40PIN"
 			(pin_names

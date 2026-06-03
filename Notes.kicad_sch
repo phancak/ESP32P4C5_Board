@@ -4,6 +4,12 @@
 	(generator_version "8.0")
 	(uuid "3c73f232-fe9b-42f8-8c4e-fe18a3dff7fe")
 	(paper "A4")
+	(title_block
+		(title "ESP32P4C5_BOARD")
+		(date "2026-06-01")
+		(rev "A")
+		(company "Peter Hancak")
+	)
 	(lib_symbols)
 	(text_box "CONTROLLED IMPEDANCE TRACE WIDTHS\n(Simulations done using ADS Controlled Impedance Line Designer)\n- Simulated is JLCPCB: JLC04161H-3313(Finished thickness1.56mm±10%)\n\n1. Microstrip Edge Coupled, 100 Ohm Differential Impedance, 0.35mm (center to center), 50mmm Length, f=1Ghz, Width = 0.1225 mm\n2. Coplanar Edge Coupled, 100 Ohm Differential Impedance, 0.35mm (center to center), 0.25mm Clearance, 50mmm Length, f=1Ghz, Width = 0.1354 mm, 0.35 - 0.1354 = 0.2146 mm (edge to edge spacing)\n3. USB Coplanar Edge Coupled, 90 Ohm Differential Impedance, 0.5mm (center to center), 0.25mm Clearance, 50mmm Length, f=240Mhz, Width = 0.1704 mm, 0.5 - 0.1704 = 0.3296 mm\n4. USB Microstrip Edge Coupled, 90 Ohm Differential Impedance, 0.5mm (center to center), 50mmm Length, f=240Mhz, Width = 0.1722 mm\n\nRF TRACE 50 Ohm\n- Coplanar single-ended , f is 2.5 GHz, L 20mm, Clearance 0.25mm, Width = 0.1472 mm\n- Coplanar single-ended , f is 5 GHz, L 20mm, Clearance 0.25mm, Width = 0.1475 mm\n\n\nSMA CONNECTOR SIGNAL PIN (MIDDLE) FOOTPRINT\n- With normal 0.35 mm clearance resulted in a veryy significant signal degradation\n- I recalculated the clearance for the middle pin using ADS:\n  - Coplanar Single-Ended, Length: 5mm, Width: 1.37 mmm (width of the pin), f: 5GHz, Clearance = 0.4046 mm\n  \n\nINTERFACE NOTES:\n- SPI2 IOMUX, DMA\n- SPI3 GPIOMATRIX, NODMA\n- I2S1 GPIOMATRIX\n- I2S2 GPIOMATRIX\n- I2C0 GPIOMATRIX CSI and P4 to C5\n- I2C1 GPIOMATRIX External Interface\n- UART0 IOMUX DEBUG\n- UART1 IOMUX External Interface\n- UART2\n- UART3\n- UART4\n- I3C\n- PARLIO\n  - PSSI_PDCK (Parallel Data Clock) to parlio_tx_clk_pad_out\n  - PSSI_RDY (Ready / Flow Control) to \n  - PSSI_DE (Data Enable) to parlio_tx_data15_pad_out MSB\n  - PSSI_D0 through PSSI_D7 (8-bit Data Bus) to parlio_tx_data0_pad_out 0 to 7\n  Connect suitable pins to the PSSI/SPI header then setup pins with ESP32P4 signals\n- DSI (LCD)\n  - LCD Choice: CTP ST7701S FT5316 D310FPC9362 CST128 (MIPI 2 LANE)\n- SDIO\n  - HS Communication between the P4 and C5 (Slave)\n  - INT pin deddicated as interrupt from C5 to P4 (Not part of SDIO)\n\nSERIES TERMINATION\n- CSI, DSI, SDIO (near P4), UART0, UART1, NOT I2C\nSDIO\n- Array Series termination on SDIO DATA 0-3\n- Individual series termination on CLK, CMD\n- PU on the SDIO INT (Interrupt) pin (Open Drain)"
 		(exclude_from_sim no)
@@ -27,7 +33,7 @@
 	(text_box "POWER MANAGEMENT NOTES:\n- The input power goes through three stages \n  1. a) External Power: LM73100RPWR, 2.7 - 23 V, 5.5 A Integrated Ideal Diode with Input Reverse Polarity and Overvoltage Protection\n     b) USB POWER: SS34-E3/57T Diode\n  2. TPS259531DSGR 2.7V to 18V, 4-A, 34-mΩ eFuse With Fast Overvoltage Protection\n  3. TPS62442RQRR, 2.75-V to 6-V, Dual-Channel Step-Down Converter with Adjustable Frequency\n\n- Stage Description:\n  1. The power is sourced from the imediatelly connected power source without relying on jumpers to manual selection. The diodes prevent current from flowing back to a source in case of multiple ppower sources being conected.\n     The ideal diode was used for thhe external power source to limit power loss inherent in a regular diode as the eternal power source will at times be a battery.   \n     The ideal diode includes ppolarity protection (not required on the USB sources)\n  2. The eFuse provides overvoltage protection, undervoltage lockout, Short Circuit Protection, and limits inrussh current.\n  3. SMPS that outputs two power rails. The first is dedicated and controlled by the ESP32P4 core. The second is general 3.3V power rail used by all other components.\n\nESP32P4 Power Domains\n- THE VDD_HP pins: 600mA to 1A Current, Required Width: 0.3 mm (1A)"
 		(exclude_from_sim no)
 		(at 27.305 29.845 0)
-		(size 77.851 36.703)
+		(size 77.851 49.403)
 		(stroke
 			(width 0)
 			(type dash)
@@ -62,7 +68,7 @@
 		)
 		(uuid "7c53a797-9a5a-487d-93ce-3285865f5cd0")
 	)
-	(text_box "ESP32P4 HARDWARE CONSIDERATIONS:\n- The P4 does have a USB connector\n  - \n- BOOT CONFIGURATION\n  - \n\n- CSI_LDO-CE Pin on the CAMERA turns the internal camera LDO ON or OFF thereby alowing the chip to turn it off when not needed (in sleep mode)\n- CSI_FLASH-LED pin is a CAMERA output pinn that is designed to send ouput signal to a flash to iluminate the surounding at the exact time of image capture\n  (Will not be used NC) "
+	(text_box "ESP32P4 HARDWARE CONSIDERATIONS:\n- DEBUG\n  - The P4 has both USB ports exposed and the UART0 as a last resort debug.\n  - Main flash/debug is to be done through the USB/JTAG port\n  - The MCU JTAG pins are exposed on a header but do not include the PU and PD resistors.\n- BOOT CONFIGURATION\n  - \n\n- CSI_LDO-CE Pin on the CAMERA turns the internal camera LDO ON or OFF thereby alowing the chip to turn it off when not needed (in sleep mode)\n- CSI_FLASH-LED pin is a CAMERA output pinn that is designed to send ouput signal to a flash to iluminate the surounding at the exact time of image capture\n  (Will not be used NC)\n\n- RESET CIRCUT\n  - The goal is for the ESP32P4 to reset from global reset pin, but also to reset after a firmware update without causing global reset of other devices.\n  - Implementation: GLOBAL RESET is connected through a buffer to the MCU that only pulls reset LOW and is HIGH-Z otherwise. The MCU RST (PU) pin is exposed with the JTAG pins on a headder to allow RST after upload."
 		(exclude_from_sim no)
 		(at 27.178 149.86 0)
 		(size 77.724 40.386)
@@ -100,7 +106,7 @@
 		)
 		(uuid "bfebffbf-548c-45ae-bf04-975b07e3741a")
 	)
-	(text_box "ESP32P4 SETUP NOTES:\n1. The PARLIO (Parallel interface) pins are set as general PARLIO IO to be set up with specific pin functtiin throuugh the GPIO Matrix. The function of each PARLIO pin can be determined based on the target device.\n2. GPIO45 is to be set up as CINT (SDIO Interrupt) for the ESP32C5 to let the P4 know of available information on the SDIO bus.\n3. The W25Q256JWPIQ flash memory is a 1.8V device and is powered as well as logic I/O from VDDO_FLASH (PIN71). Set up logic 1.8V output before connecting. Set the EFUSE_0PXA_TIEH_SEL_0 register.\n   (DO NOT solder on the flash until the flash votage is set to 1.8V)\n4. VDD_HP_n is CORE power with 1.3V MAX. Set to 1.2V (as per reference)\n"
+	(text_box "ESP32P4 SETUP NOTES:\n1. The PARLIO (Parallel interface) pins are set as general PARLIO IO to be set up with specific pin functtiin throuugh the GPIO Matrix. The function of each PARLIO pin can be determined based on the target device.\n2. GPIO45 is to be set up as CINT (SDIO Interrupt) for the ESP32C5 to let the P4 know of available information on the SDIO bus.\n3. The W25Q256JWPIQ flash memory is a 1.8V device and is powered as well as logic I/O from VDDO_FLASH (PIN71). Set up logic 1.8V output before connecting. Set the EFUSE_0PXA_TIEH_SEL_0 register.\n   (DO NOT solder on the flash until the flash votage is set to 1.8V)\n4. VDD_HP_n is CORE power with 1.3V MAX. Set to 1.2V (as per reference)\n5. BOOT CONFIGURATION\n   - The ESP32P4 can be programmed using USB-Serial-JTAG Download\n     (The USB Serial/JTAG Controller is able to put the ESP32-P4 into download mode automatically - NO NEED TO PULL GPIO35 LOW MANUALLY)\n   - GPIO35 HIGH: SPI Boot mode (default), PU is permanently on GPIO35\n   - GPIO35 LOW: Joint Download Boot mode (USB-Serial-JTAG Download Boot, UART Download Boot, SPI Slave Download Boot, USB 2.0 OTG Download)\n   - JTAG Signal Source Control\n     - eFuse 3: EFUSE_JTAG_SEL_ENABLE to 1\n     - GPIO34 can be used for JTAG signal source\n       - 1: JTAG signals come from USB Serial/JTAG Controller\n       - 0: JTAG signals come from corresponding pins MTDI, MTCK, MTMS, and MTDO\n\n"
 		(exclude_from_sim no)
 		(at 194.564 99.314 0)
 		(size 77.216 58.928)
@@ -121,8 +127,8 @@
 	)
 	(text_box "PROJECT REQUIREMENTS/GOALS:\n- Camera OV5647 to capture real-time vide (or smiliar)\n- Provide WIFI link (to transmit the real-time video)\n- Control motor through CAN-FD interface\n- High Speed 8-bit pparallel connection to expansion PCBs\n- High Speed USB connector\n- I2C, UART, SPI (through FPC) interfaces\n\nSECONDARY GOALS:\n- Function as a simple server\n- Motor control through PWM pins\n- LCD with touch screen (MIPI 2LANE)\n"
 		(exclude_from_sim no)
-		(at 27.432 69.85 0)
-		(size 77.724 40.64)
+		(at 27.432 85.09 0)
+		(size 77.724 25.4)
 		(stroke
 			(width 0)
 			(type dash)

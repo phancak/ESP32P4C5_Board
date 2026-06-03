@@ -38,8 +38,8 @@
         "other_text_upright": false,
         "pads": {
           "drill": 0.0,
-          "height": 0.3302,
-          "width": 0.889
+          "height": 0.4,
+          "width": 0.5
         },
         "silk_line_width": 0.1,
         "silk_text_italic": false,
@@ -519,7 +519,7 @@
         "microvia_diameter": 0.3,
         "microvia_drill": 0.1,
         "name": "BOOT",
-        "pcb_color": "rgba(0, 0, 0, 0.000)",
+        "pcb_color": "rgb(0, 0, 132)",
         "schematic_color": "rgb(0, 0, 132)",
         "track_width": 0.25,
         "via_diameter": 0.8,
@@ -536,7 +536,7 @@
         "microvia_diameter": 0.3,
         "microvia_drill": 0.1,
         "name": "CSI_CAMERA",
-        "pcb_color": "rgba(0, 0, 0, 0.000)",
+        "pcb_color": "rgb(255, 153, 0)",
         "schematic_color": "rgb(255, 153, 0)",
         "track_width": 0.25,
         "via_diameter": 0.45,
@@ -553,7 +553,7 @@
         "microvia_diameter": 0.3,
         "microvia_drill": 0.1,
         "name": "DCDC",
-        "pcb_color": "rgba(0, 0, 0, 0.000)",
+        "pcb_color": "rgb(255, 255, 194)",
         "schematic_color": "rgb(255, 153, 0)",
         "track_width": 0.25,
         "via_diameter": 0.8,
@@ -570,7 +570,7 @@
         "microvia_diameter": 0.3,
         "microvia_drill": 0.1,
         "name": "DEBUG_JTAG",
-        "pcb_color": "rgba(0, 0, 0, 0.000)",
+        "pcb_color": "rgb(0, 0, 255)",
         "schematic_color": "rgb(0, 0, 255)",
         "track_width": 0.25,
         "via_diameter": 0.8,
@@ -587,7 +587,7 @@
         "microvia_diameter": 0.3,
         "microvia_drill": 0.1,
         "name": "DSI_LCD",
-        "pcb_color": "rgba(0, 0, 0, 0.000)",
+        "pcb_color": "rgb(204, 102, 0)",
         "schematic_color": "rgb(204, 102, 0)",
         "track_width": 0.25,
         "via_diameter": 0.8,
@@ -604,7 +604,7 @@
         "microvia_diameter": 0.3,
         "microvia_drill": 0.1,
         "name": "FLASH",
-        "pcb_color": "rgba(0, 0, 0, 0.000)",
+        "pcb_color": "rgb(0, 255, 0)",
         "schematic_color": "rgb(0, 132, 132)",
         "track_width": 0.25,
         "via_diameter": 0.8,
@@ -621,7 +621,7 @@
         "microvia_diameter": 0.3,
         "microvia_drill": 0.1,
         "name": "GND",
-        "pcb_color": "rgba(0, 0, 0, 0.000)",
+        "pcb_color": "rgb(132, 132, 132)",
         "schematic_color": "rgb(132, 132, 132)",
         "track_width": 0.25,
         "via_diameter": 0.8,
@@ -638,7 +638,7 @@
         "microvia_diameter": 0.3,
         "microvia_drill": 0.1,
         "name": "I2C",
-        "pcb_color": "rgba(0, 0, 0, 0.000)",
+        "pcb_color": "rgb(255, 0, 255)",
         "schematic_color": "rgb(255, 0, 255)",
         "track_width": 0.25,
         "via_diameter": 0.8,
@@ -655,9 +655,9 @@
         "microvia_diameter": 0.3,
         "microvia_drill": 0.1,
         "name": "PSSI",
-        "pcb_color": "rgba(0, 0, 0, 0.000)",
+        "pcb_color": "rgb(0, 194, 0)",
         "schematic_color": "rgb(0, 132, 0)",
-        "track_width": 0.25,
+        "track_width": 0.15,
         "via_diameter": 0.8,
         "via_drill": 0.4,
         "wire_width": 6
@@ -672,7 +672,7 @@
         "microvia_diameter": 0.3,
         "microvia_drill": 0.1,
         "name": "PWR1V2",
-        "pcb_color": "rgba(0, 0, 0, 0.000)",
+        "pcb_color": "rgb(132, 0, 0)",
         "schematic_color": "rgb(132, 0, 0)",
         "track_width": 0.25,
         "via_diameter": 0.8,
@@ -689,7 +689,7 @@
         "microvia_diameter": 0.3,
         "microvia_drill": 0.1,
         "name": "PWR3V3",
-        "pcb_color": "rgba(0, 0, 0, 0.000)",
+        "pcb_color": "rgb(255, 0, 0)",
         "schematic_color": "rgb(255, 0, 0)",
         "track_width": 0.25,
         "via_diameter": 0.8,
@@ -706,7 +706,7 @@
         "microvia_diameter": 0.3,
         "microvia_drill": 0.1,
         "name": "RESET",
-        "pcb_color": "rgba(0, 0, 0, 0.000)",
+        "pcb_color": "rgb(194, 194, 0)",
         "schematic_color": "rgb(132, 132, 0)",
         "track_width": 0.25,
         "via_diameter": 0.8,
@@ -723,7 +723,7 @@
         "microvia_diameter": 0.3,
         "microvia_drill": 0.1,
         "name": "RF",
-        "pcb_color": "rgba(0, 0, 0, 0.000)",
+        "pcb_color": "rgb(255, 255, 0)",
         "schematic_color": "rgb(194, 194, 0)",
         "track_width": 0.1472,
         "via_diameter": 0.45,
@@ -740,7 +740,7 @@
         "microvia_diameter": 0.3,
         "microvia_drill": 0.1,
         "name": "SDIO",
-        "pcb_color": "rgba(0, 0, 0, 0.000)",
+        "pcb_color": "rgb(0, 132, 0)",
         "schematic_color": "rgb(0, 255, 0)",
         "track_width": 0.15,
         "via_diameter": 0.45,
@@ -757,7 +757,7 @@
         "microvia_diameter": 0.3,
         "microvia_drill": 0.1,
         "name": "SPI",
-        "pcb_color": "rgba(0, 0, 0, 0.000)",
+        "pcb_color": "rgb(0, 194, 194)",
         "schematic_color": "rgb(0, 194, 0)",
         "track_width": 0.25,
         "via_diameter": 0.8,
@@ -791,7 +791,7 @@
         "microvia_diameter": 0.3,
         "microvia_drill": 0.1,
         "name": "USB",
-        "pcb_color": "rgba(0, 0, 0, 0.000)",
+        "pcb_color": "rgb(0, 255, 255)",
         "schematic_color": "rgb(0, 194, 194)",
         "track_width": 0.235,
         "via_diameter": 0.45,
@@ -947,7 +947,7 @@
   },
   "schematic": {
     "annotate_start_num": 0,
-    "bom_export_filename": "",
+    "bom_export_filename": "Manufacturing/BOM/ESP32P4C5_Board_BOM.csv",
     "bom_fmt_presets": [],
     "bom_fmt_settings": {
       "field_delimiter": ",",
@@ -997,11 +997,269 @@
           "label": "DNP",
           "name": "${DNP}",
           "show": true
+        },
+        {
+          "group_by": false,
+          "label": "#",
+          "name": "${ITEM_NUMBER}",
+          "show": false
+        },
+        {
+          "group_by": false,
+          "label": "Arrow Part Number",
+          "name": "Arrow Part Number",
+          "show": false
+        },
+        {
+          "group_by": false,
+          "label": "Arrow Price/Stock",
+          "name": "Arrow Price/Stock",
+          "show": false
+        },
+        {
+          "group_by": false,
+          "label": "Availability",
+          "name": "Availability",
+          "show": false
+        },
+        {
+          "group_by": false,
+          "label": "Category",
+          "name": "Category",
+          "show": false
+        },
+        {
+          "group_by": false,
+          "label": "Center Contact Diameter",
+          "name": "Center Contact Diameter",
+          "show": false
+        },
+        {
+          "group_by": false,
+          "label": "Check_prices",
+          "name": "Check_prices",
+          "show": false
+        },
+        {
+          "group_by": false,
+          "label": "ComponentLink1Description",
+          "name": "ComponentLink1Description",
+          "show": false
+        },
+        {
+          "group_by": false,
+          "label": "ComponentLink1URL",
+          "name": "ComponentLink1URL",
+          "show": false
+        },
+        {
+          "group_by": false,
+          "label": "ComponentLink2Description",
+          "name": "ComponentLink2Description",
+          "show": false
+        },
+        {
+          "group_by": false,
+          "label": "ComponentLink2URL",
+          "name": "ComponentLink2URL",
+          "show": false
+        },
+        {
+          "group_by": false,
+          "label": "Connector Type",
+          "name": "Connector Type",
+          "show": false
+        },
+        {
+          "group_by": false,
+          "label": "Description_1",
+          "name": "Description_1",
+          "show": false
+        },
+        {
+          "group_by": false,
+          "label": "DigiKey_Part_Number",
+          "name": "DigiKey_Part_Number",
+          "show": false
+        },
+        {
+          "group_by": false,
+          "label": "Frequency Range",
+          "name": "Frequency Range",
+          "show": false
+        },
+        {
+          "group_by": false,
+          "label": "Gender",
+          "name": "Gender",
+          "show": false
+        },
+        {
+          "group_by": false,
+          "label": "Height",
+          "name": "Height",
+          "show": false
+        },
+        {
+          "group_by": false,
+          "label": "Impedance",
+          "name": "Impedance",
+          "show": false
+        },
+        {
+          "group_by": false,
+          "label": "Interface Type",
+          "name": "Interface Type",
+          "show": false
+        },
+        {
+          "group_by": false,
+          "label": "MANUFACTURER",
+          "name": "MANUFACTURER",
+          "show": false
+        },
+        {
+          "group_by": false,
+          "label": "MAXIMUM_PACKAGE_HEIGHT",
+          "name": "MAXIMUM_PACKAGE_HEIGHT",
+          "show": false
+        },
+        {
+          "group_by": false,
+          "label": "MF",
+          "name": "MF",
+          "show": false
+        },
+        {
+          "group_by": false,
+          "label": "MP",
+          "name": "MP",
+          "show": false
+        },
+        {
+          "group_by": false,
+          "label": "Manufacturer",
+          "name": "Manufacturer",
+          "show": false
+        },
+        {
+          "group_by": false,
+          "label": "Manufacturer Part Number",
+          "name": "Manufacturer Part Number",
+          "show": false
+        },
+        {
+          "group_by": false,
+          "label": "Manufacturer_Name",
+          "name": "Manufacturer_Name",
+          "show": false
+        },
+        {
+          "group_by": false,
+          "label": "Manufacturer_Part_Number",
+          "name": "Manufacturer_Part_Number",
+          "show": false
+        },
+        {
+          "group_by": false,
+          "label": "Match Code",
+          "name": "Match Code",
+          "show": false
+        },
+        {
+          "group_by": false,
+          "label": "Mount",
+          "name": "Mount",
+          "show": false
+        },
+        {
+          "group_by": false,
+          "label": "Mouser Part Number",
+          "name": "Mouser Part Number",
+          "show": false
+        },
+        {
+          "group_by": false,
+          "label": "Mouser Price/Stock",
+          "name": "Mouser Price/Stock",
+          "show": false
+        },
+        {
+          "group_by": false,
+          "label": "Operating Temperature Max",
+          "name": "Operating Temperature Max",
+          "show": false
+        },
+        {
+          "group_by": false,
+          "label": "Operating Temperature Min",
+          "name": "Operating Temperature Min",
+          "show": false
+        },
+        {
+          "group_by": false,
+          "label": "Orientation",
+          "name": "Orientation",
+          "show": false
+        },
+        {
+          "group_by": false,
+          "label": "PARTREV",
+          "name": "PARTREV",
+          "show": false
+        },
+        {
+          "group_by": false,
+          "label": "Package",
+          "name": "Package",
+          "show": false
+        },
+        {
+          "group_by": false,
+          "label": "Packaging",
+          "name": "Packaging",
+          "show": false
+        },
+        {
+          "group_by": false,
+          "label": "Price",
+          "name": "Price",
+          "show": false
+        },
+        {
+          "group_by": false,
+          "label": "SNAPEDA_PACKAGE_ID",
+          "name": "SNAPEDA_PACKAGE_ID",
+          "show": false
+        },
+        {
+          "group_by": false,
+          "label": "SNAPEDA_PN",
+          "name": "SNAPEDA_PN",
+          "show": false
+        },
+        {
+          "group_by": false,
+          "label": "STANDARD",
+          "name": "STANDARD",
+          "show": false
+        },
+        {
+          "group_by": false,
+          "label": "SnapEDA_Link",
+          "name": "SnapEDA_Link",
+          "show": false
+        },
+        {
+          "group_by": false,
+          "label": "Description",
+          "name": "Description",
+          "show": false
         }
       ],
       "filter_string": "",
       "group_symbols": true,
-      "name": "Grouped By Value",
+      "name": "",
       "sort_asc": true,
       "sort_field": "Reference"
     },

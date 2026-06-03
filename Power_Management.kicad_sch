@@ -4,7 +4,115 @@
 	(generator_version "8.0")
 	(uuid "16e26335-3001-41fd-ad0a-98c66c3a95e0")
 	(paper "A4")
+	(title_block
+		(title "ESP32P4C5_BOARD")
+		(date "2026-06-01")
+		(rev "A")
+		(company "Peter Hancak")
+	)
 	(lib_symbols
+		(symbol "Connector:TestPoint"
+			(pin_numbers hide)
+			(pin_names
+				(offset 0.762) hide)
+			(exclude_from_sim no)
+			(in_bom yes)
+			(on_board yes)
+			(property "Reference" "TP"
+				(at 0 6.858 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Value" "TestPoint"
+				(at 0 5.08 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Footprint" ""
+				(at 5.08 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Datasheet" "~"
+				(at 5.08 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Description" "test point"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "ki_keywords" "test point tp"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "ki_fp_filters" "Pin* Test*"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(symbol "TestPoint_0_1"
+				(circle
+					(center 0 3.302)
+					(radius 0.762)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+			)
+			(symbol "TestPoint_1_1"
+				(pin passive line
+					(at 0 0 90)
+					(length 2.54)
+					(name "1"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "1"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+			)
+		)
 		(symbol "Device:C"
 			(pin_numbers hide)
 			(pin_names
@@ -2305,10 +2413,22 @@
 		(uuid "0208e8c0-d137-4a0a-ac09-f74c9a0aa804")
 	)
 	(junction
+		(at 163.83 31.75)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "02f3d57a-b414-4076-ba9b-48be65819a1d")
+	)
+	(junction
 		(at 83.82 93.98)
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "08cf00c2-aeac-4b9f-bd4f-19e2e2190715")
+	)
+	(junction
+		(at 218.44 127)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "1191fe12-0cf5-420d-8db8-e1b5cdfad5ba")
 	)
 	(junction
 		(at 83.82 74.93)
@@ -2341,6 +2461,12 @@
 		(uuid "262159e0-f203-42c5-bec7-cd310cfecb53")
 	)
 	(junction
+		(at 223.52 93.98)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "2fbb72b8-7fc2-4836-84c9-1615f3ba9220")
+	)
+	(junction
 		(at 195.58 34.29)
 		(diameter 0)
 		(color 0 0 0 0)
@@ -2365,7 +2491,7 @@
 		(uuid "35fdad13-f2d2-4f44-866a-6ff3411d5a7d")
 	)
 	(junction
-		(at 219.71 154.94)
+		(at 227.33 154.94)
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "390ff266-f9ac-4d0d-a70a-5bfebce18500")
@@ -2425,6 +2551,12 @@
 		(uuid "6570a2af-b101-4156-94ee-8c11b8f4cc96")
 	)
 	(junction
+		(at 264.16 31.75)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "6ab99c09-3fc9-4e19-aa84-6a83121fa7c3")
+	)
+	(junction
 		(at 198.12 119.38)
 		(diameter 0)
 		(color 0 0 0 0)
@@ -2473,6 +2605,12 @@
 		(uuid "a445308d-2a5d-4d5a-a846-d7dd3018b80e")
 	)
 	(junction
+		(at 91.44 163.83)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "a72a06c2-5bcb-4e58-9ab2-c5ea7096b5d7")
+	)
+	(junction
 		(at 138.43 43.18)
 		(diameter 0)
 		(color 0 0 0 0)
@@ -2483,6 +2621,12 @@
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "b741c016-ed23-4338-98c1-476bb7defa4c")
+	)
+	(junction
+		(at 219.71 93.98)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "be48b3f4-6321-45de-a8d0-d7bd4ce53e8e")
 	)
 	(junction
 		(at 184.15 127)
@@ -2545,7 +2689,7 @@
 		(uuid "dd98f2d5-1238-4a7f-ab01-266ef3d822a0")
 	)
 	(junction
-		(at 219.71 127)
+		(at 227.33 127)
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "e1cb62f4-87b2-49c0-a74c-25639232c093")
@@ -2593,7 +2737,7 @@
 		(uuid "f19d495e-0856-4659-b892-027a230d9d13")
 	)
 	(junction
-		(at 219.71 121.92)
+		(at 227.33 121.92)
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "f8466743-d881-46b1-a05c-ce478855bade")
@@ -2611,7 +2755,7 @@
 		(uuid "fc937133-9a8f-4682-a031-2011c4dda48d")
 	)
 	(junction
-		(at 219.71 93.98)
+		(at 227.33 93.98)
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "fd2971bd-057c-4020-88cb-299d0beb858c")
@@ -2702,7 +2846,7 @@
 	)
 	(wire
 		(pts
-			(xy 219.71 146.05) (xy 219.71 154.94)
+			(xy 227.33 146.05) (xy 227.33 154.94)
 		)
 		(stroke
 			(width 0)
@@ -2852,7 +2996,7 @@
 	)
 	(wire
 		(pts
-			(xy 209.55 127) (xy 219.71 127)
+			(xy 209.55 127) (xy 218.44 127)
 		)
 		(stroke
 			(width 0)
@@ -3202,7 +3346,7 @@
 	)
 	(wire
 		(pts
-			(xy 148.59 154.94) (xy 219.71 154.94)
+			(xy 148.59 154.94) (xy 227.33 154.94)
 		)
 		(stroke
 			(width 0)
@@ -3222,7 +3366,7 @@
 	)
 	(wire
 		(pts
-			(xy 228.6 125.73) (xy 228.6 127)
+			(xy 236.22 125.73) (xy 236.22 127)
 		)
 		(stroke
 			(width 0)
@@ -3302,7 +3446,7 @@
 	)
 	(wire
 		(pts
-			(xy 157.48 31.75) (xy 187.96 31.75)
+			(xy 157.48 31.75) (xy 163.83 31.75)
 		)
 		(stroke
 			(width 0)
@@ -3422,7 +3566,7 @@
 	)
 	(wire
 		(pts
-			(xy 219.71 121.92) (xy 223.52 121.92)
+			(xy 227.33 121.92) (xy 231.14 121.92)
 		)
 		(stroke
 			(width 0)
@@ -3572,7 +3716,7 @@
 	)
 	(wire
 		(pts
-			(xy 219.71 113.03) (xy 219.71 121.92)
+			(xy 227.33 113.03) (xy 227.33 121.92)
 		)
 		(stroke
 			(width 0)
@@ -3619,6 +3763,16 @@
 			(type default)
 		)
 		(uuid "7f5fe966-1ffc-43c5-bb0b-4429d0598d84")
+	)
+	(wire
+		(pts
+			(xy 163.83 31.75) (xy 187.96 31.75)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "80ed998b-af3a-48d0-b279-88bb3adf808d")
 	)
 	(wire
 		(pts
@@ -3722,7 +3876,7 @@
 	)
 	(wire
 		(pts
-			(xy 219.71 154.94) (xy 223.52 154.94)
+			(xy 227.33 154.94) (xy 231.14 154.94)
 		)
 		(stroke
 			(width 0)
@@ -3802,7 +3956,7 @@
 	)
 	(wire
 		(pts
-			(xy 257.81 31.75) (xy 269.24 31.75)
+			(xy 257.81 31.75) (xy 264.16 31.75)
 		)
 		(stroke
 			(width 0)
@@ -3882,6 +4036,16 @@
 	)
 	(wire
 		(pts
+			(xy 93.98 163.83) (xy 91.44 163.83)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "a379d3c6-e099-4fd1-8890-9b33a2395501")
+	)
+	(wire
+		(pts
 			(xy 114.3 72.39) (xy 114.3 74.93)
 		)
 		(stroke
@@ -3892,7 +4056,7 @@
 	)
 	(wire
 		(pts
-			(xy 219.71 127) (xy 228.6 127)
+			(xy 227.33 127) (xy 236.22 127)
 		)
 		(stroke
 			(width 0)
@@ -3982,7 +4146,7 @@
 	)
 	(wire
 		(pts
-			(xy 91.44 162.56) (xy 91.44 163.83)
+			(xy 93.98 162.56) (xy 93.98 163.83)
 		)
 		(stroke
 			(width 0)
@@ -4002,13 +4166,23 @@
 	)
 	(wire
 		(pts
-			(xy 228.6 92.71) (xy 228.6 93.98)
+			(xy 236.22 92.71) (xy 236.22 93.98)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
 		(uuid "af871c8e-0e10-47f5-8844-006e725cdfc2")
+	)
+	(wire
+		(pts
+			(xy 219.71 93.98) (xy 223.52 93.98)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "b0036456-e68b-46bd-b4c8-e3c0a1dab6d9")
 	)
 	(wire
 		(pts
@@ -4049,6 +4223,16 @@
 			(type default)
 		)
 		(uuid "b90062ba-37c4-4d05-adf1-1a443e5b7f19")
+	)
+	(wire
+		(pts
+			(xy 264.16 31.75) (xy 269.24 31.75)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "ba076bf1-317c-40ce-9907-b6d334fd6344")
 	)
 	(wire
 		(pts
@@ -4142,7 +4326,7 @@
 	)
 	(wire
 		(pts
-			(xy 219.71 93.98) (xy 228.6 93.98)
+			(xy 227.33 93.98) (xy 236.22 93.98)
 		)
 		(stroke
 			(width 0)
@@ -4152,7 +4336,7 @@
 	)
 	(wire
 		(pts
-			(xy 148.59 121.92) (xy 219.71 121.92)
+			(xy 148.59 121.92) (xy 227.33 121.92)
 		)
 		(stroke
 			(width 0)
@@ -4162,7 +4346,7 @@
 	)
 	(wire
 		(pts
-			(xy 219.71 127) (xy 219.71 138.43)
+			(xy 227.33 127) (xy 227.33 138.43)
 		)
 		(stroke
 			(width 0)
@@ -4212,6 +4396,16 @@
 	)
 	(wire
 		(pts
+			(xy 218.44 127) (xy 227.33 127)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "d3c93e96-e87d-41f9-bbde-c451b34fb169")
+	)
+	(wire
+		(pts
 			(xy 83.82 53.34) (xy 83.82 54.61)
 		)
 		(stroke
@@ -4252,7 +4446,7 @@
 	)
 	(wire
 		(pts
-			(xy 219.71 93.98) (xy 219.71 105.41)
+			(xy 227.33 93.98) (xy 227.33 105.41)
 		)
 		(stroke
 			(width 0)
@@ -4269,6 +4463,16 @@
 			(type default)
 		)
 		(uuid "df9c35a2-3e57-4e57-b8c6-d47f78c5ef05")
+	)
+	(wire
+		(pts
+			(xy 223.52 93.98) (xy 227.33 93.98)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "e40f22c8-fd62-456f-a4c9-0f9895a8a43f")
 	)
 	(wire
 		(pts
@@ -4460,25 +4664,6 @@
 		)
 		(uuid "fbac4632-7126-404b-8cb7-648a77893ad0")
 	)
-	(text_box "SMPS_TPS62442RQRR\n- Tied to VIN for best transient response (larger output capacitance) (comp setting 2) SSC enabled\n- SWITCHING FREQUENCY: internally fixed 2.25 MHz\n- MINIMUM OUTPUT CAPACITANCE FOR 1 V ≤ VOUT < 3.3 V: 18 μF\n- MINIMUM OUTPUT CAPACITANCE FOR VOUT ≥ 3.3 V: 15 μF\n\n- The MODE/SYNC is pulled HIGH (tied to VIN) to force PWM mode "
-		(exclude_from_sim no)
-		(at 20.828 202.184 0)
-		(size 69.342 20.32)
-		(stroke
-			(width 0)
-			(type dash)
-		)
-		(fill
-			(type none)
-		)
-		(effects
-			(font
-				(size 1 1)
-			)
-			(justify left top)
-		)
-		(uuid "0584fefe-32af-458b-80d7-4e69f0aa60a9")
-	)
 	(text_box "ON/OFF Switch, Polarity Protection, TVS"
 		(exclude_from_sim no)
 		(at 20.32 17.526 0)
@@ -4529,7 +4714,7 @@
 	)
 	(text "Cout NC (output capacitor)\nOn the next stage"
 		(exclude_from_sim no)
-		(at 259.08 40.132 0)
+		(at 262.128 43.688 0)
 		(effects
 			(font
 				(size 1 1)
@@ -4548,9 +4733,9 @@
 		)
 		(uuid "60215593-edf5-4a8d-b047-608c783442af")
 	)
-	(text "Verified DCDC models: ETA3485, SY8088, RY3420, or TLV62569"
+	(text "Verified DCDC models for ESP32P4: \nETA3485, SY8088, RY3420, or TLV62569"
 		(exclude_from_sim no)
-		(at 23.368 225.044 0)
+		(at 118.11 168.148 0)
 		(effects
 			(font
 				(size 1 1)
@@ -4572,7 +4757,7 @@
 	)
 	(text "1V1~1V3(Core) 2A"
 		(exclude_from_sim no)
-		(at 236.474 126.492 0)
+		(at 244.094 126.492 0)
 		(effects
 			(font
 				(size 1 1)
@@ -4582,7 +4767,7 @@
 	)
 	(text "3V3(I/O) 2A"
 		(exclude_from_sim no)
-		(at 234.442 93.726 0)
+		(at 242.062 93.726 0)
 		(effects
 			(font
 				(size 1 1)
@@ -4824,7 +5009,7 @@
 	)
 	(hierarchical_label "PG1_TPS62442RQRR"
 		(shape input)
-		(at 223.52 121.92 0)
+		(at 231.14 121.92 0)
 		(fields_autoplaced yes)
 		(effects
 			(font
@@ -4848,7 +5033,7 @@
 	)
 	(hierarchical_label "PG2_TPS62442RQRR"
 		(shape input)
-		(at 223.52 154.94 0)
+		(at 231.14 154.94 0)
 		(fields_autoplaced yes)
 		(effects
 			(font
@@ -5953,6 +6138,73 @@
 		)
 	)
 	(symbol
+		(lib_id "Connector:TestPoint")
+		(at 218.44 127 180)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "3d96c398-ec7b-47d2-ac08-892264c14ca4")
+		(property "Reference" "TP6"
+			(at 218.44 131.826 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "TestPoint"
+			(at 217.1701 132.08 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+				(hide yes)
+			)
+		)
+		(property "Footprint" "TestPoint:TestPoint_Pad_1.5x1.5mm"
+			(at 213.36 127 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 213.36 127 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "test point"
+			(at 218.44 127 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "aa5f58f8-bdc3-4972-8fe2-9eba9df2c123")
+		)
+		(instances
+			(project "ESP32P4C5_Board"
+				(path "/d4a17687-8854-438f-9913-a6ddcff1a679/5da627da-af30-4bd6-b01d-1e38ca6b9860"
+					(reference "TP6")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
 		(lib_id "Device:R")
 		(at 171.45 100.33 0)
 		(mirror y)
@@ -6087,7 +6339,7 @@
 	)
 	(symbol
 		(lib_id "Device:R")
-		(at 219.71 109.22 0)
+		(at 227.33 109.22 0)
 		(mirror y)
 		(unit 1)
 		(exclude_from_sim no)
@@ -6096,7 +6348,7 @@
 		(dnp no)
 		(uuid "44612c94-7e0a-4416-8c5d-a4ebd0f7220b")
 		(property "Reference" "R46"
-			(at 222.25 105.156 0)
+			(at 229.87 105.156 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -6104,7 +6356,7 @@
 			)
 		)
 		(property "Value" "10k"
-			(at 222.504 113.03 0)
+			(at 230.124 113.03 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -6112,7 +6364,7 @@
 			)
 		)
 		(property "Footprint" "Resistor_SMD:R_0805_2012Metric"
-			(at 221.488 109.22 90)
+			(at 229.108 109.22 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -6121,7 +6373,7 @@
 			)
 		)
 		(property "Datasheet" "~"
-			(at 219.71 109.22 0)
+			(at 227.33 109.22 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -6130,7 +6382,7 @@
 			)
 		)
 		(property "Description" "Resistor"
-			(at 219.71 109.22 0)
+			(at 227.33 109.22 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -6393,7 +6645,7 @@
 				)
 			)
 		)
-		(property "Footprint" "Inductor_SMD:L_1008_2520Metric"
+		(property "Footprint" "l4"
 			(at 161.29 93.98 0)
 			(effects
 				(font
@@ -6981,6 +7233,73 @@
 		)
 	)
 	(symbol
+		(lib_id "Connector:TestPoint")
+		(at 163.83 31.75 180)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "658e36cd-b54c-4728-8586-5f0b7002a07d")
+		(property "Reference" "TP8"
+			(at 163.83 36.576 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "TestPoint"
+			(at 162.5601 36.83 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+				(hide yes)
+			)
+		)
+		(property "Footprint" "TestPoint:TestPoint_Pad_1.5x1.5mm"
+			(at 158.75 31.75 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 158.75 31.75 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "test point"
+			(at 163.83 31.75 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "cf04bdad-7e5e-41ba-86b9-f8915e8408ab")
+		)
+		(instances
+			(project "ESP32P4C5_Board"
+				(path "/d4a17687-8854-438f-9913-a6ddcff1a679/5da627da-af30-4bd6-b01d-1e38ca6b9860"
+					(reference "TP8")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
 		(lib_id "Device:R")
 		(at 242.57 54.61 0)
 		(mirror y)
@@ -7043,6 +7362,73 @@
 			(project "ESP32P4C5_Board"
 				(path "/d4a17687-8854-438f-9913-a6ddcff1a679/5da627da-af30-4bd6-b01d-1e38ca6b9860"
 					(reference "R40")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Connector:TestPoint")
+		(at 91.44 163.83 180)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "6b959324-0f6a-49f2-b494-637177a3cdea")
+		(property "Reference" "TP9"
+			(at 91.44 168.656 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "TestPoint"
+			(at 90.1701 168.91 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+				(hide yes)
+			)
+		)
+		(property "Footprint" "TestPoint:TestPoint_Pad_1.5x1.5mm"
+			(at 86.36 163.83 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 86.36 163.83 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "test point"
+			(at 91.44 163.83 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "f16e02dc-251c-4b8e-af45-1da52dc8a247")
+		)
+		(instances
+			(project "ESP32P4C5_Board"
+				(path "/d4a17687-8854-438f-9913-a6ddcff1a679/5da627da-af30-4bd6-b01d-1e38ca6b9860"
+					(reference "TP9")
 					(unit 1)
 				)
 			)
@@ -7545,8 +7931,75 @@
 		)
 	)
 	(symbol
+		(lib_id "Connector:TestPoint")
+		(at 264.16 31.75 180)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "852d4ca7-fa10-4138-9a61-c24298f7d3ef")
+		(property "Reference" "TP7"
+			(at 264.16 36.576 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "TestPoint"
+			(at 262.8901 36.83 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+				(hide yes)
+			)
+		)
+		(property "Footprint" "TestPoint:TestPoint_Pad_1.5x1.5mm"
+			(at 259.08 31.75 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 259.08 31.75 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "test point"
+			(at 264.16 31.75 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "b80e524d-6cba-4580-ae87-9a703b4cbb8b")
+		)
+		(instances
+			(project "ESP32P4C5_Board"
+				(path "/d4a17687-8854-438f-9913-a6ddcff1a679/5da627da-af30-4bd6-b01d-1e38ca6b9860"
+					(reference "TP7")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
 		(lib_id "power:+3.3V")
-		(at 228.6 92.71 0)
+		(at 236.22 92.71 0)
 		(mirror y)
 		(unit 1)
 		(exclude_from_sim no)
@@ -7555,7 +8008,7 @@
 		(dnp no)
 		(uuid "867e10c4-b3b5-4279-9c43-cee84934d657")
 		(property "Reference" "#PWR083"
-			(at 228.6 96.52 0)
+			(at 236.22 96.52 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -7564,7 +8017,7 @@
 			)
 		)
 		(property "Value" "ESP_3V3"
-			(at 223.266 91.44 0)
+			(at 230.886 91.44 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -7572,7 +8025,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 228.6 92.71 0)
+			(at 236.22 92.71 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -7581,7 +8034,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 228.6 92.71 0)
+			(at 236.22 92.71 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -7590,7 +8043,7 @@
 			)
 		)
 		(property "Description" "Power symbol creates a global label with name \"+3.3V\""
-			(at 228.6 92.71 0)
+			(at 236.22 92.71 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -8163,6 +8616,73 @@
 		)
 	)
 	(symbol
+		(lib_id "Connector:TestPoint")
+		(at 223.52 93.98 180)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "af6f77cb-97c7-43fa-a11e-e2b08d5f64e4")
+		(property "Reference" "TP10"
+			(at 223.52 98.806 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "TestPoint"
+			(at 222.2501 99.06 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+				(hide yes)
+			)
+		)
+		(property "Footprint" "TestPoint:TestPoint_Pad_1.5x1.5mm"
+			(at 218.44 93.98 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 218.44 93.98 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "test point"
+			(at 223.52 93.98 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "706bfd2d-66b8-4776-a6ea-8253e7a160b2")
+		)
+		(instances
+			(project "ESP32P4C5_Board"
+				(path "/d4a17687-8854-438f-9913-a6ddcff1a679/5da627da-af30-4bd6-b01d-1e38ca6b9860"
+					(reference "TP10")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
 		(lib_id "Diode:SS34")
 		(at 179.07 62.23 0)
 		(mirror y)
@@ -8437,7 +8957,7 @@
 	)
 	(symbol
 		(lib_id "Device:R")
-		(at 219.71 142.24 0)
+		(at 227.33 142.24 0)
 		(mirror y)
 		(unit 1)
 		(exclude_from_sim no)
@@ -8446,7 +8966,7 @@
 		(dnp no)
 		(uuid "b8007516-73d5-4c27-a233-e0be4f5e0dc2")
 		(property "Reference" "R47"
-			(at 222.25 138.176 0)
+			(at 229.87 138.176 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -8454,7 +8974,7 @@
 			)
 		)
 		(property "Value" "10k"
-			(at 222.504 146.05 0)
+			(at 230.124 146.05 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -8462,7 +8982,7 @@
 			)
 		)
 		(property "Footprint" "Resistor_SMD:R_0805_2012Metric"
-			(at 221.488 142.24 90)
+			(at 229.108 142.24 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -8471,7 +8991,7 @@
 			)
 		)
 		(property "Datasheet" "~"
-			(at 219.71 142.24 0)
+			(at 227.33 142.24 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -8480,7 +9000,7 @@
 			)
 		)
 		(property "Description" "Resistor"
-			(at 219.71 142.24 0)
+			(at 227.33 142.24 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -8640,7 +9160,7 @@
 	)
 	(symbol
 		(lib_id "power:+3.3V")
-		(at 91.44 162.56 0)
+		(at 93.98 162.56 0)
 		(mirror y)
 		(unit 1)
 		(exclude_from_sim no)
@@ -8649,7 +9169,7 @@
 		(dnp no)
 		(uuid "bfb5353a-a166-453a-a34c-3ac0cab1e98b")
 		(property "Reference" "#PWR0103"
-			(at 91.44 166.37 0)
+			(at 93.98 166.37 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -8658,7 +9178,7 @@
 			)
 		)
 		(property "Value" "5V+"
-			(at 95.25 161.29 0)
+			(at 91.186 160.274 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -8666,7 +9186,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 91.44 162.56 0)
+			(at 93.98 162.56 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -8675,7 +9195,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 91.44 162.56 0)
+			(at 93.98 162.56 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -8684,7 +9204,7 @@
 			)
 		)
 		(property "Description" "Power symbol creates a global label with name \"+3.3V\""
-			(at 91.44 162.56 0)
+			(at 93.98 162.56 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -8912,7 +9432,7 @@
 	)
 	(symbol
 		(lib_id "power:+3.3V")
-		(at 228.6 125.73 0)
+		(at 236.22 125.73 0)
 		(mirror y)
 		(unit 1)
 		(exclude_from_sim no)
@@ -8921,7 +9441,7 @@
 		(dnp no)
 		(uuid "ca21d4d9-5b58-488f-95a8-89abaed626c2")
 		(property "Reference" "#PWR093"
-			(at 228.6 129.54 0)
+			(at 236.22 129.54 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -8930,7 +9450,7 @@
 			)
 		)
 		(property "Value" "ESP_VDD_HP"
-			(at 221.234 124.46 0)
+			(at 228.854 124.46 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -8938,7 +9458,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 228.6 125.73 0)
+			(at 236.22 125.73 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -8947,7 +9467,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 228.6 125.73 0)
+			(at 236.22 125.73 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -8956,7 +9476,7 @@
 			)
 		)
 		(property "Description" "Power symbol creates a global label with name \"+3.3V\""
-			(at 228.6 125.73 0)
+			(at 236.22 125.73 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -8971,6 +9491,73 @@
 			(project "ESP32P4C5_Board"
 				(path "/d4a17687-8854-438f-9913-a6ddcff1a679/5da627da-af30-4bd6-b01d-1e38ca6b9860"
 					(reference "#PWR093")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Connector:TestPoint")
+		(at 219.71 93.98 180)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "cc10d705-bc61-48a6-baf5-78165ea83af0")
+		(property "Reference" "TP5"
+			(at 219.71 98.806 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "TestPoint"
+			(at 218.4401 99.06 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+				(hide yes)
+			)
+		)
+		(property "Footprint" "TestPoint:TestPoint_Pad_1.5x1.5mm"
+			(at 214.63 93.98 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 214.63 93.98 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "test point"
+			(at 219.71 93.98 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "50ee4a2d-eb4e-452c-8060-b509f1545ed2")
+		)
+		(instances
+			(project "ESP32P4C5_Board"
+				(path "/d4a17687-8854-438f-9913-a6ddcff1a679/5da627da-af30-4bd6-b01d-1e38ca6b9860"
+					(reference "TP5")
 					(unit 1)
 				)
 			)

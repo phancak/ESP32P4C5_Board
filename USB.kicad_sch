@@ -4,6 +4,12 @@
 	(generator_version "8.0")
 	(uuid "9555a29a-c629-4efe-aa6f-58395ab97b6a")
 	(paper "A4")
+	(title_block
+		(title "ESP32P4C5_BOARD")
+		(date "2026-06-01")
+		(rev "A")
+		(company "Peter Hancak")
+	)
 	(lib_symbols
 		(symbol "Connector:USB_C_Receptacle_USB2.0_16P"
 			(pin_names
