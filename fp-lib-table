@@ -1,0 +1,5 @@
+(fp_lib_table
+	(version 7)
+	(lib (name "Personal_Projects") (type "KiCad") (uri "/Users/guest1/Documents/KiCad/8.0/footprints/Personal_Projects.pretty") (options "") (descr ""))
+	(lib (name "Connector_SMD_Wurth") (type "KiCad") (uri "/Users/guest1/Documents/KiCad/8.0/footprints/Connector_SMD_Wurth.pretty") (options "") (descr ""))
+)

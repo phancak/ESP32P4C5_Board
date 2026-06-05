@@ -3,6 +3,8 @@
     "3dviewports": [],
     "design_settings": {
       "defaults": {
+        "apply_defaults_to_fp_barcodes": false,
+        "apply_defaults_to_fp_dimensions": false,
         "apply_defaults_to_fp_fields": false,
         "apply_defaults_to_fp_shapes": false,
         "apply_defaults_to_fp_text": false,
@@ -48,7 +50,23 @@
         "silk_text_thickness": 0.1,
         "silk_text_upright": false,
         "zones": {
-          "min_clearance": 0.0
+          "border_display_style": 2,
+          "border_hatch_pitch": 0.5,
+          "corner_radius": 0.0,
+          "corner_smoothing": 0,
+          "fill_mode": 0,
+          "hatch_gap": 1.5,
+          "hatch_orientation": 0.0,
+          "hatch_smoothing_level": 0,
+          "hatch_smoothing_value": 0.1,
+          "hatch_thickness": 1.0,
+          "min_clearance": 0.0,
+          "min_island_area": 10.0,
+          "min_thickness": 0.25,
+          "pad_connection": 1,
+          "remove_islands": 0,
+          "thermal_relief_gap": 0.5,
+          "thermal_relief_spoke_width": 0.5
         }
       },
       "diff_pair_dimensions": [
@@ -79,16 +97,20 @@
         "copper_edge_clearance": "error",
         "copper_sliver": "warning",
         "courtyards_overlap": "error",
+        "creepage": "error",
         "diff_pair_gap_out_of_range": "error",
         "diff_pair_uncoupled_length_too_long": "error",
         "drill_out_of_range": "error",
         "duplicate_footprints": "warning",
         "extra_footprint": "warning",
         "footprint": "error",
+        "footprint_filters_mismatch": "ignore",
+        "footprint_symbol_field_mismatch": "warning",
         "footprint_symbol_mismatch": "warning",
         "footprint_type_mismatch": "ignore",
         "hole_clearance": "error",
         "hole_near_hole": "error",
+        "hole_to_hole": "error",
         "holes_co_located": "warning",
         "invalid_outline": "error",
         "isolated_copper": "warning",
@@ -99,9 +121,12 @@
         "lib_footprint_mismatch": "warning",
         "malformed_courtyard": "error",
         "microvia_drill_out_of_range": "error",
+        "mirrored_text_on_front_layer": "warning",
         "missing_courtyard": "ignore",
         "missing_footprint": "warning",
+        "missing_tuning_profile": "warning",
         "net_conflict": "warning",
+        "nonmirrored_text_on_back_layer": "warning",
         "npth_inside_courtyard": "ignore",
         "padstack": "warning",
         "pth_inside_courtyard": "ignore",
@@ -113,12 +138,18 @@
         "solder_mask_bridge": "error",
         "starved_thermal": "error",
         "text_height": "warning",
+        "text_on_edge_cuts": "error",
         "text_thickness": "warning",
         "through_hole_pad_without_hole": "error",
         "too_many_vias": "error",
+        "track_angle": "error",
         "track_dangling": "warning",
+        "track_not_centered_on_via": "ignore",
+        "track_on_post_machined_layer": "error",
+        "track_segment_length": "error",
         "track_width": "error",
         "tracks_crossing": "error",
+        "tuning_profile_track_geometries": "ignore",
         "unconnected_items": "error",
         "unresolved_variable": "error",
         "via_dangling": "warning",
@@ -129,6 +160,7 @@
         "min_clearance": 0.15,
         "min_connection": 0.15,
         "min_copper_edge_clearance": 0.3,
+        "min_groove_width": 0.0,
         "min_hole_clearance": 0.2,
         "min_hole_to_hole": 0.2,
         "min_microvia_diameter": 0.2,
@@ -146,10 +178,11 @@
       },
       "teardrop_options": [
         {
-          "td_onpadsmd": true,
+          "td_onpthpad": true,
           "td_onroundshapesonly": false,
+          "td_onsmdpad": true,
           "td_ontrackend": false,
-          "td_onviapad": true
+          "td_onvia": true
         }
       ],
       "teardrop_parameters": [
@@ -258,16 +291,28 @@
       "zones_allow_external_fillets": false
     },
     "ipc2581": {
+      "bom_rev": "",
       "dist": "",
       "distpn": "",
       "internal_id": "",
       "mfg": "",
-      "mpn": ""
+      "mpn": "",
+      "sch_revision": ""
     },
+    "layer_pairs": [],
     "layer_presets": [],
     "viewports": []
   },
   "boards": [],
+  "component_class_settings": {
+    "assignments": [],
+    "meta": {
+      "version": 0
+    },
+    "sheet_component_classes": {
+      "enabled": false
+    }
+  },
   "cvpcb": {
     "equivalence_files": []
   },
@@ -458,10 +503,18 @@
       "duplicate_sheet_names": "error",
       "endpoint_off_grid": "warning",
       "extra_units": "error",
+      "field_name_whitespace": "warning",
+      "footprint_filter": "ignore",
+      "footprint_link_issues": "warning",
+      "four_way_junction": "ignore",
       "global_label_dangling": "warning",
+      "ground_pin_not_ground": "warning",
       "hier_label_mismatch": "error",
+      "isolated_pin_label": "warning",
       "label_dangling": "error",
+      "label_multiple_wires": "warning",
       "lib_symbol_issues": "warning",
+      "lib_symbol_mismatch": "warning",
       "missing_bidi_pin": "warning",
       "missing_input_pin": "warning",
       "missing_power_pin": "error",
@@ -474,21 +527,30 @@
       "pin_not_driven": "error",
       "pin_to_pin": "warning",
       "power_pin_not_driven": "error",
+      "same_local_global_label": "warning",
+      "similar_label_and_power": "warning",
       "similar_labels": "warning",
+      "similar_power": "warning",
       "simulation_model_issue": "ignore",
+      "single_global_label": "ignore",
+      "stacked_pin_name": "warning",
       "unannotated": "error",
+      "unconnected_wire_endpoint": "warning",
+      "undefined_netclass": "error",
       "unit_value_mismatch": "error",
       "unresolved_variable": "error",
       "wire_dangling": "error"
     }
   },
   "libraries": {
-    "pinned_footprint_libs": [],
+    "pinned_footprint_libs": [
+      "Personal_Projects"
+    ],
     "pinned_symbol_libs": []
   },
   "meta": {
     "filename": "ESP32P4C5_Board.kicad_pro",
-    "version": 1
+    "version": 3
   },
   "net_settings": {
     "classes": [
@@ -503,8 +565,10 @@
         "microvia_drill": 0.1,
         "name": "Default",
         "pcb_color": "rgba(0, 0, 0, 0.000)",
+        "priority": 2147483647,
         "schematic_color": "rgba(0, 0, 0, 0.000)",
         "track_width": 0.25,
+        "tuning_profile": "",
         "via_diameter": 0.8,
         "via_drill": 0.4,
         "wire_width": 6
@@ -520,8 +584,10 @@
         "microvia_drill": 0.1,
         "name": "BOOT",
         "pcb_color": "rgb(0, 0, 132)",
+        "priority": 0,
         "schematic_color": "rgb(0, 0, 132)",
         "track_width": 0.25,
+        "tuning_profile": "",
         "via_diameter": 0.8,
         "via_drill": 0.4,
         "wire_width": 6
@@ -537,8 +603,10 @@
         "microvia_drill": 0.1,
         "name": "CSI_CAMERA",
         "pcb_color": "rgb(255, 153, 0)",
+        "priority": 1,
         "schematic_color": "rgb(255, 153, 0)",
         "track_width": 0.25,
+        "tuning_profile": "",
         "via_diameter": 0.45,
         "via_drill": 0.3,
         "wire_width": 6
@@ -554,8 +622,10 @@
         "microvia_drill": 0.1,
         "name": "DCDC",
         "pcb_color": "rgb(255, 255, 194)",
+        "priority": 2,
         "schematic_color": "rgb(255, 153, 0)",
         "track_width": 0.25,
+        "tuning_profile": "",
         "via_diameter": 0.8,
         "via_drill": 0.4,
         "wire_width": 6
@@ -571,8 +641,10 @@
         "microvia_drill": 0.1,
         "name": "DEBUG_JTAG",
         "pcb_color": "rgb(0, 0, 255)",
+        "priority": 3,
         "schematic_color": "rgb(0, 0, 255)",
         "track_width": 0.25,
+        "tuning_profile": "",
         "via_diameter": 0.8,
         "via_drill": 0.4,
         "wire_width": 6
@@ -588,8 +660,10 @@
         "microvia_drill": 0.1,
         "name": "DSI_LCD",
         "pcb_color": "rgb(204, 102, 0)",
+        "priority": 4,
         "schematic_color": "rgb(204, 102, 0)",
         "track_width": 0.25,
+        "tuning_profile": "",
         "via_diameter": 0.8,
         "via_drill": 0.4,
         "wire_width": 6
@@ -605,8 +679,10 @@
         "microvia_drill": 0.1,
         "name": "FLASH",
         "pcb_color": "rgb(0, 255, 0)",
+        "priority": 5,
         "schematic_color": "rgb(0, 132, 132)",
         "track_width": 0.25,
+        "tuning_profile": "",
         "via_diameter": 0.8,
         "via_drill": 0.4,
         "wire_width": 6
@@ -622,8 +698,10 @@
         "microvia_drill": 0.1,
         "name": "GND",
         "pcb_color": "rgb(132, 132, 132)",
+        "priority": 6,
         "schematic_color": "rgb(132, 132, 132)",
         "track_width": 0.25,
+        "tuning_profile": "",
         "via_diameter": 0.8,
         "via_drill": 0.4,
         "wire_width": 6
@@ -639,8 +717,10 @@
         "microvia_drill": 0.1,
         "name": "I2C",
         "pcb_color": "rgb(255, 0, 255)",
+        "priority": 7,
         "schematic_color": "rgb(255, 0, 255)",
         "track_width": 0.25,
+        "tuning_profile": "",
         "via_diameter": 0.8,
         "via_drill": 0.4,
         "wire_width": 6
@@ -656,8 +736,10 @@
         "microvia_drill": 0.1,
         "name": "PSSI",
         "pcb_color": "rgb(0, 194, 0)",
+        "priority": 8,
         "schematic_color": "rgb(0, 132, 0)",
         "track_width": 0.15,
+        "tuning_profile": "",
         "via_diameter": 0.8,
         "via_drill": 0.4,
         "wire_width": 6
@@ -673,8 +755,10 @@
         "microvia_drill": 0.1,
         "name": "PWR1V2",
         "pcb_color": "rgb(132, 0, 0)",
+        "priority": 9,
         "schematic_color": "rgb(132, 0, 0)",
         "track_width": 0.25,
+        "tuning_profile": "",
         "via_diameter": 0.8,
         "via_drill": 0.4,
         "wire_width": 6
@@ -690,8 +774,10 @@
         "microvia_drill": 0.1,
         "name": "PWR3V3",
         "pcb_color": "rgb(255, 0, 0)",
+        "priority": 10,
         "schematic_color": "rgb(255, 0, 0)",
         "track_width": 0.25,
+        "tuning_profile": "",
         "via_diameter": 0.8,
         "via_drill": 0.4,
         "wire_width": 10
@@ -707,8 +793,10 @@
         "microvia_drill": 0.1,
         "name": "RESET",
         "pcb_color": "rgb(194, 194, 0)",
+        "priority": 11,
         "schematic_color": "rgb(132, 132, 0)",
         "track_width": 0.25,
+        "tuning_profile": "",
         "via_diameter": 0.8,
         "via_drill": 0.4,
         "wire_width": 6
@@ -724,8 +812,10 @@
         "microvia_drill": 0.1,
         "name": "RF",
         "pcb_color": "rgb(255, 255, 0)",
+        "priority": 12,
         "schematic_color": "rgb(194, 194, 0)",
         "track_width": 0.1472,
+        "tuning_profile": "",
         "via_diameter": 0.45,
         "via_drill": 0.3,
         "wire_width": 6
@@ -741,8 +831,10 @@
         "microvia_drill": 0.1,
         "name": "SDIO",
         "pcb_color": "rgb(0, 132, 0)",
+        "priority": 13,
         "schematic_color": "rgb(0, 255, 0)",
         "track_width": 0.15,
+        "tuning_profile": "",
         "via_diameter": 0.45,
         "via_drill": 0.3,
         "wire_width": 6
@@ -758,8 +850,10 @@
         "microvia_drill": 0.1,
         "name": "SPI",
         "pcb_color": "rgb(0, 194, 194)",
+        "priority": 14,
         "schematic_color": "rgb(0, 194, 0)",
         "track_width": 0.25,
+        "tuning_profile": "",
         "via_diameter": 0.8,
         "via_drill": 0.4,
         "wire_width": 6
@@ -775,8 +869,10 @@
         "microvia_drill": 0.1,
         "name": "UART",
         "pcb_color": "rgba(0, 0, 0, 0.000)",
+        "priority": 15,
         "schematic_color": "rgb(132, 0, 132)",
         "track_width": 0.25,
+        "tuning_profile": "",
         "via_diameter": 0.8,
         "via_drill": 0.4,
         "wire_width": 6
@@ -792,15 +888,17 @@
         "microvia_drill": 0.1,
         "name": "USB",
         "pcb_color": "rgb(0, 255, 255)",
+        "priority": 16,
         "schematic_color": "rgb(0, 194, 194)",
         "track_width": 0.235,
+        "tuning_profile": "",
         "via_diameter": 0.45,
         "via_drill": 0.3,
         "wire_width": 6
       }
     ],
     "meta": {
-      "version": 3
+      "version": 5
     },
     "net_colors": null,
     "netclass_assignments": null,
@@ -947,6 +1045,10 @@
   },
   "schematic": {
     "annotate_start_num": 0,
+    "annotation": {
+      "method": 0,
+      "sort_order": 0
+    },
     "bom_export_filename": "Manufacturing/BOM/ESP32P4C5_Board_BOM.csv",
     "bom_fmt_presets": [],
     "bom_fmt_settings": {
@@ -1259,10 +1361,12 @@
       ],
       "filter_string": "",
       "group_symbols": true,
+      "include_excluded_from_bom": false,
       "name": "",
       "sort_asc": true,
       "sort_field": "Reference"
     },
+    "bus_aliases": {},
     "connection_grid_size": 50.0,
     "drawing": {
       "dashed_lines_dash_length_ratio": 12.0,
@@ -1270,6 +1374,7 @@
       "default_line_thickness": 6.0,
       "default_text_size": 50.0,
       "field_names": [],
+      "hop_over_size_choice": 0,
       "intersheets_ref_own_page": false,
       "intersheets_ref_prefix": "",
       "intersheets_ref_short": false,
@@ -1293,6 +1398,7 @@
     "net_format_name": "",
     "page_layout_descr_file": "",
     "plot_directory": "",
+    "reuse_designators": true,
     "spice_current_sheet_as_root": false,
     "spice_external_command": "spice \"%I\"",
     "spice_model_current_sheet_as_root": true,
@@ -1300,7 +1406,16 @@
     "spice_save_all_dissipations": false,
     "spice_save_all_voltages": false,
     "subpart_first_id": 65,
-    "subpart_id_separator": 0
+    "subpart_id_separator": 0,
+    "top_level_sheets": [
+      {
+        "filename": "ESP32P4C5_Board.kicad_sch",
+        "name": "ESP32P4C5_Board",
+        "uuid": "00000000-0000-0000-0000-000000000000"
+      }
+    ],
+    "used_designators": "",
+    "variants": []
   },
   "sheets": [
     [
@@ -1344,5 +1459,11 @@
       "Notes"
     ]
   ],
-  "text_variables": {}
+  "text_variables": {},
+  "tuning_profiles": {
+    "meta": {
+      "version": 0
+    },
+    "tuning_profiles_impedance_geometric": []
+  }
 }
