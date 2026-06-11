@@ -1,7 +1,7 @@
 (kicad_sch
-	(version 20231120)
+	(version 20260306)
 	(generator "eeschema")
-	(generator_version "8.0")
+	(generator_version "10.0")
 	(uuid "d4a17687-8854-438f-9913-a6ddcff1a679")
 	(paper "A4")
 	(title_block
@@ -1112,17 +1112,23 @@
 	(sheet
 		(at 133.35 20.066)
 		(size 44.196 136.398)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
 		(fields_autoplaced yes)
 		(stroke
 			(width 0.1524)
 			(type solid)
 		)
 		(fill
-			(color 0 255 255 1.0000)
+			(color 0 255 255 1)
 		)
 		(uuid "05efe0cf-c24a-4029-900a-f931e619b6bb")
 		(property "Sheetname" "ESP32-P4NRW16"
 			(at 133.35 19.3544 0)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1132,6 +1138,8 @@
 		)
 		(property "Sheetfile" "ESP32-P4NRW16.kicad_sch"
 			(at 133.35 157.0486 0)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1141,633 +1149,633 @@
 		)
 		(pin "DSI_DATAN0" bidirectional
 			(at 133.35 52.07 180)
+			(uuid "73e2c577-74bb-4167-ad80-de3320962d72")
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
 				(justify left)
 			)
-			(uuid "73e2c577-74bb-4167-ad80-de3320962d72")
 		)
 		(pin "GPIO32" bidirectional
 			(at 133.35 92.71 180)
+			(uuid "ae88820a-eca1-4f17-bcd6-76eced492f91")
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
 				(justify left)
 			)
-			(uuid "ae88820a-eca1-4f17-bcd6-76eced492f91")
 		)
 		(pin "GPIO31" bidirectional
 			(at 133.35 90.17 180)
+			(uuid "b756444e-47cc-489f-8c6e-463f60be59d0")
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
 				(justify left)
 			)
-			(uuid "b756444e-47cc-489f-8c6e-463f60be59d0")
 		)
 		(pin "GPIO33" bidirectional
 			(at 133.35 95.25 180)
+			(uuid "6a1c53c5-1de2-478f-851e-f74f1a6027d9")
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
 				(justify left)
 			)
-			(uuid "6a1c53c5-1de2-478f-851e-f74f1a6027d9")
 		)
 		(pin "DSI_DATAP0" bidirectional
 			(at 133.35 54.61 180)
+			(uuid "a6f9aaa7-10a0-4c78-837e-78dc66b6b8b2")
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
 				(justify left)
 			)
-			(uuid "a6f9aaa7-10a0-4c78-837e-78dc66b6b8b2")
 		)
 		(pin "DSI_DATAP1" bidirectional
 			(at 133.35 62.23 180)
+			(uuid "e0969bad-097e-4a5e-8fea-abae03d11ef9")
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
 				(justify left)
 			)
-			(uuid "e0969bad-097e-4a5e-8fea-abae03d11ef9")
 		)
 		(pin "DSI_DATAN1" bidirectional
 			(at 133.35 64.77 180)
+			(uuid "0a91baac-5f0d-4251-88db-449509bd5440")
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
 				(justify left)
 			)
-			(uuid "0a91baac-5f0d-4251-88db-449509bd5440")
 		)
 		(pin "EN_DCDC" output
 			(at 133.35 123.19 180)
+			(uuid "f7764a9d-9e95-423a-8cfd-53bf1b2016e2")
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
 				(justify left)
 			)
-			(uuid "f7764a9d-9e95-423a-8cfd-53bf1b2016e2")
 		)
 		(pin "FB_DCDC" input
 			(at 133.35 120.65 180)
+			(uuid "74957f73-8af4-41f2-b45a-2fc2c3fa41eb")
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
 				(justify left)
 			)
-			(uuid "74957f73-8af4-41f2-b45a-2fc2c3fa41eb")
 		)
 		(pin "DSI_CLKN" bidirectional
 			(at 133.35 57.15 180)
+			(uuid "6346a3c8-0306-4b20-ba53-124e9ee8a318")
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
 				(justify left)
 			)
-			(uuid "6346a3c8-0306-4b20-ba53-124e9ee8a318")
 		)
 		(pin "GPIO29" bidirectional
 			(at 133.35 85.09 180)
+			(uuid "84ed38e2-3e2b-455f-b368-b108aaeee0b1")
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
 				(justify left)
 			)
-			(uuid "84ed38e2-3e2b-455f-b368-b108aaeee0b1")
 		)
 		(pin "GPIO28" bidirectional
 			(at 133.35 82.55 180)
+			(uuid "46963817-e10b-438d-abec-8ac66e954ef2")
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
 				(justify left)
 			)
-			(uuid "46963817-e10b-438d-abec-8ac66e954ef2")
 		)
 		(pin "DSI_CLKP" bidirectional
 			(at 133.35 59.69 180)
+			(uuid "9ccd4746-39a2-4498-a1fb-9ca6e4ea4591")
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
 				(justify left)
 			)
-			(uuid "9ccd4746-39a2-4498-a1fb-9ca6e4ea4591")
 		)
 		(pin "GPIO30" bidirectional
 			(at 133.35 87.63 180)
+			(uuid "12e692d0-41f8-4f81-be1c-0bd54f4157be")
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
 				(justify left)
 			)
-			(uuid "12e692d0-41f8-4f81-be1c-0bd54f4157be")
 		)
 		(pin "GPIO46" bidirectional
 			(at 177.546 139.7 0)
+			(uuid "2ac34091-38f1-4c30-8686-d9776235b065")
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
 				(justify right)
 			)
-			(uuid "2ac34091-38f1-4c30-8686-d9776235b065")
 		)
 		(pin "GPIO50" bidirectional
 			(at 177.546 90.17 0)
+			(uuid "b3cc93df-afb2-4064-a813-66cdd372f388")
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
 				(justify right)
 			)
-			(uuid "b3cc93df-afb2-4064-a813-66cdd372f388")
 		)
 		(pin "GPIO52" bidirectional
 			(at 133.35 110.49 180)
+			(uuid "aed9705d-8b5f-47fc-97cf-7019a7ea37d0")
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
 				(justify left)
 			)
-			(uuid "aed9705d-8b5f-47fc-97cf-7019a7ea37d0")
 		)
 		(pin "GPIO51" bidirectional
 			(at 133.35 113.03 180)
+			(uuid "ea9ab754-450b-4295-b12d-b0040907c329")
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
 				(justify left)
 			)
-			(uuid "ea9ab754-450b-4295-b12d-b0040907c329")
 		)
 		(pin "GPIO54" bidirectional
 			(at 133.35 105.41 180)
+			(uuid "c1a9b0cd-ac2a-4cf1-b34b-935b19fc5152")
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
 				(justify left)
 			)
-			(uuid "c1a9b0cd-ac2a-4cf1-b34b-935b19fc5152")
 		)
 		(pin "GPIO53" bidirectional
 			(at 133.35 107.95 180)
+			(uuid "e5edae67-2618-4652-97fb-ff032d0e605a")
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
 				(justify left)
 			)
-			(uuid "e5edae67-2618-4652-97fb-ff032d0e605a")
 		)
 		(pin "GPIO1" bidirectional
 			(at 177.546 46.99 0)
+			(uuid "2d2d0fcf-278a-4672-8ac3-5eaf0dfa11c0")
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
 				(justify right)
 			)
-			(uuid "2d2d0fcf-278a-4672-8ac3-5eaf0dfa11c0")
 		)
 		(pin "GPIO0" bidirectional
 			(at 177.546 44.45 0)
+			(uuid "c59514b3-787a-4775-aa89-ff5c82bb4814")
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
 				(justify right)
 			)
-			(uuid "c59514b3-787a-4775-aa89-ff5c82bb4814")
 		)
 		(pin "CSI_CLKN" bidirectional
 			(at 133.35 34.29 180)
+			(uuid "12d785db-4acc-45c4-9c3d-00222e0637da")
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
 				(justify left)
 			)
-			(uuid "12d785db-4acc-45c4-9c3d-00222e0637da")
 		)
 		(pin "CSI_CLKP" bidirectional
 			(at 133.35 36.83 180)
+			(uuid "63bda605-8aa6-4c1d-aebb-60f26ea89f09")
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
 				(justify left)
 			)
-			(uuid "63bda605-8aa6-4c1d-aebb-60f26ea89f09")
 		)
 		(pin "CSI_DATAP1" bidirectional
 			(at 133.35 31.75 180)
+			(uuid "f96f7326-0886-464e-bf13-facac7486eb0")
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
 				(justify left)
 			)
-			(uuid "f96f7326-0886-464e-bf13-facac7486eb0")
 		)
 		(pin "CSI_DATAN1" bidirectional
 			(at 133.35 29.21 180)
+			(uuid "39297982-8e67-4941-9950-343599c58966")
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
 				(justify left)
 			)
-			(uuid "39297982-8e67-4941-9950-343599c58966")
 		)
 		(pin "GPIO15" bidirectional
 			(at 177.546 80.01 0)
+			(uuid "cb88ffc2-cfae-47ce-84a1-bf0098afbf6f")
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
 				(justify right)
 			)
-			(uuid "cb88ffc2-cfae-47ce-84a1-bf0098afbf6f")
 		)
 		(pin "GPIO12" bidirectional
 			(at 177.546 72.39 0)
+			(uuid "c920cdc8-e5b3-4636-b6c4-172e540c9d5d")
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
 				(justify right)
 			)
-			(uuid "c920cdc8-e5b3-4636-b6c4-172e540c9d5d")
 		)
 		(pin "CSI_DATAP0" bidirectional
 			(at 133.35 26.67 180)
+			(uuid "dcd27dfe-769b-447e-827b-bd93f6d784a7")
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
 				(justify left)
 			)
-			(uuid "dcd27dfe-769b-447e-827b-bd93f6d784a7")
 		)
 		(pin "CSI_DATAN0" bidirectional
 			(at 133.35 24.13 180)
+			(uuid "c2fd6e21-c40f-4326-843b-9a083388ee7a")
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
 				(justify left)
 			)
-			(uuid "c2fd6e21-c40f-4326-843b-9a083388ee7a")
 		)
 		(pin "RST_PWR" input
 			(at 133.35 140.97 180)
+			(uuid "ea145f2d-0bd6-453f-b498-3fa0829426f8")
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
 				(justify left)
 			)
-			(uuid "ea145f2d-0bd6-453f-b498-3fa0829426f8")
 		)
 		(pin "GPIO17" bidirectional
 			(at 133.35 46.99 180)
+			(uuid "40c66ca5-8196-463c-abe6-eecde526bc04")
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
 				(justify left)
 			)
-			(uuid "40c66ca5-8196-463c-abe6-eecde526bc04")
 		)
 		(pin "GPIO19" bidirectional
 			(at 133.35 39.37 180)
+			(uuid "2e7bdf51-a7c6-4c3b-8d95-462cf49af7a1")
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
 				(justify left)
 			)
-			(uuid "2e7bdf51-a7c6-4c3b-8d95-462cf49af7a1")
 		)
 		(pin "GPIO18" bidirectional
 			(at 133.35 44.45 180)
+			(uuid "74b20baf-f9cb-4808-bf95-17ea0b2dc7d7")
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
 				(justify left)
 			)
-			(uuid "74b20baf-f9cb-4808-bf95-17ea0b2dc7d7")
 		)
 		(pin "GPIO45_CINT" bidirectional
 			(at 177.546 39.37 0)
+			(uuid "a0b67d72-a5c8-43d9-9952-2818fae50866")
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
 				(justify right)
 			)
-			(uuid "a0b67d72-a5c8-43d9-9952-2818fae50866")
 		)
 		(pin "GPIO40_CDATA1" bidirectional
 			(at 177.546 26.67 0)
+			(uuid "780754d8-c704-48af-8926-1b71fd0fecdf")
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
 				(justify right)
 			)
-			(uuid "780754d8-c704-48af-8926-1b71fd0fecdf")
 		)
 		(pin "GPIO41_CDATA2" bidirectional
 			(at 177.546 29.21 0)
+			(uuid "43d24bfd-5b16-4de8-b373-3e00f9028c47")
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
 				(justify right)
 			)
-			(uuid "43d24bfd-5b16-4de8-b373-3e00f9028c47")
 		)
 		(pin "GPIO39_CDATA0" bidirectional
 			(at 177.546 24.13 0)
+			(uuid "cfbd4227-142a-4e78-b6a2-281a75437abe")
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
 				(justify right)
 			)
-			(uuid "cfbd4227-142a-4e78-b6a2-281a75437abe")
 		)
 		(pin "GPIO42_CDATA3" bidirectional
 			(at 177.546 31.75 0)
+			(uuid "357275cb-32c5-4de7-ace4-0202048b78d8")
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
 				(justify right)
 			)
-			(uuid "357275cb-32c5-4de7-ace4-0202048b78d8")
 		)
 		(pin "GPIO7_SPI2_CS" input
 			(at 177.546 59.69 0)
+			(uuid "0eb6c627-d991-4f9f-8f22-f68748b344e8")
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
 				(justify right)
 			)
-			(uuid "0eb6c627-d991-4f9f-8f22-f68748b344e8")
 		)
 		(pin "GPIO8_SPI2_MOSI" input
 			(at 177.546 64.77 0)
+			(uuid "bc4be205-7df9-499d-8426-75129633e629")
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
 				(justify right)
 			)
-			(uuid "bc4be205-7df9-499d-8426-75129633e629")
 		)
 		(pin "GPIO10_SPI2_MISO" input
 			(at 177.546 62.23 0)
+			(uuid "eaf5824e-5bbb-4138-aa5d-650e1d53846d")
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
 				(justify right)
 			)
-			(uuid "eaf5824e-5bbb-4138-aa5d-650e1d53846d")
 		)
 		(pin "GPIO9_SPI2_CK" input
 			(at 177.546 67.31 0)
+			(uuid "0421f540-fed7-48c1-ba82-f473fa015b4f")
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
 				(justify right)
 			)
-			(uuid "0421f540-fed7-48c1-ba82-f473fa015b4f")
 		)
 		(pin "GPIO43_CCLK" output
 			(at 177.546 34.29 0)
+			(uuid "7f9b3e84-8177-49d6-b66f-2d374746b205")
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
 				(justify right)
 			)
-			(uuid "7f9b3e84-8177-49d6-b66f-2d374746b205")
 		)
 		(pin "GPIO44_CCMD" output
 			(at 177.546 36.83 0)
+			(uuid "1017e67c-3ca9-4a37-b862-586b8f961e64")
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
 				(justify right)
 			)
-			(uuid "1017e67c-3ca9-4a37-b862-586b8f961e64")
 		)
 		(pin "GPIO11" input
 			(at 177.546 74.93 0)
+			(uuid "f5fb159c-118f-4dcd-ae12-1ca52993a131")
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
 				(justify right)
 			)
-			(uuid "f5fb159c-118f-4dcd-ae12-1ca52993a131")
 		)
 		(pin "GPIO6" input
 			(at 177.546 99.06 0)
+			(uuid "6ba4b4ed-1535-41a4-83d3-6bcf51642282")
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
 				(justify right)
 			)
-			(uuid "6ba4b4ed-1535-41a4-83d3-6bcf51642282")
 		)
 		(pin "P4_USB_HS_DP" bidirectional
 			(at 133.35 137.16 180)
+			(uuid "00cd6678-e079-4ef3-969c-50988a552fb7")
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
 				(justify left)
 			)
-			(uuid "00cd6678-e079-4ef3-969c-50988a552fb7")
 		)
 		(pin "GPIO27" bidirectional
 			(at 133.35 80.01 180)
+			(uuid "22fe5ba4-b192-41c0-9698-6b81b490b21f")
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
 				(justify left)
 			)
-			(uuid "22fe5ba4-b192-41c0-9698-6b81b490b21f")
 		)
 		(pin "GPIO26" bidirectional
 			(at 133.35 77.47 180)
+			(uuid "dbe84a00-eb84-45df-837c-a8eb455f435d")
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
 				(justify left)
 			)
-			(uuid "dbe84a00-eb84-45df-837c-a8eb455f435d")
 		)
 		(pin "GPIO47_PARLIO" input
 			(at 133.35 97.79 180)
+			(uuid "66617e3b-801e-4523-9ae4-80d6d755ebd3")
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
 				(justify left)
 			)
-			(uuid "66617e3b-801e-4523-9ae4-80d6d755ebd3")
 		)
 		(pin "GPIO49_PARLIO" input
 			(at 133.35 102.87 180)
+			(uuid "0cf5c93e-7778-48a1-9781-2e969e799ccb")
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
 				(justify left)
 			)
-			(uuid "0cf5c93e-7778-48a1-9781-2e969e799ccb")
 		)
 		(pin "GPIO48_PARLIO" input
 			(at 133.35 100.33 180)
+			(uuid "04b375c1-5592-4f7e-ae06-67effb9c695b")
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
 				(justify left)
 			)
-			(uuid "04b375c1-5592-4f7e-ae06-67effb9c695b")
 		)
 		(pin "USB1P1_N" bidirectional
 			(at 133.35 128.27 180)
+			(uuid "cf3ea403-bd6a-4e73-b0f3-80281f6a5c2d")
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
 				(justify left)
 			)
-			(uuid "cf3ea403-bd6a-4e73-b0f3-80281f6a5c2d")
 		)
 		(pin "USB1P1_P" bidirectional
 			(at 133.35 130.81 180)
+			(uuid "a0b2f4d2-4ef8-482c-b9b5-62f0febc9b49")
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
 				(justify left)
 			)
-			(uuid "a0b2f4d2-4ef8-482c-b9b5-62f0febc9b49")
 		)
 		(pin "P4_USB_HS_DN" bidirectional
 			(at 133.35 134.62 180)
+			(uuid "4fdcc3eb-d88d-4e94-9527-62ca45d2d9a7")
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
 				(justify left)
 			)
-			(uuid "4fdcc3eb-d88d-4e94-9527-62ca45d2d9a7")
 		)
 		(pin "GPIO14" bidirectional
 			(at 177.546 77.47 0)
+			(uuid "c7430cdb-254e-4424-bd79-07beae6ee166")
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
 				(justify right)
 			)
-			(uuid "c7430cdb-254e-4424-bd79-07beae6ee166")
 		)
 		(pin "GPIO38_BOOTM_UART0_RXD" input
 			(at 177.546 116.84 0)
+			(uuid "33cb5051-2f56-45ed-a2da-58af6c457925")
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
 				(justify right)
 			)
-			(uuid "33cb5051-2f56-45ed-a2da-58af6c457925")
 		)
 		(pin "GPIO37_BOOTM_UART0_TXD" output
 			(at 177.546 119.38 0)
+			(uuid "1e7da593-bc35-4c5a-a7e6-18b0ac6d6654")
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
 				(justify right)
 			)
-			(uuid "1e7da593-bc35-4c5a-a7e6-18b0ac6d6654")
 		)
 		(pin "GPIO22_SPI_CLK" output
 			(at 177.546 127 0)
+			(uuid "79951f40-82bb-4027-80bf-84af68d246c1")
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
 				(justify right)
 			)
-			(uuid "79951f40-82bb-4027-80bf-84af68d246c1")
 		)
 		(pin "GPIO20_SPI_MOSI" output
 			(at 177.546 132.08 0)
+			(uuid "5ad088a2-5cde-45e3-948a-e095741cfd64")
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
 				(justify right)
 			)
-			(uuid "5ad088a2-5cde-45e3-948a-e095741cfd64")
 		)
 		(pin "GPIO21_SPI_MISO" input
 			(at 177.546 129.54 0)
+			(uuid "21417807-9ad7-4ff9-b44d-2a2526a829ac")
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
 				(justify right)
 			)
-			(uuid "21417807-9ad7-4ff9-b44d-2a2526a829ac")
 		)
 		(pin "GPIO23_SPI_CS" output
 			(at 177.546 124.46 0)
+			(uuid "296bb2e2-9855-40fd-acc7-cdb09f51e699")
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
 				(justify right)
 			)
-			(uuid "296bb2e2-9855-40fd-acc7-cdb09f51e699")
 		)
 		(instances
 			(project "ESP32P4C5_Board"
@@ -1780,17 +1788,23 @@
 	(sheet
 		(at 31.75 124.714)
 		(size 48.26 12.7)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
 		(fields_autoplaced yes)
 		(stroke
 			(width 0.1524)
 			(type solid)
 		)
 		(fill
-			(color 0 255 255 1.0000)
+			(color 0 255 255 1)
 		)
 		(uuid "3362b474-800a-4d6a-82f1-a4ac76924ab6")
 		(property "Sheetname" "ESP32-P4NRW16_POWER"
 			(at 31.75 124.0024 0)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1800,6 +1814,8 @@
 		)
 		(property "Sheetfile" "ESP32-P4NRW16_Power.kicad_sch"
 			(at 31.75 137.9986 0)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1818,17 +1834,23 @@
 	(sheet
 		(at 31.75 171.958)
 		(size 48.26 18.034)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
 		(fields_autoplaced yes)
 		(stroke
 			(width 0.1524)
 			(type solid)
 		)
 		(fill
-			(color 0 255 255 1.0000)
+			(color 0 255 255 1)
 		)
 		(uuid "4669535d-355c-4113-b374-63bde4c3d7df")
 		(property "Sheetname" "USB"
 			(at 31.75 171.2464 0)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1838,6 +1860,8 @@
 		)
 		(property "Sheetfile" "USB.kicad_sch"
 			(at 31.75 190.5766 0)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1847,43 +1871,43 @@
 		)
 		(pin "USB_DI_D1+" bidirectional
 			(at 80.01 175.26 0)
+			(uuid "8968dc1d-8ce8-438f-926d-545cc70e5847")
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
 				(justify right)
 			)
-			(uuid "8968dc1d-8ce8-438f-926d-545cc70e5847")
 		)
 		(pin "USB_DI_D1-" bidirectional
 			(at 80.01 177.8 0)
+			(uuid "9a611415-411b-4696-8690-3e8b463c2868")
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
 				(justify right)
 			)
-			(uuid "9a611415-411b-4696-8690-3e8b463c2868")
 		)
 		(pin "USB_DI_D2+" bidirectional
 			(at 80.01 181.61 0)
+			(uuid "743c5061-cc0f-4394-9726-31c32ce05cf4")
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
 				(justify right)
 			)
-			(uuid "743c5061-cc0f-4394-9726-31c32ce05cf4")
 		)
 		(pin "USB_DI_D2-" bidirectional
 			(at 80.01 184.15 0)
+			(uuid "a5fe4eda-1d29-4ccb-800e-196ab8035395")
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
 				(justify right)
 			)
-			(uuid "a5fe4eda-1d29-4ccb-800e-196ab8035395")
 		)
 		(instances
 			(project "ESP32P4C5_Board"
@@ -1896,17 +1920,23 @@
 	(sheet
 		(at 31.75 19.05)
 		(size 48.26 98.298)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
 		(fields_autoplaced yes)
 		(stroke
 			(width 0.1524)
 			(type solid)
 		)
 		(fill
-			(color 0 255 255 1.0000)
+			(color 0 255 255 1)
 		)
 		(uuid "4ba82f33-f7c8-416a-88b4-ba37db88ac8a")
 		(property "Sheetname" "Interface_DSI_CSI"
 			(at 31.75 18.3384 0)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1916,6 +1946,8 @@
 		)
 		(property "Sheetfile" "Interface_DSI_CSI.kicad_sch"
 			(at 31.75 117.9326 0)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1925,343 +1957,343 @@
 		)
 		(pin "CSI_RDN0" input
 			(at 80.01 24.13 0)
+			(uuid "f318f129-a361-49b8-8202-3c644b37d347")
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
 				(justify right)
 			)
-			(uuid "f318f129-a361-49b8-8202-3c644b37d347")
 		)
 		(pin "CSI_RDP1" input
 			(at 80.01 31.75 0)
+			(uuid "e3200905-87fe-44bb-8cd2-8fb317d3ca4e")
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
 				(justify right)
 			)
-			(uuid "e3200905-87fe-44bb-8cd2-8fb317d3ca4e")
 		)
 		(pin "CSI_CLK_P" input
 			(at 80.01 36.83 0)
+			(uuid "0ca34328-7d9d-4c26-b045-3f80c5850e6b")
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
 				(justify right)
 			)
-			(uuid "0ca34328-7d9d-4c26-b045-3f80c5850e6b")
 		)
 		(pin "CSI_RDP0" input
 			(at 80.01 26.67 0)
+			(uuid "ad55cef2-3b51-4b10-b87e-5d4fcfdfa375")
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
 				(justify right)
 			)
-			(uuid "ad55cef2-3b51-4b10-b87e-5d4fcfdfa375")
 		)
 		(pin "CSI_RDN1" input
 			(at 80.01 29.21 0)
+			(uuid "ca014cd3-0d63-4ab0-9572-e6fee15d49bb")
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
 				(justify right)
 			)
-			(uuid "ca014cd3-0d63-4ab0-9572-e6fee15d49bb")
 		)
 		(pin "CSI_CLK_N" input
 			(at 80.01 34.29 0)
+			(uuid "6f5584aa-0c19-486c-bd31-e4b213acfbdf")
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
 				(justify right)
 			)
-			(uuid "6f5584aa-0c19-486c-bd31-e4b213acfbdf")
 		)
 		(pin "CSI_SCL" input
 			(at 80.01 44.45 0)
+			(uuid "ccf34f94-828f-4bb5-b728-0ee97087775f")
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
 				(justify right)
 			)
-			(uuid "ccf34f94-828f-4bb5-b728-0ee97087775f")
 		)
 		(pin "CSI_SDA" input
 			(at 80.01 46.99 0)
+			(uuid "fe798b54-c372-45ed-addb-43ebb89859ca")
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
 				(justify right)
 			)
-			(uuid "fe798b54-c372-45ed-addb-43ebb89859ca")
 		)
 		(pin "CSI_LDO-CE" input
 			(at 80.01 39.37 0)
+			(uuid "5561baf8-3714-4925-9bf7-afd74db93b00")
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
 				(justify right)
 			)
-			(uuid "5561baf8-3714-4925-9bf7-afd74db93b00")
 		)
 		(pin "CSI_FLASH-LED" input
 			(at 80.01 41.91 0)
+			(uuid "acce8b84-9c6c-48c9-ab38-922a294e16cb")
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
 				(justify right)
 			)
-			(uuid "acce8b84-9c6c-48c9-ab38-922a294e16cb")
 		)
 		(pin "DSI_D1N" input
 			(at 80.01 62.23 0)
+			(uuid "4df23f1c-d591-4b3e-b6ee-52c9b5ac6510")
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
 				(justify right)
 			)
-			(uuid "4df23f1c-d591-4b3e-b6ee-52c9b5ac6510")
 		)
 		(pin "DSI_CLKN" input
 			(at 80.01 57.15 0)
+			(uuid "7e4ce357-32f2-40cb-9c1a-c323750dd223")
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
 				(justify right)
 			)
-			(uuid "7e4ce357-32f2-40cb-9c1a-c323750dd223")
 		)
 		(pin "DSI_CLKP" input
 			(at 80.01 59.69 0)
+			(uuid "8dfecf2b-827f-4ad4-af52-bd3d03ca44ab")
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
 				(justify right)
 			)
-			(uuid "8dfecf2b-827f-4ad4-af52-bd3d03ca44ab")
 		)
 		(pin "DSI_RESET" input
 			(at 80.01 67.31 0)
+			(uuid "72336734-3355-4854-91fe-004ba2105d19")
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
 				(justify right)
 			)
-			(uuid "72336734-3355-4854-91fe-004ba2105d19")
 		)
 		(pin "DSI_D1P" input
 			(at 80.01 64.77 0)
+			(uuid "b937c156-580e-4126-8404-bcacdba51431")
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
 				(justify right)
 			)
-			(uuid "b937c156-580e-4126-8404-bcacdba51431")
 		)
 		(pin "DSI_LEDA" input
 			(at 80.01 69.85 0)
+			(uuid "bd0ec401-78fc-47be-bef4-29e1a115eeb4")
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
 				(justify right)
 			)
-			(uuid "bd0ec401-78fc-47be-bef4-29e1a115eeb4")
 		)
 		(pin "DSI_LEDK" input
 			(at 80.01 72.39 0)
+			(uuid "5f0b26cd-1fc2-4c15-a155-62f5fcb9ef2a")
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
 				(justify right)
 			)
-			(uuid "5f0b26cd-1fc2-4c15-a155-62f5fcb9ef2a")
 		)
 		(pin "DSI_D0N" input
 			(at 80.01 52.07 0)
+			(uuid "b1a53128-a4ec-48a5-8ce7-a8b75ffd6eb6")
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
 				(justify right)
 			)
-			(uuid "b1a53128-a4ec-48a5-8ce7-a8b75ffd6eb6")
 		)
 		(pin "DSI_D0P" input
 			(at 80.01 54.61 0)
+			(uuid "34422924-7789-4cf8-b254-c3269ede7d5d")
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
 				(justify right)
 			)
-			(uuid "34422924-7789-4cf8-b254-c3269ede7d5d")
 		)
 		(pin "PSSI_PDCK" output
 			(at 80.01 77.47 0)
+			(uuid "69f83a26-625c-4f0e-888e-aaff291ea8a9")
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
 				(justify right)
 			)
-			(uuid "69f83a26-625c-4f0e-888e-aaff291ea8a9")
 		)
 		(pin "PSSI_RDY" bidirectional
 			(at 80.01 80.01 0)
+			(uuid "808cfd92-9832-4ced-8ab6-0f398e86b4e0")
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
 				(justify right)
 			)
-			(uuid "808cfd92-9832-4ced-8ab6-0f398e86b4e0")
 		)
 		(pin "PSSI_DE" bidirectional
 			(at 80.01 82.55 0)
+			(uuid "b2d6ff47-efae-4e79-86e2-49cbb43c3ce2")
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
 				(justify right)
 			)
-			(uuid "b2d6ff47-efae-4e79-86e2-49cbb43c3ce2")
 		)
 		(pin "PSSI_D0" bidirectional
 			(at 80.01 85.09 0)
+			(uuid "cc0bfebc-b9d0-40d9-b198-ba9a6970f6e3")
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
 				(justify right)
 			)
-			(uuid "cc0bfebc-b9d0-40d9-b198-ba9a6970f6e3")
 		)
 		(pin "PSSI_D1" bidirectional
 			(at 80.01 87.63 0)
+			(uuid "2a638af1-d6ae-4b33-91b4-b40b17b3a1fb")
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
 				(justify right)
 			)
-			(uuid "2a638af1-d6ae-4b33-91b4-b40b17b3a1fb")
 		)
 		(pin "SPI2_NSS" bidirectional
 			(at 80.01 107.95 0)
+			(uuid "8b0c2319-be56-4014-86db-9f3319825369")
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
 				(justify right)
 			)
-			(uuid "8b0c2319-be56-4014-86db-9f3319825369")
 		)
 		(pin "SPI2_MOSI" bidirectional
 			(at 80.01 105.41 0)
+			(uuid "21abfaf6-c274-4a08-b45c-b0035f2c858e")
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
 				(justify right)
 			)
-			(uuid "21abfaf6-c274-4a08-b45c-b0035f2c858e")
 		)
 		(pin "PSSI_D7" bidirectional
 			(at 80.01 102.87 0)
+			(uuid "bccbc1ee-f94c-4fe2-8e6b-d5e86f603fc3")
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
 				(justify right)
 			)
-			(uuid "bccbc1ee-f94c-4fe2-8e6b-d5e86f603fc3")
 		)
 		(pin "SPI2_SCK" bidirectional
 			(at 80.01 113.03 0)
+			(uuid "788fc4bd-ce39-4af4-90ab-ae04fb0f8c67")
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
 				(justify right)
 			)
-			(uuid "788fc4bd-ce39-4af4-90ab-ae04fb0f8c67")
 		)
 		(pin "SPI2_MISO" bidirectional
 			(at 80.01 110.49 0)
+			(uuid "ebdc6356-3475-441a-b9b7-6a44a8126174")
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
 				(justify right)
 			)
-			(uuid "ebdc6356-3475-441a-b9b7-6a44a8126174")
 		)
 		(pin "PSSI_D5" bidirectional
 			(at 80.01 97.79 0)
+			(uuid "849bf232-00d9-4b3c-9ae8-3c65238cdac8")
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
 				(justify right)
 			)
-			(uuid "849bf232-00d9-4b3c-9ae8-3c65238cdac8")
 		)
 		(pin "PSSI_D2" bidirectional
 			(at 80.01 90.17 0)
+			(uuid "17fc0d49-86ba-49fa-85d3-d419559d639e")
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
 				(justify right)
 			)
-			(uuid "17fc0d49-86ba-49fa-85d3-d419559d639e")
 		)
 		(pin "PSSI_D4" bidirectional
 			(at 80.01 95.25 0)
+			(uuid "3fcedde0-2b18-49f1-8c5e-d8a8f9807bfc")
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
 				(justify right)
 			)
-			(uuid "3fcedde0-2b18-49f1-8c5e-d8a8f9807bfc")
 		)
 		(pin "PSSI_D6" bidirectional
 			(at 80.01 100.33 0)
+			(uuid "ca336685-84f6-42da-a241-3f50848fad85")
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
 				(justify right)
 			)
-			(uuid "ca336685-84f6-42da-a241-3f50848fad85")
 		)
 		(pin "PSSI_D3" bidirectional
 			(at 80.01 92.71 0)
+			(uuid "85a8e5df-f37f-4fc4-8808-08474f154e2f")
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
 				(justify right)
 			)
-			(uuid "85a8e5df-f37f-4fc4-8808-08474f154e2f")
 		)
 		(instances
 			(project "ESP32P4C5_Board"
@@ -2274,17 +2306,23 @@
 	(sheet
 		(at 31.75 143.51)
 		(size 48.26 22.86)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
 		(fields_autoplaced yes)
 		(stroke
 			(width 0.1524)
 			(type solid)
 		)
 		(fill
-			(color 0 255 255 1.0000)
+			(color 0 255 255 1)
 		)
 		(uuid "5da627da-af30-4bd6-b01d-1e38ca6b9860")
 		(property "Sheetname" "Power_Management"
 			(at 31.75 142.7984 0)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2294,6 +2332,8 @@
 		)
 		(property "Sheetfile" "Power_Management.kicad_sch"
 			(at 31.75 166.9546 0)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2303,53 +2343,53 @@
 		)
 		(pin "RST_PWR" input
 			(at 80.01 160.02 0)
+			(uuid "b26516ab-6dda-45ba-8ced-18ed951729cc")
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
 				(justify right)
 			)
-			(uuid "b26516ab-6dda-45ba-8ced-18ed951729cc")
 		)
 		(pin "PG1_TPS62442RQRR" input
 			(at 80.01 153.67 0)
+			(uuid "65b04d09-5673-44a7-85e6-4352aa5deead")
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
 				(justify right)
 			)
-			(uuid "65b04d09-5673-44a7-85e6-4352aa5deead")
 		)
 		(pin "PG2_TPS62442RQRR" input
 			(at 80.01 156.21 0)
+			(uuid "726d82ea-ea52-4ff4-ace2-ba56a71b358b")
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
 				(justify right)
 			)
-			(uuid "726d82ea-ea52-4ff4-ace2-ba56a71b358b")
 		)
 		(pin "TPS62442RQRR_2_FB" input
 			(at 80.01 148.59 0)
+			(uuid "4d1f5c9d-c405-4bf6-bcad-c382ac46fcb7")
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
 				(justify right)
 			)
-			(uuid "4d1f5c9d-c405-4bf6-bcad-c382ac46fcb7")
 		)
 		(pin "TPS62442RQRR_2_EN" input
 			(at 80.01 151.13 0)
+			(uuid "b0928619-4046-4ac3-85a8-6d6488c50946")
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
 				(justify right)
 			)
-			(uuid "b0928619-4046-4ac3-85a8-6d6488c50946")
 		)
 		(instances
 			(project "ESP32P4C5_Board"
@@ -2362,17 +2402,23 @@
 	(sheet
 		(at 132.842 175.514)
 		(size 37.084 10.287)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
 		(fields_autoplaced yes)
 		(stroke
 			(width 0.1524)
 			(type solid)
 		)
 		(fill
-			(color 0 194 194 1.0000)
+			(color 0 194 194 1)
 		)
 		(uuid "85cff351-52fd-43dc-a419-ab29305f7b0a")
 		(property "Sheetname" "Notes"
 			(at 132.842 174.8024 0)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2382,6 +2428,8 @@
 		)
 		(property "Sheetfile" "Notes.kicad_sch"
 			(at 132.842 186.3856 0)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2400,17 +2448,23 @@
 	(sheet
 		(at 220.98 19.304)
 		(size 42.672 44.45)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
 		(fields_autoplaced yes)
 		(stroke
 			(width 0.1524)
 			(type solid)
 		)
 		(fill
-			(color 0 255 255 1.0000)
+			(color 0 255 255 1)
 		)
 		(uuid "e64b2c4a-3136-4c33-ae85-e0f033842593")
 		(property "Sheetname" "ESP32-C5HR8"
 			(at 220.98 18.5924 0)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2420,6 +2474,8 @@
 		)
 		(property "Sheetfile" "ESP32-C5HR8.kicad_sch"
 			(at 220.98 64.3386 0)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2429,123 +2485,123 @@
 		)
 		(pin "GPIO13_SDIO_DATA3" input
 			(at 220.98 31.75 180)
+			(uuid "5c645776-de65-407f-82b0-dc264fae6734")
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
 				(justify left)
 			)
-			(uuid "5c645776-de65-407f-82b0-dc264fae6734")
 		)
 		(pin "GPIO14_SDIO_DATA2" input
 			(at 220.98 29.21 180)
+			(uuid "3c6f1479-6670-4eb4-af27-12d8e6ae3c85")
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
 				(justify left)
 			)
-			(uuid "3c6f1479-6670-4eb4-af27-12d8e6ae3c85")
 		)
 		(pin "GPIO7_SDIO_DATA1" input
 			(at 220.98 26.67 180)
+			(uuid "5d5f55ce-afd3-4e28-9f6f-c893a35fdf60")
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
 				(justify left)
 			)
-			(uuid "5d5f55ce-afd3-4e28-9f6f-c893a35fdf60")
 		)
 		(pin "GPIO8_SDIO_DATA0" input
 			(at 220.98 24.13 180)
+			(uuid "c6d0a9ad-4b49-425b-aa4e-a147b9d38cb4")
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
 				(justify left)
 			)
-			(uuid "c6d0a9ad-4b49-425b-aa4e-a147b9d38cb4")
 		)
 		(pin "GPIO10_SDIO_CMD" input
 			(at 220.98 36.83 180)
+			(uuid "6ff66535-8f00-4714-9774-e68b3305d35d")
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
 				(justify left)
 			)
-			(uuid "6ff66535-8f00-4714-9774-e68b3305d35d")
 		)
 		(pin "GPIO9_SDIO_CLK" input
 			(at 220.98 34.29 180)
+			(uuid "e6364df8-9f61-4b72-b079-a6a9a2edcf29")
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
 				(justify left)
 			)
-			(uuid "e6364df8-9f61-4b72-b079-a6a9a2edcf29")
 		)
 		(pin "GPIO6_SDIO_INT" input
 			(at 220.98 39.37 180)
+			(uuid "0843105c-1e87-42b1-826f-d5796c0c43fc")
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
 				(justify left)
 			)
-			(uuid "0843105c-1e87-42b1-826f-d5796c0c43fc")
 		)
 		(pin "RST_PWR" input
 			(at 220.98 59.69 180)
+			(uuid "7c197c94-b129-4e6d-8d71-c322f78bfcb7")
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
 				(justify left)
 			)
-			(uuid "7c197c94-b129-4e6d-8d71-c322f78bfcb7")
 		)
 		(pin "GPIO24" input
 			(at 220.98 49.53 180)
+			(uuid "57c0fbba-1cc8-4930-80c7-5058b127e7d0")
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
 				(justify left)
 			)
-			(uuid "57c0fbba-1cc8-4930-80c7-5058b127e7d0")
 		)
 		(pin "GPIO25" input
 			(at 220.98 52.07 180)
+			(uuid "4939e0a6-ee31-46c0-a0fc-7840b41cda34")
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
 				(justify left)
 			)
-			(uuid "4939e0a6-ee31-46c0-a0fc-7840b41cda34")
 		)
 		(pin "GPIO1" input
 			(at 220.98 44.45 180)
+			(uuid "48f80f2b-b466-4a42-8d50-660c11774021")
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
 				(justify left)
 			)
-			(uuid "48f80f2b-b466-4a42-8d50-660c11774021")
 		)
 		(pin "GPIO0" input
 			(at 220.98 46.99 180)
+			(uuid "cba42010-df6d-4537-a3f3-f1932572fe28")
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
 				(justify left)
 			)
-			(uuid "cba42010-df6d-4537-a3f3-f1932572fe28")
 		)
 		(instances
 			(project "ESP32P4C5_Board"
@@ -2558,17 +2614,23 @@
 	(sheet
 		(at 220.726 70.104)
 		(size 42.672 29.718)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
 		(fields_autoplaced yes)
 		(stroke
 			(width 0.1524)
 			(type solid)
 		)
 		(fill
-			(color 0 255 255 1.0000)
+			(color 0 255 255 1)
 		)
 		(uuid "ee3aadd3-a8c7-4495-ba93-0e1a5bfc4c08")
 		(property "Sheetname" "CAN-FD_BUS"
 			(at 220.726 69.3924 0)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2578,6 +2640,8 @@
 		)
 		(property "Sheetfile" "CAN-FD_BUS.kicad_sch"
 			(at 220.726 100.4066 0)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2587,83 +2651,83 @@
 		)
 		(pin "CLKO{slash}SOF" input
 			(at 220.726 91.44 180)
+			(uuid "6185c535-a8c4-4b14-b188-ab6d9ca32989")
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
 				(justify left)
 			)
-			(uuid "6185c535-a8c4-4b14-b188-ab6d9ca32989")
 		)
 		(pin "SCK" input
 			(at 220.726 81.28 180)
+			(uuid "8df099da-361d-4df6-b598-867e28a4ba62")
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
 				(justify left)
 			)
-			(uuid "8df099da-361d-4df6-b598-867e28a4ba62")
 		)
 		(pin "NCS" input
 			(at 220.726 73.66 180)
+			(uuid "56ac9122-44c5-48b2-b462-d33094a1e0ca")
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
 				(justify left)
 			)
-			(uuid "56ac9122-44c5-48b2-b462-d33094a1e0ca")
 		)
 		(pin "~{_INT0}{slash}GPIO0{slash}XSTBY" input
 			(at 220.726 88.9 180)
+			(uuid "9fd056b5-2187-42b8-b6c2-565625d38dfa")
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
 				(justify left)
 			)
-			(uuid "9fd056b5-2187-42b8-b6c2-565625d38dfa")
 		)
 		(pin "~{INT1}{slash}GPIO1" input
 			(at 220.726 86.36 180)
+			(uuid "94a17755-c88b-4a2c-a147-0a8cb2e62e9d")
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
 				(justify left)
 			)
-			(uuid "94a17755-c88b-4a2c-a147-0a8cb2e62e9d")
 		)
 		(pin "~{INT}" input
 			(at 220.726 93.98 180)
+			(uuid "390adbbc-81f9-419c-8f62-7f008db44415")
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
 				(justify left)
 			)
-			(uuid "390adbbc-81f9-419c-8f62-7f008db44415")
 		)
 		(pin "SDI" input
 			(at 220.726 78.74 180)
+			(uuid "8142726c-0379-44a3-ac4b-a3f6643dd8ff")
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
 				(justify left)
 			)
-			(uuid "8142726c-0379-44a3-ac4b-a3f6643dd8ff")
 		)
 		(pin "SDO" input
 			(at 220.726 76.2 180)
+			(uuid "50bf5c86-6013-4657-aecb-b0830aa5b4c0")
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
 				(justify left)
 			)
-			(uuid "50bf5c86-6013-4657-aecb-b0830aa5b4c0")
 		)
 		(instances
 			(project "ESP32P4C5_Board"
@@ -2676,17 +2740,23 @@
 	(sheet
 		(at 220.98 104.902)
 		(size 42.164 53.34)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
 		(fields_autoplaced yes)
 		(stroke
 			(width 0.1524)
 			(type solid)
 		)
 		(fill
-			(color 0 255 255 1.0000)
+			(color 0 255 255 1)
 		)
 		(uuid "f756c495-8b69-446e-8416-a9a4b9a7b1c0")
 		(property "Sheetname" "Interfaces"
 			(at 220.98 104.1904 0)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2696,6 +2766,8 @@
 		)
 		(property "Sheetfile" "Interfaces.kicad_sch"
 			(at 220.98 158.8266 0)
+			(show_name no)
+			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2705,83 +2777,83 @@
 		)
 		(pin "SPI_CS" bidirectional
 			(at 220.98 124.46 180)
+			(uuid "3740a918-09fd-477d-ac2c-c014da1469e9")
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
 				(justify left)
 			)
-			(uuid "3740a918-09fd-477d-ac2c-c014da1469e9")
 		)
 		(pin "SPI_CLK" bidirectional
 			(at 220.98 127 180)
+			(uuid "557302e3-e9d9-47a9-8cd9-0654fceb89cc")
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
 				(justify left)
 			)
-			(uuid "557302e3-e9d9-47a9-8cd9-0654fceb89cc")
 		)
 		(pin "SPI_MISO" bidirectional
 			(at 220.98 129.54 180)
+			(uuid "a8171dff-acfa-4b4d-bd93-c0afde309f4c")
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
 				(justify left)
 			)
-			(uuid "a8171dff-acfa-4b4d-bd93-c0afde309f4c")
 		)
 		(pin "SPI_MOSI" bidirectional
 			(at 220.98 132.08 180)
+			(uuid "c35633b7-4ad1-4e79-9937-3a79c4bcc759")
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
 				(justify left)
 			)
-			(uuid "c35633b7-4ad1-4e79-9937-3a79c4bcc759")
 		)
 		(pin "I2C_SCL_HDR" bidirectional
 			(at 220.98 109.22 180)
+			(uuid "f75a3b43-cf81-4143-94a5-696ee10f495d")
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
 				(justify left)
 			)
-			(uuid "f75a3b43-cf81-4143-94a5-696ee10f495d")
 		)
 		(pin "I2C_SDA_HDR" bidirectional
 			(at 220.98 111.76 180)
+			(uuid "5f7f187a-9bea-4ec0-a0e1-c9c3b6a01e91")
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
 				(justify left)
 			)
-			(uuid "5f7f187a-9bea-4ec0-a0e1-c9c3b6a01e91")
 		)
 		(pin "UART0_RXD" input
 			(at 220.98 116.84 180)
+			(uuid "b4274bff-727d-4645-bd65-76051a598124")
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
 				(justify left)
 			)
-			(uuid "b4274bff-727d-4645-bd65-76051a598124")
 		)
 		(pin "UART0_TXD" output
 			(at 220.98 119.38 180)
+			(uuid "9a061dc7-8ee1-4591-a01a-e00fac284ce7")
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
 				(justify left)
 			)
-			(uuid "9a061dc7-8ee1-4591-a01a-e00fac284ce7")
 		)
 		(instances
 			(project "ESP32P4C5_Board"
@@ -2796,4 +2868,5 @@
 			(page "1")
 		)
 	)
+	(embedded_fonts no)
 )

@@ -1,7 +1,7 @@
 (kicad_sch
-	(version 20231120)
+	(version 20260306)
 	(generator "eeschema")
-	(generator_version "8.0")
+	(generator_version "10.0")
 	(uuid "3c73f232-fe9b-42f8-8c4e-fe18a3dff7fe")
 	(paper "A4")
 	(title_block
@@ -15,6 +15,7 @@
 		(exclude_from_sim no)
 		(at 113.03 29.464 0)
 		(size 73.152 128.905)
+		(margins 0.75 0.75 0.75 0.75)
 		(stroke
 			(width 0)
 			(type dash)
@@ -34,6 +35,7 @@
 		(exclude_from_sim no)
 		(at 27.305 29.845 0)
 		(size 77.851 49.403)
+		(margins 0.75 0.75 0.75 0.75)
 		(stroke
 			(width 0)
 			(type dash)
@@ -53,6 +55,7 @@
 		(exclude_from_sim no)
 		(at 194.564 29.21 0)
 		(size 77.216 63.5)
+		(margins 0.75 0.75 0.75 0.75)
 		(stroke
 			(width 0)
 			(type dash)
@@ -72,6 +75,7 @@
 		(exclude_from_sim no)
 		(at 27.178 149.86 0)
 		(size 77.724 40.386)
+		(margins 0.75 0.75 0.75 0.75)
 		(stroke
 			(width 0)
 			(type dash)
@@ -91,6 +95,7 @@
 		(exclude_from_sim no)
 		(at 27.178 114.046 0)
 		(size 77.724 31.75)
+		(margins 0.75 0.75 0.75 0.75)
 		(stroke
 			(width 0)
 			(type dash)
@@ -110,6 +115,7 @@
 		(exclude_from_sim no)
 		(at 194.564 99.314 0)
 		(size 77.216 58.928)
+		(margins 0.75 0.75 0.75 0.75)
 		(stroke
 			(width 0)
 			(type dash)
@@ -129,6 +135,7 @@
 		(exclude_from_sim no)
 		(at 27.432 85.09 0)
 		(size 77.724 25.4)
+		(margins 0.75 0.75 0.75 0.75)
 		(stroke
 			(width 0)
 			(type dash)
