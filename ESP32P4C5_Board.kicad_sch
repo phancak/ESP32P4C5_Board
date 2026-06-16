@@ -2775,46 +2775,6 @@
 				(justify left top)
 			)
 		)
-		(pin "SPI_CS" bidirectional
-			(at 220.98 124.46 180)
-			(uuid "3740a918-09fd-477d-ac2c-c014da1469e9")
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(pin "SPI_CLK" bidirectional
-			(at 220.98 127 180)
-			(uuid "557302e3-e9d9-47a9-8cd9-0654fceb89cc")
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(pin "SPI_MISO" bidirectional
-			(at 220.98 129.54 180)
-			(uuid "a8171dff-acfa-4b4d-bd93-c0afde309f4c")
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(pin "SPI_MOSI" bidirectional
-			(at 220.98 132.08 180)
-			(uuid "c35633b7-4ad1-4e79-9937-3a79c4bcc759")
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
 		(pin "I2C_SCL_HDR" bidirectional
 			(at 220.98 109.22 180)
 			(uuid "f75a3b43-cf81-4143-94a5-696ee10f495d")
@@ -2848,6 +2808,46 @@
 		(pin "UART0_TXD" output
 			(at 220.98 119.38 180)
 			(uuid "9a061dc7-8ee1-4591-a01a-e00fac284ce7")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(pin "SPI_0_CLK_R" bidirectional
+			(at 220.98 127 180)
+			(uuid "13c0fd3f-3c5e-473c-a4d3-0fd314f0b102")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(pin "SPI_0_CS_R" bidirectional
+			(at 220.98 124.46 180)
+			(uuid "0a087cf7-3b3d-4e5a-b545-258c324f771c")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(pin "SPI_0_MISO_R" bidirectional
+			(at 220.98 129.54 180)
+			(uuid "0f8451b7-d1a7-4a27-9be9-a14cd4708a6a")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(pin "SPI_0_MOSI_R" bidirectional
+			(at 220.98 132.08 180)
+			(uuid "fd0fc640-66c9-4a20-8196-a72c6f089eb7")
 			(effects
 				(font
 					(size 1.27 1.27)

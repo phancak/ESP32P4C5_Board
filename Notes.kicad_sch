@@ -31,10 +31,10 @@
 		)
 		(uuid "254c2e72-0440-4444-976b-7ef33e415564")
 	)
-	(text_box "POWER MANAGEMENT NOTES:\n- The input power goes through three stages \n  1. a) External Power: LM73100RPWR, 2.7 - 23 V, 5.5 A Integrated Ideal Diode with Input Reverse Polarity and Overvoltage Protection\n     b) USB POWER: SS34-E3/57T Diode\n  2. TPS259531DSGR 2.7V to 18V, 4-A, 34-mΩ eFuse With Fast Overvoltage Protection\n  3. TPS62442RQRR, 2.75-V to 6-V, Dual-Channel Step-Down Converter with Adjustable Frequency\n\n- Stage Description:\n  1. The power is sourced from the imediatelly connected power source without relying on jumpers to manual selection. The diodes prevent current from flowing back to a source in case of multiple ppower sources being conected.\n     The ideal diode was used for thhe external power source to limit power loss inherent in a regular diode as the eternal power source will at times be a battery.   \n     The ideal diode includes ppolarity protection (not required on the USB sources)\n  2. The eFuse provides overvoltage protection, undervoltage lockout, Short Circuit Protection, and limits inrussh current.\n  3. SMPS that outputs two power rails. The first is dedicated and controlled by the ESP32P4 core. The second is general 3.3V power rail used by all other components.\n\nESP32P4 Power Domains\n- THE VDD_HP pins: 600mA to 1A Current, Required Width: 0.3 mm (1A)"
+	(text_box "POWER MANAGEMENT NOTES:\n- The input power goes through three stages \n  1. a) External Power: LM73100RPWR, 2.7 - 23 V, 5.5 A Integrated Ideal Diode with Input Reverse Polarity and Overvoltage Protection\n     b) USB POWER: SS34-E3/57T Diode\n  2. TPS259531DSGR 2.7V to 18V, 4-A, 34-mΩ eFuse With Fast Overvoltage Protection\n  3. TPS62442RQRR, 2.75-V to 6-V, Dual-Channel Step-Down Converter with Adjustable Frequency\n\n- Stage Description:\n  1. The power is sourced from the imediatelly connected power source without relying on jumpers to manual selection. The diodes prevent current from flowing back to a source in case of multiple ppower sources being conected.\n     The ideal diode was used for thhe external power source to limit power loss inherent in a regular diode as the eternal power source will at times be a battery.   \n     The ideal diode includes ppolarity protection (not required on the USB sources)\n  2. The eFuse provides overvoltage protection, undervoltage lockout, Short Circuit Protection, and limits inrussh current.\n  3. SMPS that outputs two power rails. The first is dedicated and controlled by the ESP32P4 core. The second is general 3.3V power rail used by all other components.\n\nESP32P4 Power Domains\n- THE VDD_HP pins: 600mA to 1A Current, Required Width: 0.3 mm (1A)\n\nIdeal Diode LM73100RPWR Parameter Notes:\n- Maximum System Peak Current (IOUT): 2.5 A (to cleanly capture joint ESP32 radio bursts, camera operations, and converter losses).\n- I IMON = 2.5 A×181 μA/A=452.5 μA (181 μA/A from data sheet, how much current goes through IMON pin for each 1A useful OUT current)  \n- LM73100RPWR will be monitoring for 425.5 μA\n- Calculate the Value for RIMON = VADC_MAX/IIMON = 3.3 V/452.5 μA ≈ 7.29 kΩ IMON\n​\nEFUSE TPS259531DSGR Notes:\n- Over Voltage Clamp (OVC) set at 5.7V (for TPS25953x)\n\nSMPS TPS62442RQRR Notes:\n- The PG1 and PG2 left floatng as they are not used. The MCU PU pins are handled through a parallel C. \n"
 		(exclude_from_sim no)
 		(at 27.305 29.845 0)
-		(size 77.851 49.403)
+		(size 77.851 65.4049)
 		(margins 0.75 0.75 0.75 0.75)
 		(stroke
 			(width 0)
@@ -71,7 +71,7 @@
 		)
 		(uuid "7c53a797-9a5a-487d-93ce-3285865f5cd0")
 	)
-	(text_box "ESP32P4 HARDWARE CONSIDERATIONS:\n- DEBUG\n  - The P4 has both USB ports exposed and the UART0 as a last resort debug.\n  - Main flash/debug is to be done through the USB/JTAG port\n  - The MCU JTAG pins are exposed on a header but do not include the PU and PD resistors.\n- BOOT CONFIGURATION\n  - \n\n- CSI_LDO-CE Pin on the CAMERA turns the internal camera LDO ON or OFF thereby alowing the chip to turn it off when not needed (in sleep mode)\n- CSI_FLASH-LED pin is a CAMERA output pinn that is designed to send ouput signal to a flash to iluminate the surounding at the exact time of image capture\n  (Will not be used NC)\n\n- RESET CIRCUT\n  - The goal is for the ESP32P4 to reset from global reset pin, but also to reset after a firmware update without causing global reset of other devices.\n  - Implementation: GLOBAL RESET is connected through a buffer to the MCU that only pulls reset LOW and is HIGH-Z otherwise. The MCU RST (PU) pin is exposed with the JTAG pins on a headder to allow RST after upload."
+	(text_box "ESP32P4 HARDWARE CONSIDERATIONS:\n- DEBUG\n  - The P4 has both USB ports exposed and the UART0 as a last resort debug.\n  - Main flash/debug is to be done through the USB/JTAG port\n  - The MCU JTAG pins are exposed on a header but do not include the PU and PD resistors.\n- BOOT CONFIGURATION\n  - \n\n- CSI_LDO-CE Pin on the CAMERA turns the internal camera LDO ON or OFF thereby alowing the chip to turn it off when not needed (in sleep mode)\n- CSI_FLASH-LED pin is a CAMERA output pinn that is designed to send ouput signal to a flash to iluminate the surounding at the exact time of image capture\n  (Will not be used NC)\n\n- RESET CIRCUT\n  - The goal is for the ESP32P4 to reset from global reset pin, but also to reset after a firmware update without causing global reset of other devices.\n  - Implementation: GLOBAL RESET is connected through a buffer to the MCU that only pulls reset LOW and is HIGH-Z otherwise. The MCU RST (PU) pin is exposed with the JTAG pins on a headder to allow RST after upload.\n  - PU (RST) Timing Considerations: The PU has to stay low for tSTBL = 50uS after VIN stable at 3.3V\n    - Place a 100nF capacitor at PU."
 		(exclude_from_sim no)
 		(at 27.178 149.86 0)
 		(size 77.724 40.386)
@@ -93,8 +93,8 @@
 	)
 	(text_box "ESP32C5 HARDWARE CONSIDERATIONS:\n- The C5 does not have a USB connector\n  - Programming is to be done through JTAG pins\n  - To enable programming through the JTAG pins eFuse 2: EFUSE_DIS_USB_JTAG has to be set to 1 (default 0)\n- BOOT CONFIGURATION\n  - GPIO26_BOOT is pulled to GND (for all boot configurations) \n  - GPIO27_BOOT and GPIO28_BOOT have PU R with a pull-down BTN\n  - Solder bridge allows for either both to be pulled LOW or only the GPIO28_BOOT"
 		(exclude_from_sim no)
-		(at 27.178 114.046 0)
-		(size 77.724 31.75)
+		(at 27.178 123.19 0)
+		(size 77.724 22.606)
 		(margins 0.75 0.75 0.75 0.75)
 		(stroke
 			(width 0)
@@ -133,8 +133,8 @@
 	)
 	(text_box "PROJECT REQUIREMENTS/GOALS:\n- Camera OV5647 to capture real-time vide (or smiliar)\n- Provide WIFI link (to transmit the real-time video)\n- Control motor through CAN-FD interface\n- High Speed 8-bit pparallel connection to expansion PCBs\n- High Speed USB connector\n- I2C, UART, SPI (through FPC) interfaces\n\nSECONDARY GOALS:\n- Function as a simple server\n- Motor control through PWM pins\n- LCD with touch screen (MIPI 2LANE)\n"
 		(exclude_from_sim no)
-		(at 27.432 85.09 0)
-		(size 77.724 25.4)
+		(at 27.432 97.79 0)
+		(size 77.724 21.59)
 		(margins 0.75 0.75 0.75 0.75)
 		(stroke
 			(width 0)

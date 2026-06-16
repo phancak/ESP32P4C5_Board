@@ -9683,8 +9683,8 @@
 				(justify right)
 			)
 		)
-		(property "Value" "10n"
-			(at 230.251 87.63 0)
+		(property "Value" "10n_GRM188R72A103KA01"
+			(at 228.6 90.17 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -9926,7 +9926,7 @@
 				(justify left)
 			)
 		)
-		(property "Value" "10u"
+		(property "Value" "10u_GRM188Z71A106KA73"
 			(at 242.316 64.77 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -11427,8 +11427,8 @@
 				(justify left)
 			)
 		)
-		(property "Value" "0p6"
-			(at 178.308 56.896 0)
+		(property "Value" "0p6_GQM1875C2ER60BB12"
+			(at 178.308 62.23 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -11908,7 +11908,7 @@
 				(justify left)
 			)
 		)
-		(property "Value" "10u"
+		(property "Value" "10u_GRM188Z71A106KA73"
 			(at 200.406 57.15 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -11919,7 +11919,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "Capacitor_SMD:C_1206_3216Metric"
+		(property "Footprint" "Capacitor_SMD:C_0603_1608Metric"
 			(at 206.7052 58.42 0)
 			(hide yes)
 			(show_name no)
@@ -12785,7 +12785,7 @@
 				(justify left)
 			)
 		)
-		(property "Value" "10u"
+		(property "Value" "10u_GRM188Z71A106KA73"
 			(at 274.066 110.49 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -12796,7 +12796,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "Capacitor_SMD:C_1206_3216Metric"
+		(property "Footprint" "Capacitor_SMD:C_0603_1608Metric"
 			(at 280.3652 111.76 0)
 			(hide yes)
 			(show_name no)
@@ -12983,8 +12983,8 @@
 				(justify left)
 			)
 		)
-		(property "Value" "100n"
-			(at 242.316 82.55 0)
+		(property "Value" "100n_GRM188R72A104KA35"
+			(at 244.094 82.55 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -13065,8 +13065,8 @@
 				(justify right)
 			)
 		)
-		(property "Value" "3p"
-			(at 250.952 110.49 0)
+		(property "Value" "3p_GQM1875C2E3R0BB12D"
+			(at 247.65 115.57 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -13227,8 +13227,8 @@
 				(justify left)
 			)
 		)
-		(property "Value" "100n"
-			(at 261.366 110.49 0)
+		(property "Value" "100n_GRM188R72A104KA35"
+			(at 260.096 112.776 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -14619,8 +14619,8 @@
 				(justify left)
 			)
 		)
-		(property "Value" "1p"
-			(at 191.008 56.896 0)
+		(property "Value" "1p_GQM1875C2E1R0WB12D"
+			(at 191.262 59.436 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
