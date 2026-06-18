@@ -40,8 +40,8 @@
         "other_text_upright": false,
         "pads": {
           "drill": 0.0,
-          "height": 4.75,
-          "width": 4.75
+          "height": 7.5,
+          "width": 7.5
         },
         "silk_line_width": 0.1,
         "silk_text_italic": false,
@@ -74,6 +74,11 @@
           "gap": 0.0,
           "via_gap": 0.0,
           "width": 0.0
+        },
+        {
+          "gap": 1.5,
+          "via_gap": 1.0,
+          "width": 0.1
         },
         {
           "gap": 0.2146,
@@ -222,6 +227,7 @@
       ],
       "track_widths": [
         0.0,
+        0.1,
         0.1472,
         0.1475,
         0.15,
@@ -581,13 +587,26 @@
         "microvia_drill": 0.1,
         "name": "BOOT",
         "pcb_color": "rgb(0, 0, 132)",
-        "priority": 0,
+        "priority": 1,
         "schematic_color": "rgb(0, 0, 132)",
         "track_width": 0.25,
         "tuning_profile": "",
         "via_diameter": 0.8,
         "via_drill": 0.4,
         "wire_width": 6
+      },
+      {
+        "clearance": 0.25,
+        "diff_pair_gap": 1.0,
+        "diff_pair_width": 0.1,
+        "name": "CAN-FD",
+        "pcb_color": "rgba(0, 0, 0, 0.000)",
+        "priority": 0,
+        "schematic_color": "rgba(0, 0, 0, 0.000)",
+        "track_width": 0.1,
+        "tuning_profile": "",
+        "via_diameter": 0.45,
+        "via_drill": 0.3
       },
       {
         "bus_width": 12,
@@ -599,7 +618,7 @@
         "microvia_drill": 0.1,
         "name": "CSI_CAMERA",
         "pcb_color": "rgb(255, 153, 0)",
-        "priority": 1,
+        "priority": 2,
         "schematic_color": "rgb(255, 153, 0)",
         "track_width": 0.25,
         "tuning_profile": "",
@@ -617,7 +636,7 @@
         "microvia_drill": 0.1,
         "name": "DCDC",
         "pcb_color": "rgb(255, 255, 194)",
-        "priority": 2,
+        "priority": 3,
         "schematic_color": "rgb(255, 153, 0)",
         "track_width": 0.25,
         "tuning_profile": "",
@@ -635,7 +654,7 @@
         "microvia_drill": 0.1,
         "name": "DEBUG_JTAG",
         "pcb_color": "rgb(0, 0, 255)",
-        "priority": 3,
+        "priority": 4,
         "schematic_color": "rgb(0, 0, 255)",
         "track_width": 0.25,
         "tuning_profile": "",
@@ -653,7 +672,7 @@
         "microvia_drill": 0.1,
         "name": "DSI_LCD",
         "pcb_color": "rgb(204, 102, 0)",
-        "priority": 4,
+        "priority": 5,
         "schematic_color": "rgb(204, 102, 0)",
         "track_width": 0.25,
         "tuning_profile": "",
@@ -671,7 +690,7 @@
         "microvia_drill": 0.1,
         "name": "FLASH",
         "pcb_color": "rgb(0, 255, 0)",
-        "priority": 5,
+        "priority": 6,
         "schematic_color": "rgb(0, 132, 132)",
         "track_width": 0.25,
         "tuning_profile": "",
@@ -689,7 +708,7 @@
         "microvia_drill": 0.1,
         "name": "GND",
         "pcb_color": "rgb(132, 132, 132)",
-        "priority": 6,
+        "priority": 7,
         "schematic_color": "rgb(132, 132, 132)",
         "track_width": 0.25,
         "tuning_profile": "",
@@ -707,7 +726,7 @@
         "microvia_drill": 0.1,
         "name": "I2C",
         "pcb_color": "rgb(255, 0, 255)",
-        "priority": 7,
+        "priority": 8,
         "schematic_color": "rgb(255, 0, 255)",
         "track_width": 0.25,
         "tuning_profile": "",
@@ -725,7 +744,7 @@
         "microvia_drill": 0.1,
         "name": "PSSI",
         "pcb_color": "rgb(0, 194, 0)",
-        "priority": 8,
+        "priority": 9,
         "schematic_color": "rgb(0, 132, 0)",
         "track_width": 0.15,
         "tuning_profile": "",
@@ -743,7 +762,7 @@
         "microvia_drill": 0.1,
         "name": "PWR1V2",
         "pcb_color": "rgb(132, 0, 0)",
-        "priority": 9,
+        "priority": 10,
         "schematic_color": "rgb(132, 0, 0)",
         "track_width": 0.25,
         "tuning_profile": "",
@@ -761,7 +780,7 @@
         "microvia_drill": 0.1,
         "name": "PWR3V3",
         "pcb_color": "rgb(255, 0, 0)",
-        "priority": 10,
+        "priority": 11,
         "schematic_color": "rgb(255, 0, 0)",
         "track_width": 0.25,
         "tuning_profile": "",
@@ -779,7 +798,7 @@
         "microvia_drill": 0.1,
         "name": "RESET",
         "pcb_color": "rgb(194, 194, 0)",
-        "priority": 11,
+        "priority": 12,
         "schematic_color": "rgb(132, 132, 0)",
         "track_width": 0.25,
         "tuning_profile": "",
@@ -797,7 +816,7 @@
         "microvia_drill": 0.1,
         "name": "RF",
         "pcb_color": "rgb(255, 255, 0)",
-        "priority": 12,
+        "priority": 13,
         "schematic_color": "rgb(194, 194, 0)",
         "track_width": 0.1472,
         "tuning_profile": "",
@@ -815,7 +834,7 @@
         "microvia_drill": 0.1,
         "name": "SDIO",
         "pcb_color": "rgb(0, 132, 0)",
-        "priority": 13,
+        "priority": 14,
         "schematic_color": "rgb(0, 255, 0)",
         "track_width": 0.15,
         "tuning_profile": "",
@@ -833,7 +852,7 @@
         "microvia_drill": 0.1,
         "name": "SPI",
         "pcb_color": "rgb(0, 194, 194)",
-        "priority": 14,
+        "priority": 15,
         "schematic_color": "rgb(0, 194, 0)",
         "track_width": 0.1521,
         "tuning_profile": "",
@@ -851,7 +870,7 @@
         "microvia_drill": 0.1,
         "name": "UART",
         "pcb_color": "rgba(0, 0, 0, 0.000)",
-        "priority": 15,
+        "priority": 16,
         "schematic_color": "rgb(132, 0, 132)",
         "track_width": 0.25,
         "tuning_profile": "",
@@ -869,7 +888,7 @@
         "microvia_drill": 0.1,
         "name": "USB",
         "pcb_color": "rgb(0, 255, 255)",
-        "priority": 16,
+        "priority": 17,
         "schematic_color": "rgb(0, 194, 194)",
         "track_width": 0.235,
         "tuning_profile": "",
@@ -1007,6 +1026,14 @@
       {
         "netclass": "SPI",
         "pattern": "*SCK"
+      },
+      {
+        "netclass": "CAN-FD",
+        "pattern": "*CAN+"
+      },
+      {
+        "netclass": "CAN-FD",
+        "pattern": "*CAN-"
       }
     ]
   },
@@ -1395,7 +1422,7 @@
         "uuid": "d4a17687-8854-438f-9913-a6ddcff1a679"
       }
     ],
-    "used_designators": "",
+    "used_designators": "R41",
     "variants": []
   },
   "sheets": [
