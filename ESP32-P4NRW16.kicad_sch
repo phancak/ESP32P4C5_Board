@@ -4990,7 +4990,7 @@
 		)
 		(uuid "d46b4235-49ee-42ca-abac-ca27876a2750")
 	)
-	(text_box "GLOBAL RESET"
+	(text_box "RST-BTN"
 		(exclude_from_sim no)
 		(at 15.494 47.498 0)
 		(size 59.69 49.53)
