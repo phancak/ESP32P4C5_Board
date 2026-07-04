@@ -12,6 +12,7 @@
 
 ## 📑 Quick Access
 * [**📂 View Project Schematics (PDF)**](./Schematics/ESP32P4C5_Board.pdf)
+* [**📂 View PCB Layout (PDF)**](./PCB_Layout/ESP32P4C5_Board.pdf)
 
 ## 📌 Project Overview
 

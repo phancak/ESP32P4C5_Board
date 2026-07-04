@@ -66,6 +66,10 @@
 		(uuid "6c1d240d-cae9-4881-b5e0-b54e6b6cadf8")
 	)
 	(no_connect
+		(at 133.35 67.31)
+		(uuid "87e234a6-98da-477f-b01f-8d0797b4e3b7")
+	)
+	(no_connect
 		(at 133.35 52.07)
 		(uuid "abb2a93f-301e-49e5-a365-f5ee452edec2")
 	)
@@ -179,7 +183,7 @@
 	)
 	(wire
 		(pts
-			(xy 133.35 92.71) (xy 80.01 92.71)
+			(xy 133.35 95.25) (xy 80.01 95.25)
 		)
 		(stroke
 			(width 0)
@@ -239,7 +243,7 @@
 	)
 	(wire
 		(pts
-			(xy 80.01 105.41) (xy 133.35 105.41)
+			(xy 80.01 107.95) (xy 133.35 107.95)
 		)
 		(stroke
 			(width 0)
@@ -279,7 +283,7 @@
 	)
 	(wire
 		(pts
-			(xy 133.35 90.17) (xy 80.01 90.17)
+			(xy 133.35 92.71) (xy 80.01 92.71)
 		)
 		(stroke
 			(width 0)
@@ -389,7 +393,7 @@
 	)
 	(wire
 		(pts
-			(xy 80.01 97.79) (xy 133.35 97.79)
+			(xy 80.01 100.33) (xy 133.35 100.33)
 		)
 		(stroke
 			(width 0)
@@ -399,7 +403,7 @@
 	)
 	(wire
 		(pts
-			(xy 133.35 87.63) (xy 80.01 87.63)
+			(xy 133.35 90.17) (xy 80.01 90.17)
 		)
 		(stroke
 			(width 0)
@@ -429,7 +433,7 @@
 	)
 	(wire
 		(pts
-			(xy 80.01 102.87) (xy 133.35 102.87)
+			(xy 80.01 105.41) (xy 133.35 105.41)
 		)
 		(stroke
 			(width 0)
@@ -569,7 +573,7 @@
 	)
 	(wire
 		(pts
-			(xy 133.35 77.47) (xy 80.01 77.47)
+			(xy 133.35 80.01) (xy 80.01 80.01)
 		)
 		(stroke
 			(width 0)
@@ -609,7 +613,7 @@
 	)
 	(wire
 		(pts
-			(xy 133.35 74.93) (xy 80.01 74.93)
+			(xy 133.35 77.47) (xy 80.01 77.47)
 		)
 		(stroke
 			(width 0)
@@ -639,7 +643,7 @@
 	)
 	(wire
 		(pts
-			(xy 80.01 100.33) (xy 133.35 100.33)
+			(xy 80.01 102.87) (xy 133.35 102.87)
 		)
 		(stroke
 			(width 0)
@@ -669,7 +673,7 @@
 	)
 	(wire
 		(pts
-			(xy 133.35 95.25) (xy 80.01 95.25)
+			(xy 133.35 97.79) (xy 80.01 97.79)
 		)
 		(stroke
 			(width 0)
@@ -789,7 +793,7 @@
 	)
 	(wire
 		(pts
-			(xy 133.35 80.01) (xy 80.01 80.01)
+			(xy 133.35 82.55) (xy 80.01 82.55)
 		)
 		(stroke
 			(width 0)
@@ -889,7 +893,7 @@
 	)
 	(wire
 		(pts
-			(xy 133.35 82.55) (xy 80.01 82.55)
+			(xy 133.35 85.09) (xy 80.01 85.09)
 		)
 		(stroke
 			(width 0)
@@ -959,7 +963,7 @@
 	)
 	(wire
 		(pts
-			(xy 133.35 85.09) (xy 80.01 85.09)
+			(xy 133.35 87.63) (xy 80.01 87.63)
 		)
 		(stroke
 			(width 0)
@@ -979,7 +983,7 @@
 	)
 	(wire
 		(pts
-			(xy 133.35 69.85) (xy 80.01 69.85)
+			(xy 133.35 72.39) (xy 80.01 72.39)
 		)
 		(stroke
 			(width 0)
@@ -1009,7 +1013,7 @@
 	)
 	(wire
 		(pts
-			(xy 133.35 72.39) (xy 80.01 72.39)
+			(xy 133.35 74.93) (xy 80.01 74.93)
 		)
 		(stroke
 			(width 0)
@@ -1106,7 +1110,7 @@
 			)
 		)
 		(pin "GPIO32" bidirectional
-			(at 133.35 85.09 180)
+			(at 133.35 87.63 180)
 			(uuid "ae88820a-eca1-4f17-bcd6-76eced492f91")
 			(effects
 				(font
@@ -1116,7 +1120,7 @@
 			)
 		)
 		(pin "GPIO31" bidirectional
-			(at 133.35 82.55 180)
+			(at 133.35 85.09 180)
 			(uuid "b756444e-47cc-489f-8c6e-463f60be59d0")
 			(effects
 				(font
@@ -1126,7 +1130,7 @@
 			)
 		)
 		(pin "GPIO33" bidirectional
-			(at 133.35 87.63 180)
+			(at 133.35 90.17 180)
 			(uuid "6a1c53c5-1de2-478f-851e-f74f1a6027d9")
 			(effects
 				(font
@@ -1196,7 +1200,7 @@
 			)
 		)
 		(pin "GPIO29" bidirectional
-			(at 133.35 77.47 180)
+			(at 133.35 80.01 180)
 			(uuid "84ed38e2-3e2b-455f-b368-b108aaeee0b1")
 			(effects
 				(font
@@ -1206,7 +1210,7 @@
 			)
 		)
 		(pin "GPIO28" bidirectional
-			(at 133.35 74.93 180)
+			(at 133.35 77.47 180)
 			(uuid "46963817-e10b-438d-abec-8ac66e954ef2")
 			(effects
 				(font
@@ -1226,7 +1230,7 @@
 			)
 		)
 		(pin "GPIO30" bidirectional
-			(at 133.35 80.01 180)
+			(at 133.35 82.55 180)
 			(uuid "12e692d0-41f8-4f81-be1c-0bd54f4157be")
 			(effects
 				(font
@@ -1256,7 +1260,7 @@
 			)
 		)
 		(pin "GPIO52" bidirectional
-			(at 133.35 102.87 180)
+			(at 133.35 105.41 180)
 			(uuid "aed9705d-8b5f-47fc-97cf-7019a7ea37d0")
 			(effects
 				(font
@@ -1266,7 +1270,7 @@
 			)
 		)
 		(pin "GPIO51" bidirectional
-			(at 133.35 105.41 180)
+			(at 133.35 107.95 180)
 			(uuid "ea9ab754-450b-4295-b12d-b0040907c329")
 			(effects
 				(font
@@ -1276,7 +1280,7 @@
 			)
 		)
 		(pin "GPIO54" bidirectional
-			(at 133.35 97.79 180)
+			(at 133.35 100.33 180)
 			(uuid "c1a9b0cd-ac2a-4cf1-b34b-935b19fc5152")
 			(effects
 				(font
@@ -1286,7 +1290,7 @@
 			)
 		)
 		(pin "GPIO53" bidirectional
-			(at 133.35 100.33 180)
+			(at 133.35 102.87 180)
 			(uuid "e5edae67-2618-4652-97fb-ff032d0e605a")
 			(effects
 				(font
@@ -1576,7 +1580,7 @@
 			)
 		)
 		(pin "GPIO27" bidirectional
-			(at 133.35 72.39 180)
+			(at 133.35 74.93 180)
 			(uuid "22fe5ba4-b192-41c0-9698-6b81b490b21f")
 			(effects
 				(font
@@ -1586,7 +1590,7 @@
 			)
 		)
 		(pin "GPIO26" bidirectional
-			(at 133.35 69.85 180)
+			(at 133.35 72.39 180)
 			(uuid "dbe84a00-eb84-45df-837c-a8eb455f435d")
 			(effects
 				(font
@@ -1596,7 +1600,7 @@
 			)
 		)
 		(pin "GPIO47_PARLIO" input
-			(at 133.35 90.17 180)
+			(at 133.35 92.71 180)
 			(uuid "66617e3b-801e-4523-9ae4-80d6d755ebd3")
 			(effects
 				(font
@@ -1606,7 +1610,7 @@
 			)
 		)
 		(pin "GPIO49_PARLIO" input
-			(at 133.35 95.25 180)
+			(at 133.35 97.79 180)
 			(uuid "0cf5c93e-7778-48a1-9781-2e969e799ccb")
 			(effects
 				(font
@@ -1616,7 +1620,7 @@
 			)
 		)
 		(pin "GPIO48_PARLIO" input
-			(at 133.35 92.71 180)
+			(at 133.35 95.25 180)
 			(uuid "04b375c1-5592-4f7e-ae06-67effb9c695b")
 			(effects
 				(font
@@ -1723,6 +1727,16 @@
 					(size 1.27 1.27)
 				)
 				(justify right)
+			)
+		)
+		(pin "DSI_REXT" bidirectional
+			(at 133.35 67.31 180)
+			(uuid "6d2b26fb-cf0d-4c71-8b7d-a3d0d03e0d1e")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
 			)
 		)
 		(instances
@@ -2004,7 +2018,7 @@
 			)
 		)
 		(pin "PSSI_PDCK" output
-			(at 80.01 69.85 0)
+			(at 80.01 72.39 0)
 			(uuid "69f83a26-625c-4f0e-888e-aaff291ea8a9")
 			(effects
 				(font
@@ -2014,7 +2028,7 @@
 			)
 		)
 		(pin "PSSI_RDY" bidirectional
-			(at 80.01 72.39 0)
+			(at 80.01 74.93 0)
 			(uuid "808cfd92-9832-4ced-8ab6-0f398e86b4e0")
 			(effects
 				(font
@@ -2024,7 +2038,7 @@
 			)
 		)
 		(pin "PSSI_DE" bidirectional
-			(at 80.01 74.93 0)
+			(at 80.01 77.47 0)
 			(uuid "b2d6ff47-efae-4e79-86e2-49cbb43c3ce2")
 			(effects
 				(font
@@ -2034,7 +2048,7 @@
 			)
 		)
 		(pin "PSSI_D0" bidirectional
-			(at 80.01 77.47 0)
+			(at 80.01 80.01 0)
 			(uuid "cc0bfebc-b9d0-40d9-b198-ba9a6970f6e3")
 			(effects
 				(font
@@ -2044,7 +2058,7 @@
 			)
 		)
 		(pin "PSSI_D1" bidirectional
-			(at 80.01 80.01 0)
+			(at 80.01 82.55 0)
 			(uuid "2a638af1-d6ae-4b33-91b4-b40b17b3a1fb")
 			(effects
 				(font
@@ -2054,7 +2068,7 @@
 			)
 		)
 		(pin "SPI2_NSS" bidirectional
-			(at 80.01 100.33 0)
+			(at 80.01 102.87 0)
 			(uuid "8b0c2319-be56-4014-86db-9f3319825369")
 			(effects
 				(font
@@ -2064,7 +2078,7 @@
 			)
 		)
 		(pin "SPI2_MOSI" bidirectional
-			(at 80.01 97.79 0)
+			(at 80.01 100.33 0)
 			(uuid "21abfaf6-c274-4a08-b45c-b0035f2c858e")
 			(effects
 				(font
@@ -2074,7 +2088,7 @@
 			)
 		)
 		(pin "PSSI_D7" bidirectional
-			(at 80.01 95.25 0)
+			(at 80.01 97.79 0)
 			(uuid "bccbc1ee-f94c-4fe2-8e6b-d5e86f603fc3")
 			(effects
 				(font
@@ -2084,7 +2098,7 @@
 			)
 		)
 		(pin "SPI2_SCK" bidirectional
-			(at 80.01 105.41 0)
+			(at 80.01 107.95 0)
 			(uuid "788fc4bd-ce39-4af4-90ab-ae04fb0f8c67")
 			(effects
 				(font
@@ -2094,7 +2108,7 @@
 			)
 		)
 		(pin "SPI2_MISO" bidirectional
-			(at 80.01 102.87 0)
+			(at 80.01 105.41 0)
 			(uuid "ebdc6356-3475-441a-b9b7-6a44a8126174")
 			(effects
 				(font
@@ -2104,7 +2118,7 @@
 			)
 		)
 		(pin "PSSI_D5" bidirectional
-			(at 80.01 90.17 0)
+			(at 80.01 92.71 0)
 			(uuid "849bf232-00d9-4b3c-9ae8-3c65238cdac8")
 			(effects
 				(font
@@ -2114,7 +2128,7 @@
 			)
 		)
 		(pin "PSSI_D2" bidirectional
-			(at 80.01 82.55 0)
+			(at 80.01 85.09 0)
 			(uuid "17fc0d49-86ba-49fa-85d3-d419559d639e")
 			(effects
 				(font
@@ -2124,7 +2138,7 @@
 			)
 		)
 		(pin "PSSI_D4" bidirectional
-			(at 80.01 87.63 0)
+			(at 80.01 90.17 0)
 			(uuid "3fcedde0-2b18-49f1-8c5e-d8a8f9807bfc")
 			(effects
 				(font
@@ -2134,7 +2148,7 @@
 			)
 		)
 		(pin "PSSI_D6" bidirectional
-			(at 80.01 92.71 0)
+			(at 80.01 95.25 0)
 			(uuid "ca336685-84f6-42da-a241-3f50848fad85")
 			(effects
 				(font
@@ -2144,7 +2158,7 @@
 			)
 		)
 		(pin "PSSI_D3" bidirectional
-			(at 80.01 85.09 0)
+			(at 80.01 87.63 0)
 			(uuid "85a8e5df-f37f-4fc4-8808-08474f154e2f")
 			(effects
 				(font
