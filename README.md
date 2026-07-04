@@ -63,14 +63,6 @@ To fulfill its requirements as a universally integrable module, the layout stric
 
 ---
 
-## 📂 Repository Structural Layout
-
-├── hardware/             # KiCad PCB Layout projects, schematics, and mechanical STEP exports
-├── firmware/             # Modular ESP-IDF target implementations
-│   ├── main_p4/          # Optimized application-layer firmware running on the ESP32-P4
-│   └── co_pro_c5/        # Network management stack and IPC drivers for the ESP32-C5 co-processor
-└── README.md
-
 ## 🛠 System Compilation & Initialization Workflow
 
 ### Technical Prerequisites
@@ -80,6 +72,7 @@ To fulfill its requirements as a universally integrable module, the layout stric
 ### Compiling and Deployment
 To compile and flash the primary application workspace onto the main ESP32-P4 target engine:
 
+```bash
 # Navigate to the core processor application repository
 cd firmware/main_p4
 
