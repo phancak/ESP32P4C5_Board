@@ -4948,16 +4948,6 @@
 		)
 		(uuid "7188d6ab-a9e6-43c2-946a-ba7d5709a204")
 	)
-	(text "------ MUST SELECT AVAILABLE FLASH"
-		(exclude_from_sim no)
-		(at 15.748 101.6 0)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-		)
-		(uuid "8c6bcd72-3d4a-4ed0-9355-797f3502d484")
-	)
 	(text "Connect to global RST"
 		(exclude_from_sim no)
 		(at 24.892 30.48 0)

@@ -7362,7 +7362,7 @@
 				)
 			)
 		)
-		(property "Footprint" "l4"
+		(property "Footprint" "Inductor_SMD:L_1008_2520Metric"
 			(at 176.53 93.98 0)
 			(hide yes)
 			(show_name no)
