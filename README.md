@@ -84,6 +84,7 @@ idf.py build
 
 # Flash binary payloads onto the hardware module and open serial communication lines
 idf.py -p [YOUR_TARGET_PORT] flash monitor
+```
 
 ## 📝 License & Open Source Compliance
 This architecture and firmware codebase are released under the terms of the open-source MIT License. For complete text and details regarding reuse rights, consult the accompanying LICENSE file.
