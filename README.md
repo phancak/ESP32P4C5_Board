@@ -26,6 +26,12 @@ This repository showcases an advanced asynchronous, dual-MCU topology that isola
 
 The system architecture purposefully segregates application compute from wireless networking to maximize throughput and guarantee real-time predictability.
 
+<div align="center">
+  <img src="Docs/ESP32P4C5_Board_Architecture.png" alt="ESP32P4C5 System architecture diagram" width="800">
+  <br>
+  <em>System architecture diagram.</em>
+</div>
+
 ### 1. Primary Workstation Core: Espressif ESP32-P4
 The **ESP32-P4** acts as the primary host, running application firmwares, digital signal processing (DSP), and complex interface state-machines. It interfaces with high-bandwidth peripherals without experiencing interrupt starvation caused by networking radio activity.
 *   **Camera FPC Interface:** A dedicated 0.5mm pitch FPC interface supporting parallel/MIPI CSI camera modules. Designed for minimal trace-length skew to support synchronous high-frame-rate image acquisition and local edge execution.
