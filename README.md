@@ -1,7 +1,7 @@
 # Modular ESP32 Heterogeneous Computing Platform (ESP32-P4 + ESP32-C5)
 
 <div align="center">
-  <img src="Docs/ESP32P4C5_Board_PCB.png" alt="ESP32P4C5 PCB 3D Render" width="800">
+  <img src="Docs/ESP32P4C5_Board_PCB_1.png" alt="ESP32P4C5 PCB 3D Render" width="800">
   <br>
   <em>4-layer PCB diagram.</em>
 </div>
