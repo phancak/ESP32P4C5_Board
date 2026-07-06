@@ -2410,7 +2410,7 @@
 		)
 		(uuid "4a7452a8-5402-4bce-9762-138c69509647")
 	)
-	(label "CANL"
+	(label "CAN-"
 		(at 223.52 99.06 180)
 		(effects
 			(font
@@ -2460,7 +2460,7 @@
 		)
 		(uuid "f4696f8d-2462-4c70-b868-a259602ca37b")
 	)
-	(label "CANH"
+	(label "CAN+"
 		(at 223.52 87.63 180)
 		(effects
 			(font

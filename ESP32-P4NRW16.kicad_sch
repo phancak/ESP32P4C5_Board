@@ -4948,16 +4948,6 @@
 		)
 		(uuid "7188d6ab-a9e6-43c2-946a-ba7d5709a204")
 	)
-	(text "------ MUST SELECT AVAILABLE FLASH"
-		(exclude_from_sim no)
-		(at 15.748 101.6 0)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-		)
-		(uuid "8c6bcd72-3d4a-4ed0-9355-797f3502d484")
-	)
 	(text "Connect to global RST"
 		(exclude_from_sim no)
 		(at 24.892 30.48 0)
@@ -4990,7 +4980,7 @@
 		)
 		(uuid "d46b4235-49ee-42ca-abac-ca27876a2750")
 	)
-	(text_box "GLOBAL RESET"
+	(text_box "RST-BTN"
 		(exclude_from_sim no)
 		(at 15.494 47.498 0)
 		(size 59.69 49.53)
@@ -6358,16 +6348,6 @@
 	)
 	(wire
 		(pts
-			(xy 250.19 81.28) (xy 254 81.28)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "6d9457b3-f740-4ceb-9979-8b18b23168b1")
-	)
-	(wire
-		(pts
 			(xy 207.01 73.66) (xy 180.34 73.66)
 		)
 		(stroke
@@ -6578,7 +6558,7 @@
 	)
 	(wire
 		(pts
-			(xy 180.34 81.28) (xy 242.57 81.28)
+			(xy 180.34 81.28) (xy 207.01 81.28)
 		)
 		(stroke
 			(width 0)
@@ -9425,6 +9405,17 @@
 			(justify right)
 		)
 		(uuid "b70b88c9-6fda-4a01-a725-8d250b47ac0b")
+	)
+	(hierarchical_label "DSI_REXT"
+		(shape bidirectional)
+		(at 207.01 81.28 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left)
+		)
+		(uuid "b81e2346-1aaa-481c-8dfc-74a8e78c89cf")
 	)
 	(hierarchical_label "GPIO49_PARLIO"
 		(shape input)
@@ -13518,87 +13509,6 @@
 		)
 	)
 	(symbol
-		(lib_id "power:GND")
-		(at 254 81.28 90)
-		(mirror x)
-		(unit 1)
-		(body_style 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(in_pos_files yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "a907ed98-0ff6-4cba-a29d-518b56f67924")
-		(property "Reference" "#PWR031"
-			(at 260.35 81.28 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Value" "GND"
-			(at 255.2699 78.74 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify right)
-			)
-		)
-		(property "Footprint" ""
-			(at 254 81.28 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Datasheet" ""
-			(at 254 81.28 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
-			(at 254 81.28 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(pin "1"
-			(uuid "05dd84e0-cd52-401a-b42b-9c29a81b6b3a")
-		)
-		(instances
-			(project "ESP32P4C5_Board"
-				(path "/d4a17687-8854-438f-9913-a6ddcff1a679/05efe0cf-c24a-4029-900a-f931e619b6bb"
-					(reference "#PWR031")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
 		(lib_id "Device:R_Pack04")
 		(at 213.36 121.92 90)
 		(mirror x)
@@ -14575,87 +14485,6 @@
 			(project "ESP32P4C5_Board"
 				(path "/d4a17687-8854-438f-9913-a6ddcff1a679/05efe0cf-c24a-4029-900a-f931e619b6bb"
 					(reference "C41")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "Device:R")
-		(at 246.38 81.28 90)
-		(unit 1)
-		(body_style 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(in_pos_files yes)
-		(dnp no)
-		(uuid "efc91649-37e4-4911-872a-978a2e2332dd")
-		(property "Reference" "R2"
-			(at 243.332 80.01 90)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Value" "4k02"
-			(at 254.254 80.01 90)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Footprint" "Resistor_SMD:R_0603_1608Metric"
-			(at 246.38 83.058 90)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Datasheet" ""
-			(at 246.38 81.28 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Description" "Resistor"
-			(at 246.38 81.28 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(pin "2"
-			(uuid "eed54252-d8d9-409b-953f-eae95403a30d")
-		)
-		(pin "1"
-			(uuid "18e98417-5c0a-4218-a404-5758975cb206")
-		)
-		(instances
-			(project "ESP32P4C5_Board"
-				(path "/d4a17687-8854-438f-9913-a6ddcff1a679/05efe0cf-c24a-4029-900a-f931e619b6bb"
-					(reference "R2")
 					(unit 1)
 				)
 			)
