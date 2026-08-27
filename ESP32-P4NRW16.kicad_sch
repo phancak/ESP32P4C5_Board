@@ -1887,241 +1887,7 @@
 			)
 			(embedded_fonts no)
 		)
-		(symbol "Personal_Projects:BTN_SKSCLCE010"
-			(pin_names
-				(hide yes)
-			)
-			(exclude_from_sim no)
-			(in_bom yes)
-			(on_board yes)
-			(in_pos_files yes)
-			(duplicate_pin_numbers_are_jumpers no)
-			(property "Reference" "U"
-				(at 19.05 3.81 0)
-				(show_name no)
-				(do_not_autoplace no)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-				)
-			)
-			(property "Value" ""
-				(at 0 0 0)
-				(show_name no)
-				(do_not_autoplace no)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-				)
-			)
-			(property "Footprint" "Personal_Project:Button_SKSCLCE010"
-				(at 0 6.35 0)
-				(show_name no)
-				(do_not_autoplace no)
-				(hide yes)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-				)
-			)
-			(property "Datasheet" ""
-				(at 0 0 0)
-				(show_name no)
-				(do_not_autoplace no)
-				(hide yes)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-				)
-			)
-			(property "Description" ""
-				(at 0 0 0)
-				(show_name no)
-				(do_not_autoplace no)
-				(hide yes)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-				)
-			)
-			(symbol "BTN_SKSCLCE010_0_1"
-				(polyline
-					(pts
-						(xy 3.71 -2.54) (xy 3.71 0) (xy 3.964 0)
-					)
-					(stroke
-						(width 0)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(polyline
-					(pts
-						(xy 3.964 1.27) (xy 8.536 1.27)
-					)
-					(stroke
-						(width 0)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(circle
-					(center 4.472 0)
-					(radius 0.508)
-					(stroke
-						(width 0)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(polyline
-					(pts
-						(xy 4.98 1.27) (xy 4.98 2.54)
-					)
-					(stroke
-						(width 0)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(polyline
-					(pts
-						(xy 7.52 2.54) (xy 4.98 2.54)
-					)
-					(stroke
-						(width 0)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(polyline
-					(pts
-						(xy 7.52 1.27) (xy 7.52 2.54)
-					)
-					(stroke
-						(width 0)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(circle
-					(center 8.028 0)
-					(radius 0.508)
-					(stroke
-						(width 0)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(polyline
-					(pts
-						(xy 8.89 -2.54) (xy 8.89 0) (xy 8.636 0)
-					)
-					(stroke
-						(width 0)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-			)
-			(symbol "BTN_SKSCLCE010_1_1"
-				(pin passive line
-					(at 12.7 0 180)
-					(length 3.7)
-					(name "1"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "1"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-				(pin passive line
-					(at 12.7 -2.54 180)
-					(length 3.7)
-					(name "2"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "2"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-				(pin passive line
-					(at 0 0 0)
-					(length 3.7)
-					(name "3"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "3"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-				(pin passive line
-					(at 0 -2.54 0)
-					(length 3.7)
-					(name "4"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "4"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-			)
-			(embedded_fonts no)
-		)
-		(symbol "Personal_Projects:ESP32-P4NRW16"
+		(symbol "Personal_Components:ESP32-P4NRW32X"
 			(pin_names
 				(offset 1.016)
 			)
@@ -2141,7 +1907,7 @@
 					(justify left bottom)
 				)
 			)
-			(property "Value" "ESP32-P4NRW16"
+			(property "Value" "ESP32-P4NRW32X"
 				(at -17.78 -63.5 0)
 				(show_name no)
 				(do_not_autoplace no)
@@ -2330,7 +2096,7 @@
 					(justify bottom)
 				)
 			)
-			(symbol "ESP32-P4NRW16_1_0"
+			(symbol "ESP32-P4NRW32X_1_0"
 				(rectangle
 					(start -17.78 60.96)
 					(end 17.78 -60.96)
@@ -3188,24 +2954,6 @@
 						)
 					)
 				)
-				(pin no_connect line
-					(at -22.86 -55.88 0)
-					(length 5.08)
-					(name "NC"
-						(effects
-							(font
-								(size 1.016 1.016)
-							)
-						)
-					)
-					(number "54"
-						(effects
-							(font
-								(size 1.016 1.016)
-							)
-						)
-					)
-				)
 				(pin bidirectional line
 					(at -22.86 -50.8 0)
 					(length 5.08)
@@ -3855,10 +3603,10 @@
 					)
 				)
 			)
-			(symbol "ESP32-P4NRW16_2_0"
+			(symbol "ESP32-P4NRW32X_2_0"
 				(rectangle
 					(start -12.7 35.56)
-					(end 12.7 -33.02)
+					(end 12.7 -36.83)
 					(stroke
 						(width 0.254)
 						(type default)
@@ -3940,7 +3688,7 @@
 					)
 				)
 				(pin power_in line
-					(at 17.78 -5.08 180)
+					(at 17.78 -7.62 180)
 					(length 5.08)
 					(name "VDD_MIPI_DPHY"
 						(effects
@@ -3958,7 +3706,7 @@
 					)
 				)
 				(pin power_in line
-					(at 17.78 -22.86 180)
+					(at 17.78 -25.4 180)
 					(length 5.08)
 					(name "VDD_USBPHY"
 						(effects
@@ -3968,6 +3716,24 @@
 						)
 					)
 					(number "51"
+						(effects
+							(font
+								(size 1.016 1.016)
+							)
+						)
+					)
+				)
+				(pin power_in line
+					(at 17.78 0 180)
+					(length 5.08)
+					(name "VDD_HP_1"
+						(effects
+							(font
+								(size 1.016 1.016)
+							)
+						)
+					)
+					(number "54"
 						(effects
 							(font
 								(size 1.016 1.016)
@@ -4030,7 +3796,7 @@
 					)
 				)
 				(pin power_in line
-					(at 17.78 -10.16 180)
+					(at 17.78 -12.7 180)
 					(length 5.08)
 					(name "VDDO_FLASH"
 						(effects
@@ -4048,7 +3814,7 @@
 					)
 				)
 				(pin power_in line
-					(at 17.78 -12.7 180)
+					(at 17.78 -15.24 180)
 					(length 5.08)
 					(name "VDDO_PSRAM"
 						(effects
@@ -4066,7 +3832,7 @@
 					)
 				)
 				(pin power_in line
-					(at 17.78 -15.24 180)
+					(at 17.78 -17.78 180)
 					(length 5.08)
 					(name "VDDO_3"
 						(effects
@@ -4084,7 +3850,7 @@
 					)
 				)
 				(pin power_in line
-					(at 17.78 -17.78 180)
+					(at 17.78 -20.32 180)
 					(length 5.08)
 					(name "VDDO_4"
 						(effects
@@ -4104,7 +3870,7 @@
 				(pin power_in line
 					(at 17.78 10.16 180)
 					(length 5.08)
-					(name "VDDPST_LDO"
+					(name "VDD_LDO"
 						(effects
 							(font
 								(size 1.016 1.016)
@@ -4120,7 +3886,7 @@
 					)
 				)
 				(pin power_in line
-					(at 17.78 0 180)
+					(at 17.78 -2.54 180)
 					(length 5.08)
 					(name "VDD_HP_2"
 						(effects
@@ -4174,7 +3940,7 @@
 					)
 				)
 				(pin power_in line
-					(at 17.78 -2.54 180)
+					(at 17.78 -5.08 180)
 					(length 5.08)
 					(name "VDD_HP_3"
 						(effects
@@ -4210,9 +3976,9 @@
 					)
 				)
 				(pin power_in line
-					(at 17.78 -25.4 180)
+					(at 17.78 -27.94 180)
 					(length 5.08)
-					(name "VDDA"
+					(name "VDDANA"
 						(effects
 							(font
 								(size 1.016 1.016)
@@ -4228,7 +3994,7 @@
 					)
 				)
 				(pin power_in line
-					(at 17.78 -30.48 180)
+					(at 17.78 -33.02 180)
 					(length 5.08)
 					(name "VBAT"
 						(effects
@@ -4241,6 +4007,240 @@
 						(effects
 							(font
 								(size 1.016 1.016)
+							)
+						)
+					)
+				)
+			)
+			(embedded_fonts no)
+		)
+		(symbol "Personal_Projects:BTN_SKSCLCE010"
+			(pin_names
+				(hide yes)
+			)
+			(exclude_from_sim no)
+			(in_bom yes)
+			(on_board yes)
+			(in_pos_files yes)
+			(duplicate_pin_numbers_are_jumpers no)
+			(property "Reference" "U"
+				(at 19.05 3.81 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Value" ""
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Footprint" "Personal_Project:Button_SKSCLCE010"
+				(at 0 6.35 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Datasheet" ""
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Description" ""
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(symbol "BTN_SKSCLCE010_0_1"
+				(polyline
+					(pts
+						(xy 3.71 -2.54) (xy 3.71 0) (xy 3.964 0)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 3.964 1.27) (xy 8.536 1.27)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(circle
+					(center 4.472 0)
+					(radius 0.508)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 4.98 1.27) (xy 4.98 2.54)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 7.52 2.54) (xy 4.98 2.54)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 7.52 1.27) (xy 7.52 2.54)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(circle
+					(center 8.028 0)
+					(radius 0.508)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 8.89 -2.54) (xy 8.89 0) (xy 8.636 0)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+			)
+			(symbol "BTN_SKSCLCE010_1_1"
+				(pin passive line
+					(at 12.7 0 180)
+					(length 3.7)
+					(name "1"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "1"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at 12.7 -2.54 180)
+					(length 3.7)
+					(name "2"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "2"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at 0 0 0)
+					(length 3.7)
+					(name "3"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "3"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at 0 -2.54 0)
+					(length 3.7)
+					(name "4"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "4"
+						(effects
+							(font
+								(size 1.27 1.27)
 							)
 						)
 					)
@@ -12975,540 +12975,6 @@
 		)
 	)
 	(symbol
-		(lib_id "Personal_Projects:ESP32-P4NRW16")
-		(at 157.48 101.6 0)
-		(unit 1)
-		(body_style 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(in_pos_files yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "a72da77c-2fa5-4258-97d4-2e7516fb6e1e")
-		(property "Reference" "U1"
-			(at 157.48 35.56 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Value" "ESP32-P4NRW16"
-			(at 157.48 38.1 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" "Personal_Project:ESP32-P4NRW16"
-			(at 157.48 101.6 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify bottom)
-			)
-		)
-		(property "Datasheet" ""
-			(at 157.48 101.6 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Description" ""
-			(at 157.48 101.6 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "MF" "Espressif Systems"
-			(at 157.48 101.6 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify bottom)
-			)
-		)
-		(property "MAXIMUM_PACKAGE_HEIGHT" "NA"
-			(at 157.48 101.6 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify bottom)
-			)
-		)
-		(property "Package" "None"
-			(at 157.48 101.6 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify bottom)
-			)
-		)
-		(property "Price" "None"
-			(at 157.48 101.6 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify bottom)
-			)
-		)
-		(property "Check_prices" "https://www.snapeda.com/parts/ESP32-P4NRW16/Espressif+Systems/view-part/?ref=eda"
-			(at 157.48 101.6 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify bottom)
-			)
-		)
-		(property "STANDARD" "Manufacturer Recommendations"
-			(at 157.48 101.6 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify bottom)
-			)
-		)
-		(property "PARTREV" "v0.4"
-			(at 157.48 101.6 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify bottom)
-			)
-		)
-		(property "SnapEDA_Link" "https://www.snapeda.com/parts/ESP32-P4NRW16/Espressif+Systems/view-part/?ref=snap"
-			(at 157.48 101.6 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify bottom)
-			)
-		)
-		(property "MP" "ESP32-P4NRW16"
-			(at 157.48 101.6 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify bottom)
-			)
-		)
-		(property "Description_1" "\n                        \n                            High-performance MCU with one RISC-V 32-bit dual-core microprocessor\n                        \n"
-			(at 157.48 101.6 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify bottom)
-			)
-		)
-		(property "Availability" "In Stock"
-			(at 157.48 101.6 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify bottom)
-			)
-		)
-		(property "MANUFACTURER" "Espressif Systems"
-			(at 157.48 101.6 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify bottom)
-			)
-		)
-		(pin "15"
-			(uuid "a79b0f4b-1c97-4f18-ac2c-aabf06846a24")
-		)
-		(pin "10"
-			(uuid "e17919dd-1ddb-4c8e-b325-fb1eaf35ec4e")
-		)
-		(pin "1"
-			(uuid "27a8949e-ee3a-4747-93e0-de55af4d2687")
-		)
-		(pin "78"
-			(uuid "56e27bd6-6dc0-4cdf-b0a2-80ffc88ed28b")
-		)
-		(pin "8"
-			(uuid "65d36294-bee6-4ba4-8b23-9f6664d1cb6e")
-		)
-		(pin "80"
-			(uuid "4ef13bb6-7de6-480f-8ef2-5de80f4d5949")
-		)
-		(pin "81"
-			(uuid "bd818005-635f-4150-9f46-df9f31e39425")
-		)
-		(pin "82"
-			(uuid "682f8912-4f64-48b9-afdf-89058d00efe8")
-		)
-		(pin "83"
-			(uuid "2db623f3-2b72-4cba-89d0-abcd300d1829")
-		)
-		(pin "84"
-			(uuid "1fa4ab97-6973-4a23-b75e-4701b17c9083")
-		)
-		(pin "86"
-			(uuid "911065de-3d3f-49af-9fc0-dbf4a5a1c143")
-		)
-		(pin "87"
-			(uuid "1fc48391-8e8b-46df-9ec3-1c85c615f87c")
-		)
-		(pin "88"
-			(uuid "5c948239-7f08-49e9-827e-d5d4b68907d9")
-		)
-		(pin "89"
-			(uuid "86b6d8c1-d248-405a-8244-3a86752792d6")
-		)
-		(pin "90"
-			(uuid "05e94746-ed6a-4f80-95c6-ba7db14ddebd")
-		)
-		(pin "92"
-			(uuid "b2d25f14-ba8b-4ab4-9ba5-879af17b988a")
-		)
-		(pin "93"
-			(uuid "73cbcfd8-d583-4a4e-9cf0-1e4ace9a346f")
-		)
-		(pin "94"
-			(uuid "0433507f-a682-44db-bef5-cee4aed450fa")
-		)
-		(pin "95"
-			(uuid "32550612-fd23-4461-b5ff-a338074330f9")
-		)
-		(pin "97"
-			(uuid "8b2f222f-1df3-478c-bba1-29cf97b78b42")
-		)
-		(pin "98"
-			(uuid "c17ab4ee-1236-40f6-b405-e8074b4d39ff")
-		)
-		(pin "99"
-			(uuid "38db28a9-cacf-479e-92a9-ee17291a683a")
-		)
-		(pin "101"
-			(uuid "05b5b850-1d3b-4928-9472-ce5b875a5f63")
-		)
-		(pin "102"
-			(uuid "77433f81-927d-40fb-8354-f7a8da5f5983")
-		)
-		(pin "21"
-			(uuid "b5b88940-987a-4f2f-ba26-fc2300d243ae")
-		)
-		(pin "26"
-			(uuid "d69db4f1-b686-463f-b804-338d99c39b51")
-		)
-		(pin "30"
-			(uuid "4d71634c-9432-4b51-bdf6-14aa5dd1411d")
-		)
-		(pin "41"
-			(uuid "eefc85fc-a1c7-4896-8745-8085132cc671")
-		)
-		(pin "51"
-			(uuid "c3b5803e-002a-4733-ba7c-284599939cc5")
-		)
-		(pin "59"
-			(uuid "b4036a82-d421-4a9e-b9ac-e3001c3243ea")
-		)
-		(pin "62"
-			(uuid "a73f571f-50d5-4db9-ae54-464dedd9dbf2")
-		)
-		(pin "67"
-			(uuid "e8edc3b7-7f2a-4831-86dd-038bfba45a22")
-		)
-		(pin "71"
-			(uuid "aec67814-7e93-4f10-ae6e-fe4d11b69206")
-		)
-		(pin "72"
-			(uuid "32a29e00-1527-4149-b0b5-ff2165ea6d8b")
-		)
-		(pin "73"
-			(uuid "22eee07a-290d-4dc8-8cd4-d46d28b25dc8")
-		)
-		(pin "74"
-			(uuid "27424909-1d16-4c1a-a1ce-5a5e6fec6bbb")
-		)
-		(pin "75"
-			(uuid "42453feb-cc57-4e75-aa55-f3d25385d65e")
-		)
-		(pin "76"
-			(uuid "d5c62d95-0d15-4421-83e6-a1e3d5b5266f")
-		)
-		(pin "77"
-			(uuid "97e5e328-9cb6-4c80-89c6-4eba3d90454e")
-		)
-		(pin "85"
-			(uuid "fd68f0d6-4d88-4230-b805-d97c26e55940")
-		)
-		(pin "9"
-			(uuid "a2411f4b-88d9-4631-90a9-8abe0ea0c2be")
-		)
-		(pin "91"
-			(uuid "0fd44dc2-b4bf-4516-bd9d-64a85ba7364c")
-		)
-		(pin "96"
-			(uuid "7a7f3f2d-82a8-4fc4-b854-845143f73ddb")
-		)
-		(pin "105"
-			(uuid "aff6262a-5184-4bc2-be1d-bd4b82aff896")
-		)
-		(pin "37"
-			(uuid "f3c6d66b-fcd2-4752-9759-090f4864a6b3")
-		)
-		(pin "38"
-			(uuid "19567396-c47d-4def-8fc6-0aff43cfd3a4")
-		)
-		(pin "31"
-			(uuid "419253eb-1af5-429e-b244-b724b7f300d9")
-		)
-		(pin "32"
-			(uuid "306e1acb-5101-43f0-b826-f1365b8b2bca")
-		)
-		(pin "29"
-			(uuid "ed69bf52-0840-4699-ad96-e5bb1477ac02")
-		)
-		(pin "3"
-			(uuid "90d88a42-3ec5-448b-ba10-e91e838792eb")
-		)
-		(pin "27"
-			(uuid "9605b544-7880-41c7-9fb3-89d92930d3f6")
-		)
-		(pin "28"
-			(uuid "0e6bafeb-122d-4b3b-aeef-0e7fcb82e751")
-		)
-		(pin "79"
-			(uuid "5b2a05c1-e3e6-49b2-a46c-95d2539b9846")
-		)
-		(pin "39"
-			(uuid "74ebf96b-e482-460f-a2fa-6295c33ae2d3")
-		)
-		(pin "24"
-			(uuid "f65edd47-5bdc-4b22-84be-336cf4ec57ee")
-		)
-		(pin "25"
-			(uuid "3d4014b3-5b28-4e7a-9b27-1630a3e0093c")
-		)
-		(pin "22"
-			(uuid "0423ca60-721c-49d3-9f54-ae64dac02e2d")
-		)
-		(pin "23"
-			(uuid "e0fb849f-f660-414d-ac0f-a1065831483b")
-		)
-		(pin "104"
-			(uuid "1d851c2e-be5b-40b2-9856-af56a9230b0e")
-		)
-		(pin "103"
-			(uuid "8fbd8cbf-a880-4324-8dc6-29f19b10d19f")
-		)
-		(pin "20"
-			(uuid "925c800e-22ca-4467-bab4-0f2cfd0d3f86")
-		)
-		(pin "100"
-			(uuid "1eafd62b-22f0-4160-8cd8-e7be3635a200")
-		)
-		(pin "14"
-			(uuid "2c410d9a-5c70-4a24-81b4-454317452c2b")
-		)
-		(pin "18"
-			(uuid "2ff2b50e-2d94-448a-b174-68b21882dad1")
-		)
-		(pin "19"
-			(uuid "e0c3db7a-dbd5-4b25-a026-bfa0cd398f2f")
-		)
-		(pin "2"
-			(uuid "e84eedff-cebb-4445-ad44-bf16e80152c0")
-		)
-		(pin "16"
-			(uuid "29307ec3-a90e-4e47-8ff5-6a9ef01ac7e9")
-		)
-		(pin "17"
-			(uuid "edd1fe7b-899d-4218-9aec-f76d412edf79")
-		)
-		(pin "4"
-			(uuid "7a678f55-11e7-4cd9-8a99-3c3ac893e369")
-		)
-		(pin "40"
-			(uuid "6aaf6327-c4f2-452a-8939-19939652952f")
-		)
-		(pin "42"
-			(uuid "c8a5ffe7-ab6a-40f3-8aeb-5adf2ab38665")
-		)
-		(pin "43"
-			(uuid "1e651ba0-6af6-4d15-bb74-c1400156c13a")
-		)
-		(pin "44"
-			(uuid "3984c73f-402b-4c8d-a6fb-cdda1d4503e0")
-		)
-		(pin "45"
-			(uuid "f5d4824a-943f-4cdb-a23a-b7e7c77d49fa")
-		)
-		(pin "46"
-			(uuid "a95e548c-dfb9-4b17-bdfe-ba9bc3c7dbd6")
-		)
-		(pin "47"
-			(uuid "bb9db027-eb34-4bbb-80a2-c630689d81d8")
-		)
-		(pin "48"
-			(uuid "71c48508-c2c4-4ac3-bf3b-cd2f10099593")
-		)
-		(pin "49"
-			(uuid "8a1b8cb6-9fd4-4b47-98f1-f63779678c1d")
-		)
-		(pin "5"
-			(uuid "51775927-3512-4727-aa6f-c73c4849f4ab")
-		)
-		(pin "50"
-			(uuid "94a3a274-d763-41dd-a801-91ee55a83edf")
-		)
-		(pin "52"
-			(uuid "7d756921-44e0-4b75-b92f-d01ca1a3aaa8")
-		)
-		(pin "53"
-			(uuid "f2798716-38c7-4034-b90a-5600d003b137")
-		)
-		(pin "54"
-			(uuid "15a8b45e-76d1-4e3a-afae-b4f84213341f")
-		)
-		(pin "55"
-			(uuid "19c6efc6-4aab-4a21-aa12-9e5d97092e75")
-		)
-		(pin "56"
-			(uuid "058e3289-ef49-4b9f-bb12-893c9d37ac9c")
-		)
-		(pin "57"
-			(uuid "1abf813f-8864-4eca-9a2a-a9ff9c9eaf5f")
-		)
-		(pin "58"
-			(uuid "76f27b61-4d59-4f90-8471-12369ed8fb81")
-		)
-		(pin "33"
-			(uuid "cc735aae-23bb-4585-987e-c1524d132724")
-		)
-		(pin "34"
-			(uuid "acbb07f2-6566-4eb4-be26-6449c8e32c75")
-		)
-		(pin "35"
-			(uuid "8212a896-3c91-435c-958f-3d322fec6df0")
-		)
-		(pin "36"
-			(uuid "98357ce1-4b4e-44c3-b5ef-61274ae5b771")
-		)
-		(pin "69"
-			(uuid "ac0c6f8b-7a67-4a49-9427-92f90600d8cb")
-		)
-		(pin "7"
-			(uuid "41a9bbf9-75ec-40c3-bd72-465376b21383")
-		)
-		(pin "70"
-			(uuid "0b81def4-db6b-4efa-8415-43af110c3be5")
-		)
-		(pin "6"
-			(uuid "8989bd69-53d8-480f-a606-b862485c13f0")
-		)
-		(pin "60"
-			(uuid "fcb0e3f6-96f7-4fff-8873-a692d4147925")
-		)
-		(pin "61"
-			(uuid "e398eb85-b0d0-462f-a594-19e4219f9272")
-		)
-		(pin "63"
-			(uuid "d19b6cc7-0727-4299-86f2-98dea04fee4a")
-		)
-		(pin "64"
-			(uuid "32633b29-53a8-4251-9d62-5a4342235aab")
-		)
-		(pin "65"
-			(uuid "7c81538a-c4e3-4442-bd1a-5e8951c8d6f5")
-		)
-		(pin "66"
-			(uuid "c4aff551-43db-4071-b791-70148bc44561")
-		)
-		(pin "68"
-			(uuid "da9f2e08-7012-42b2-ad5d-2920afd0c2c7")
-		)
-		(pin "11"
-			(uuid "cf7de4c7-5001-4147-8821-e3893a667d1d")
-		)
-		(pin "12"
-			(uuid "794dc657-fcf5-4d26-a76a-777fbda64898")
-		)
-		(pin "13"
-			(uuid "5ddc3e75-9a0c-4aef-9df7-b27e0d248ea0")
-		)
-		(instances
-			(project "ESP32P4C5_Board"
-				(path "/d4a17687-8854-438f-9913-a6ddcff1a679/05efe0cf-c24a-4029-900a-f931e619b6bb"
-					(reference "U1")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
 		(lib_id "Device:R_Pack04")
 		(at 213.36 121.92 90)
 		(mirror x)
@@ -14246,6 +13712,540 @@
 			(project "ESP32P4C5_Board"
 				(path "/d4a17687-8854-438f-9913-a6ddcff1a679/05efe0cf-c24a-4029-900a-f931e619b6bb"
 					(reference "C77")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Personal_Components:ESP32-P4NRW32X")
+		(at 157.48 101.6 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "e17e475e-c888-441d-8580-ef1001981f7f")
+		(property "Reference" "U3"
+			(at 157.48 35.56 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "ESP32-P4NRW32X"
+			(at 157.48 38.1 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "Personal_Project:ESP32-P4NRW16"
+			(at 189.738 172.72 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify bottom)
+			)
+		)
+		(property "Datasheet" ""
+			(at 157.48 101.6 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" ""
+			(at 157.48 101.6 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "MF" "Espressif Systems"
+			(at 192.786 171.196 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify bottom)
+			)
+		)
+		(property "MAXIMUM_PACKAGE_HEIGHT" "NA"
+			(at 186.69 169.926 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify bottom)
+			)
+		)
+		(property "Package" "None"
+			(at 183.896 170.434 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify bottom)
+			)
+		)
+		(property "Price" "None"
+			(at 182.88 169.926 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify bottom)
+			)
+		)
+		(property "Check_prices" "https://www.snapeda.com/parts/ESP32-P4NRW16/Espressif+Systems/view-part/?ref=eda"
+			(at 139.954 171.45 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify bottom)
+			)
+		)
+		(property "STANDARD" "Manufacturer Recommendations"
+			(at 191.516 171.958 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify bottom)
+			)
+		)
+		(property "PARTREV" "v0.4"
+			(at 181.61 171.45 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify bottom)
+			)
+		)
+		(property "SnapEDA_Link" "https://www.snapeda.com/parts/ESP32-P4NRW16/Espressif+Systems/view-part/?ref=snap"
+			(at 135.382 170.942 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify bottom)
+			)
+		)
+		(property "MP" "ESP32-P4NRW16"
+			(at 191.516 173.482 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify bottom)
+			)
+		)
+		(property "Description_1" "\n                        \n                            High-performance MCU with one RISC-V 32-bit dual-core microprocessor\n                        \n"
+			(at 192.278 171.196 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify bottom)
+			)
+		)
+		(property "Availability" "In Stock"
+			(at 188.214 171.704 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify bottom)
+			)
+		)
+		(property "MANUFACTURER" "Espressif Systems"
+			(at 185.928 172.974 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify bottom)
+			)
+		)
+		(pin "104"
+			(uuid "9d1dd704-87a1-435a-8ff5-dff351f93c12")
+		)
+		(pin "105"
+			(uuid "2c1fde77-297c-4bc7-97ce-0a3b9a2fbbf1")
+		)
+		(pin "9"
+			(uuid "5bfee847-6308-4469-9636-eb285e4d8547")
+		)
+		(pin "21"
+			(uuid "76035835-10f3-47a9-bd0f-19596ac72f25")
+		)
+		(pin "26"
+			(uuid "af746451-b034-4e01-9e97-b728ca2db2be")
+		)
+		(pin "30"
+			(uuid "677bd4b2-3d99-4a62-b072-7bed669791c2")
+		)
+		(pin "41"
+			(uuid "d66f4cc3-27a3-4e9f-b1a7-8ce3c5aad614")
+		)
+		(pin "51"
+			(uuid "2fbfc35a-6ae4-40ca-ae7b-5b9b5a10b7d2")
+		)
+		(pin "54"
+			(uuid "8bf2b646-0d3b-420f-8bfa-5a0c2d19095b")
+		)
+		(pin "59"
+			(uuid "0b4e5acf-6662-40b3-8121-b17f8f807815")
+		)
+		(pin "62"
+			(uuid "dffc7aae-f89c-49a8-8ae1-ef8cb6501259")
+		)
+		(pin "67"
+			(uuid "ddf4b687-136f-4a4e-bfe1-bf12d83b5180")
+		)
+		(pin "71"
+			(uuid "58840bb6-ff58-4e29-bf01-7dbad58336b6")
+		)
+		(pin "72"
+			(uuid "8919dd6d-e141-4e4f-9c68-e0f041846b3a")
+		)
+		(pin "73"
+			(uuid "e4283126-66ef-49ef-8f08-4e2efed1f462")
+		)
+		(pin "74"
+			(uuid "5a16a46b-30a4-49f0-8d65-266e0114d2a9")
+		)
+		(pin "75"
+			(uuid "e9791cf9-e3a6-43bf-92cf-1e9c75b40405")
+		)
+		(pin "76"
+			(uuid "4338b381-889d-4d6c-80e3-bfa39045549c")
+		)
+		(pin "77"
+			(uuid "464cf298-611f-4394-9424-080b59797b5e")
+		)
+		(pin "85"
+			(uuid "7fc1fb34-2ccb-4795-a53d-9a2458d154db")
+		)
+		(pin "91"
+			(uuid "4f223be3-409f-40d2-9688-860bba033da0")
+		)
+		(pin "96"
+			(uuid "4b988102-6579-46c6-9ebe-4185e914a609")
+		)
+		(pin "101"
+			(uuid "5c494397-2832-4c92-b903-77385d4ca8d6")
+		)
+		(pin "45"
+			(uuid "76294b19-4c6c-4bcd-b0d2-68ce44cd64b4")
+		)
+		(pin "46"
+			(uuid "b63562ec-78cc-482a-9847-ae855406e674")
+		)
+		(pin "47"
+			(uuid "5ffbe8a9-cd7e-4475-a234-0671a4809ea9")
+		)
+		(pin "48"
+			(uuid "9c1996b0-327b-4d6d-88bb-eb221a22130b")
+		)
+		(pin "49"
+			(uuid "d8d869bd-dfe0-4e76-ac54-0a11e330f416")
+		)
+		(pin "50"
+			(uuid "bd62cb01-3a97-41b1-84f7-9a3def200e1e")
+		)
+		(pin "52"
+			(uuid "12f9191c-d9bd-456a-96ac-cf8ddf2e6989")
+		)
+		(pin "53"
+			(uuid "d6f20a33-f88e-49ba-9437-144cd5ae06e4")
+		)
+		(pin "55"
+			(uuid "c6da1acf-11fd-4f41-aa78-780a38b1c651")
+		)
+		(pin "56"
+			(uuid "8e75adf8-bfc9-4f94-b421-45fc4c5eddca")
+		)
+		(pin "57"
+			(uuid "ad92e99a-8e21-472a-828b-6fb7893c8617")
+		)
+		(pin "58"
+			(uuid "220454d5-fd6e-4d53-b23b-eb6f44583318")
+		)
+		(pin "60"
+			(uuid "5b647b81-4c21-4941-bc78-edf74f40538b")
+		)
+		(pin "61"
+			(uuid "e29186ed-5510-4e09-b3fb-c495330284c7")
+		)
+		(pin "63"
+			(uuid "7dc219e8-1730-491f-995d-7cf00f6cdbfb")
+		)
+		(pin "64"
+			(uuid "9f36d6db-e14a-4578-9e02-a76f233a0b12")
+		)
+		(pin "65"
+			(uuid "8e874911-909a-4d48-ade3-62423406d15c")
+		)
+		(pin "66"
+			(uuid "8e9fa143-06a7-4504-9cbe-25f6def73f8f")
+		)
+		(pin "68"
+			(uuid "7cb551a9-e114-48ac-82d7-c9110678051b")
+		)
+		(pin "69"
+			(uuid "31c18816-acc5-47c9-9c5e-4093019d6b39")
+		)
+		(pin "70"
+			(uuid "aa9c2ce7-b409-4cba-a22f-b20233f0e1e4")
+		)
+		(pin "78"
+			(uuid "38f57377-0d78-413b-8e3c-255d50f48b8a")
+		)
+		(pin "79"
+			(uuid "3eb0d7f1-d44f-4f04-a4f1-ad9cd75c5006")
+		)
+		(pin "80"
+			(uuid "e4f8ba45-5be9-4fa2-8d64-b34965faa79a")
+		)
+		(pin "81"
+			(uuid "70512ff8-301f-40a9-bf8a-68465907cbee")
+		)
+		(pin "82"
+			(uuid "6637e4c9-9f0d-4db8-a515-d7b6aa15c647")
+		)
+		(pin "83"
+			(uuid "d8e8634f-36b4-4dda-a6a5-a8fdb0de9d00")
+		)
+		(pin "84"
+			(uuid "9a915b70-bdee-4151-a7a3-96bbd3d93e9b")
+		)
+		(pin "86"
+			(uuid "61ed5a7c-4e5d-4097-83fb-bbf4468af51e")
+		)
+		(pin "87"
+			(uuid "b99726f1-438b-4051-a775-713d050f46a1")
+		)
+		(pin "88"
+			(uuid "098757b8-1c3c-49e8-95e6-9cc544b94436")
+		)
+		(pin "89"
+			(uuid "56ef5976-662b-4a25-b57a-7826db005ef2")
+		)
+		(pin "90"
+			(uuid "a7dd01cf-7388-4af9-8276-04aba342b9ac")
+		)
+		(pin "92"
+			(uuid "9fe48a4b-3e18-49b9-9964-81fdcff3c7b0")
+		)
+		(pin "93"
+			(uuid "5ad6b255-0b5a-4c60-bc3a-0a6c5528aa76")
+		)
+		(pin "94"
+			(uuid "34a1f597-f864-4dc0-9044-093064bcbbd5")
+		)
+		(pin "95"
+			(uuid "cb618ba2-f1fd-4d5e-8410-ee2ccd3ef938")
+		)
+		(pin "97"
+			(uuid "b1328c6b-4839-4ffa-a279-fa927f959976")
+		)
+		(pin "98"
+			(uuid "d9c264c9-2ffd-4d2d-ba71-8427c5237c47")
+		)
+		(pin "99"
+			(uuid "9eed34c9-fc11-4d0e-8872-f5a7f7d29bc2")
+		)
+		(pin "100"
+			(uuid "813d7900-3070-4393-bc00-7853a0dcd2d9")
+		)
+		(pin "103"
+			(uuid "d5b84618-26e3-4708-aa9d-5781c6115e6c")
+		)
+		(pin "15"
+			(uuid "243cec0f-5d72-4d95-a11d-59623d8b908b")
+		)
+		(pin "16"
+			(uuid "75ca7192-73b1-4411-8341-406f0c6bdbf0")
+		)
+		(pin "17"
+			(uuid "f2403cd5-7b9e-41b0-a5b6-4a9c1a203ba0")
+		)
+		(pin "18"
+			(uuid "1a2b67c7-8d45-4e7b-b9e6-8fd356f33984")
+		)
+		(pin "19"
+			(uuid "27f78335-2f10-466e-b1d4-6152c26a1416")
+		)
+		(pin "20"
+			(uuid "47d735fd-11bd-4601-b36f-eb8c30ae8af6")
+		)
+		(pin "22"
+			(uuid "9b8edff2-4290-4a00-baa9-179d04c864a4")
+		)
+		(pin "23"
+			(uuid "42c92a95-80c1-45df-864e-4c529a6bde7d")
+		)
+		(pin "24"
+			(uuid "cce99b19-f4bd-49fc-a6b1-b6fad89701e8")
+		)
+		(pin "25"
+			(uuid "54037b4b-e428-4e64-9283-4138ad7fdc0b")
+		)
+		(pin "27"
+			(uuid "710faf03-a639-40c7-9ed7-71c4fb2ca37a")
+		)
+		(pin "28"
+			(uuid "a9fd172a-880e-4b45-be53-26502bd64bf6")
+		)
+		(pin "29"
+			(uuid "b9544afc-117d-4889-bb03-fd1826b3fdff")
+		)
+		(pin "31"
+			(uuid "20dac8af-dbcc-405f-b29b-83d6793d194f")
+		)
+		(pin "32"
+			(uuid "3a3dbf45-4430-40c6-85b9-cbd756dd1b81")
+		)
+		(pin "33"
+			(uuid "b99c0fae-b33d-4dba-a727-43e425e1e042")
+		)
+		(pin "34"
+			(uuid "068d2241-0d93-49cc-84bd-b763716ec7a6")
+		)
+		(pin "35"
+			(uuid "c6d462f4-8895-4449-9304-ef6936769c35")
+		)
+		(pin "36"
+			(uuid "0d38d664-3385-4e37-8e6b-efd3c0412ec3")
+		)
+		(pin "37"
+			(uuid "532ef5ad-5985-4a95-b687-b958471c798a")
+		)
+		(pin "38"
+			(uuid "8eed6d3d-af61-42a9-8eb8-2a822c73d888")
+		)
+		(pin "39"
+			(uuid "8b18697a-92a4-4b01-bac0-d67ab6d77693")
+		)
+		(pin "40"
+			(uuid "c8779a82-5c72-4451-afd2-7c7e6beae53a")
+		)
+		(pin "42"
+			(uuid "2c4fd87c-041c-4204-9ae0-cb44f79594c7")
+		)
+		(pin "43"
+			(uuid "c81c3a55-bcdd-422f-87a7-5004c8a7cedf")
+		)
+		(pin "44"
+			(uuid "1128856c-a4d1-4e77-be14-93237775cd8b")
+		)
+		(pin "102"
+			(uuid "8c283233-9f05-4235-bce4-76f4f12e17b4")
+		)
+		(pin "13"
+			(uuid "549faca0-5bc7-4aa4-9463-6cf4a3da4cd1")
+		)
+		(pin "14"
+			(uuid "bd77223c-9794-4ed0-b693-b56c07993327")
+		)
+		(pin "11"
+			(uuid "467d6909-a651-47f1-b140-970f86e21269")
+		)
+		(pin "3"
+			(uuid "8916a727-8dbf-4ec6-89ff-4644a2e54e62")
+		)
+		(pin "10"
+			(uuid "94ec2b0c-7986-4aec-a59e-01c080dd2727")
+		)
+		(pin "4"
+			(uuid "77839687-00c9-4880-85a2-9359753bb82b")
+		)
+		(pin "2"
+			(uuid "7de55414-3a68-4540-96fb-03143b9bd7e7")
+		)
+		(pin "5"
+			(uuid "9681eebe-f396-4b51-8525-1fdcbd31d3ff")
+		)
+		(pin "12"
+			(uuid "25a9ddd2-bac1-4f03-ba6b-dfcdc5c3c338")
+		)
+		(pin "8"
+			(uuid "b799722c-303a-4370-8e4e-7ad6f7b47a04")
+		)
+		(pin "7"
+			(uuid "31922cfe-a584-436a-a75f-aff33e32e4b2")
+		)
+		(pin "6"
+			(uuid "f157589b-542e-44e3-b990-3ab919d5bc87")
+		)
+		(pin "1"
+			(uuid "0d74f89c-575c-411f-ac4b-83f6a98da458")
+		)
+		(instances
+			(project "ESP32P4C5_Board"
+				(path "/d4a17687-8854-438f-9913-a6ddcff1a679/05efe0cf-c24a-4029-900a-f931e619b6bb"
+					(reference "U3")
 					(unit 1)
 				)
 			)
