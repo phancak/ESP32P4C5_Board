@@ -11,6 +11,193 @@
 		(company "Peter Hancak")
 	)
 	(lib_symbols
+		(symbol "Connector_Generic:Conn_01x03"
+			(pin_names
+				(offset 1.016)
+				(hide yes)
+			)
+			(exclude_from_sim no)
+			(in_bom yes)
+			(on_board yes)
+			(in_pos_files yes)
+			(duplicate_pin_numbers_are_jumpers no)
+			(property "Reference" "J"
+				(at 0 5.08 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Value" "Conn_01x03"
+				(at 0 -5.08 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Footprint" ""
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Datasheet" ""
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Description" "Generic connector, single row, 01x03, script generated (kicad-library-utils/schlib/autogen/connector/)"
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "ki_keywords" "connector"
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "ki_fp_filters" "Connector*:*_1x??_*"
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(symbol "Conn_01x03_1_1"
+				(rectangle
+					(start -1.27 3.81)
+					(end 1.27 -3.81)
+					(stroke
+						(width 0.254)
+						(type default)
+					)
+					(fill
+						(type background)
+					)
+				)
+				(rectangle
+					(start -1.27 2.667)
+					(end 0 2.413)
+					(stroke
+						(width 0.1524)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(rectangle
+					(start -1.27 0.127)
+					(end 0 -0.127)
+					(stroke
+						(width 0.1524)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(rectangle
+					(start -1.27 -2.413)
+					(end 0 -2.667)
+					(stroke
+						(width 0.1524)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(pin passive line
+					(at -5.08 2.54 0)
+					(length 3.81)
+					(name "Pin_1"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "1"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at -5.08 0 0)
+					(length 3.81)
+					(name "Pin_2"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "2"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at -5.08 -2.54 0)
+					(length 3.81)
+					(name "Pin_3"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "3"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+			)
+			(embedded_fonts no)
+		)
 		(symbol "Device:C"
 			(pin_numbers
 				(hide yes)
@@ -1213,196 +1400,6 @@
 			)
 			(embedded_fonts no)
 		)
-		(symbol "Personal_Projects:JST_S3B-XH-A-1_LF_SN"
-			(exclude_from_sim no)
-			(in_bom yes)
-			(on_board yes)
-			(in_pos_files yes)
-			(duplicate_pin_numbers_are_jumpers no)
-			(property "Reference" "JST1"
-				(at 0 6.35 0)
-				(show_name no)
-				(do_not_autoplace no)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-				)
-			)
-			(property "Value" "JST_S3B-XH-2.54"
-				(at -6.604 4.064 0)
-				(show_name no)
-				(do_not_autoplace no)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-				)
-			)
-			(property "Footprint" "Personal_Project:JST_S3B-XH-SHDRRA3W64P0X250_1X3_990X1150X610P"
-				(at 16.51 -94.92 0)
-				(show_name no)
-				(do_not_autoplace no)
-				(hide yes)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(justify left top)
-				)
-			)
-			(property "Datasheet" "http://www.jst-mfg.com/product/pdf/eng/eXH.pdf?5de523f84a15d"
-				(at 16.51 -194.92 0)
-				(show_name no)
-				(do_not_autoplace no)
-				(hide yes)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(justify left top)
-				)
-			)
-			(property "Description" "Wire To Board / Wire To Wire Connector Through Hole,P=2.5mm RoHS"
-				(at 0 -16.51 0)
-				(show_name no)
-				(do_not_autoplace no)
-				(hide yes)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-				)
-			)
-			(property "Height" "6.1"
-				(at 16.51 -394.92 0)
-				(show_name no)
-				(do_not_autoplace no)
-				(hide yes)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(justify left top)
-				)
-			)
-			(property "Mouser Part Number" "306-S3BXHA1LFSN"
-				(at 16.51 -494.92 0)
-				(show_name no)
-				(do_not_autoplace no)
-				(hide yes)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(justify left top)
-				)
-			)
-			(property "Mouser Price/Stock" "https://www.mouser.co.uk/ProductDetail/JST-Commercial/S3B-XH-A-1LFSN?qs=QpmGXVUTftECC8e9QmmPaQ%3D%3D"
-				(at 16.51 -594.92 0)
-				(show_name no)
-				(do_not_autoplace no)
-				(hide yes)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(justify left top)
-				)
-			)
-			(property "Manufacturer_Name" "JST (JAPAN SOLDERLESS TERMINALS)"
-				(at 16.51 -694.92 0)
-				(show_name no)
-				(do_not_autoplace no)
-				(hide yes)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(justify left top)
-				)
-			)
-			(property "Manufacturer_Part_Number" "S3B-XH-A-1(LF)(SN)"
-				(at 16.51 -794.92 0)
-				(show_name no)
-				(do_not_autoplace no)
-				(hide yes)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(justify left top)
-				)
-			)
-			(symbol "JST_S3B-XH-A-1_LF_SN_1_1"
-				(rectangle
-					(start 2.54 2.54)
-					(end 12.7 -7.62)
-					(stroke
-						(width 0.254)
-						(type default)
-					)
-					(fill
-						(type background)
-					)
-				)
-				(pin passive line
-					(at 0 0 0)
-					(length 2.54)
-					(name "CANH"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "1"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-				(pin passive line
-					(at 0 -2.54 0)
-					(length 2.54)
-					(name "CANL"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "2"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-				(pin passive line
-					(at 0 -5.08 0)
-					(length 2.54)
-					(name "GND"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "3"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-			)
-			(embedded_fonts no)
-		)
 		(symbol "power:+3.3V"
 			(power global)
 			(pin_numbers
@@ -1719,6 +1716,12 @@
 		(uuid "7878fa87-e241-4b40-9e7a-b75ba78e92de")
 	)
 	(junction
+		(at 209.55 87.63)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "7da654c9-f2a7-4aba-9a50-1fef29305546")
+	)
+	(junction
 		(at 125.73 58.42)
 		(diameter 0)
 		(color 0 0 0 0)
@@ -1729,12 +1732,6 @@
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "a216e0fb-94aa-4db0-8743-577ee7a12c00")
-	)
-	(junction
-		(at 209.55 87.63)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "c0cd4ef7-8336-4002-b957-364fa590be5c")
 	)
 	(junction
 		(at 154.94 116.84)
@@ -1982,6 +1979,26 @@
 	)
 	(wire
 		(pts
+			(xy 231.14 92.71) (xy 243.84 92.71)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "588890ef-4dfb-4a25-b5bb-4e2ab1f439dd")
+	)
+	(wire
+		(pts
+			(xy 209.55 87.63) (xy 231.14 87.63)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "603add03-ad5b-4f34-b787-b1c16842ebf0")
+	)
+	(wire
+		(pts
 			(xy 180.34 92.71) (xy 175.26 92.71)
 		)
 		(stroke
@@ -2112,16 +2129,6 @@
 	)
 	(wire
 		(pts
-			(xy 240.03 92.71) (xy 240.03 100.33)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "af4ce5a0-c98c-456a-8f05-fdf0528d85db")
-	)
-	(wire
-		(pts
 			(xy 143.51 101.6) (xy 154.94 101.6)
 		)
 		(stroke
@@ -2172,6 +2179,16 @@
 	)
 	(wire
 		(pts
+			(xy 231.14 87.63) (xy 231.14 92.71)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "b1e5844c-8f7e-47e9-9776-3dd6249163a4")
+	)
+	(wire
+		(pts
 			(xy 86.36 87.63) (xy 106.68 87.63)
 		)
 		(stroke
@@ -2189,6 +2206,16 @@
 			(type default)
 		)
 		(uuid "b90a6265-ad20-400a-9b37-fc411e1f92a8")
+	)
+	(wire
+		(pts
+			(xy 237.49 87.63) (xy 243.84 87.63)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "bad01785-1d0e-4584-b3fa-96bbaad8416b")
 	)
 	(wire
 		(pts
@@ -2242,16 +2269,6 @@
 	)
 	(wire
 		(pts
-			(xy 243.84 92.71) (xy 240.03 92.71)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "d185e565-d485-41a0-9acc-201447b929b3")
-	)
-	(wire
-		(pts
 			(xy 86.36 101.6) (xy 106.68 101.6)
 		)
 		(stroke
@@ -2269,16 +2286,6 @@
 			(type default)
 		)
 		(uuid "dd88fbf4-4363-401d-af67-3bc1c6955faa")
-	)
-	(wire
-		(pts
-			(xy 209.55 87.63) (xy 243.84 87.63)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "e1efad89-480c-43f0-97e7-c759a99aa46d")
 	)
 	(wire
 		(pts
@@ -2645,6 +2652,85 @@
 			(project "ESP32P4C5_Board"
 				(path "/d4a17687-8854-438f-9913-a6ddcff1a679/ee3aadd3-a8c7-4495-ba93-0e1a5bfc4c08"
 					(reference "C9")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "power:GND")
+		(at 237.49 87.63 270)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(uuid "07415c54-3786-40bd-9ef5-3bcac3757a96")
+		(property "Reference" "#PWR070"
+			(at 231.14 87.63 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "GND"
+			(at 234.442 85.09 90)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" ""
+			(at 237.49 87.63 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 237.49 87.63 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
+			(at 237.49 87.63 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "7cc1a784-b5fe-4808-af7c-a5d5d6c83ec1")
+		)
+		(instances
+			(project "ESP32P4C5_Board"
+				(path "/d4a17687-8854-438f-9913-a6ddcff1a679/ee3aadd3-a8c7-4495-ba93-0e1a5bfc4c08"
+					(reference "#PWR070")
 					(unit 1)
 				)
 			)
@@ -3071,150 +3157,6 @@
 		)
 	)
 	(symbol
-		(lib_id "Personal_Projects:JST_S3B-XH-A-1_LF_SN")
-		(at 243.84 87.63 0)
-		(unit 1)
-		(body_style 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(in_pos_files yes)
-		(dnp no)
-		(uuid "2eb3f76a-7eed-4cfd-8b95-634eba54251e")
-		(property "Reference" "JST1"
-			(at 243.84 81.28 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Value" "JST_S3B-XH-2.54"
-			(at 237.236 83.566 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" "Personal_Project:JST_S3B-XH-SHDRRA3W64P0X250_1X3_990X1150X610P"
-			(at 260.35 182.55 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left top)
-			)
-		)
-		(property "Datasheet" "http://www.jst-mfg.com/product/pdf/eng/eXH.pdf?5de523f84a15d"
-			(at 260.35 282.55 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left top)
-			)
-		)
-		(property "Description" "Wire To Board / Wire To Wire Connector Through Hole,P=2.5mm RoHS"
-			(at 243.84 104.14 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Height" "6.1"
-			(at 260.35 482.55 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left top)
-			)
-		)
-		(property "Mouser Part Number" "306-S3BXHA1LFSN"
-			(at 260.35 582.55 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left top)
-			)
-		)
-		(property "Mouser Price/Stock" "https://www.mouser.co.uk/ProductDetail/JST-Commercial/S3B-XH-A-1LFSN?qs=QpmGXVUTftECC8e9QmmPaQ%3D%3D"
-			(at 260.35 682.55 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left top)
-			)
-		)
-		(property "Manufacturer_Name" "JST (JAPAN SOLDERLESS TERMINALS)"
-			(at 260.35 782.55 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left top)
-			)
-		)
-		(property "Manufacturer_Part_Number" "S3B-XH-A-1(LF)(SN)"
-			(at 260.35 882.55 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left top)
-			)
-		)
-		(pin "3"
-			(uuid "68857fd2-9305-438f-9686-58b13766990e")
-		)
-		(pin "2"
-			(uuid "7941443d-3db6-41cd-bf20-2f5a348da6ad")
-		)
-		(pin "1"
-			(uuid "e28cb328-fc5e-4b35-a101-b98e07bdc6c3")
-		)
-		(instances
-			(project "ESP32P4C5_Board"
-				(path "/d4a17687-8854-438f-9913-a6ddcff1a679/ee3aadd3-a8c7-4495-ba93-0e1a5bfc4c08"
-					(reference "JST1")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
 		(lib_id "power:GND")
 		(at 118.11 73.66 0)
 		(unit 1)
@@ -3376,6 +3318,91 @@
 		)
 	)
 	(symbol
+		(lib_id "Connector_Generic:Conn_01x03")
+		(at 248.92 90.17 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "556422f2-61b1-41b3-ae0f-e907d41e7fd4")
+		(property "Reference" "J4"
+			(at 251.46 88.8999 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "CAN_HDR"
+			(at 251.46 91.4399 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "Connector_PinHeader_2.54mm:PinHeader_1x03_P2.54mm_Horizontal"
+			(at 248.92 90.17 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 248.92 90.17 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "Generic connector, single row, 01x03, script generated (kicad-library-utils/schlib/autogen/connector/)"
+			(at 248.92 90.17 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "e4b9fbfd-da58-48de-b5f8-b4d1a4cecfe9")
+		)
+		(pin "2"
+			(uuid "413af2ba-6ba0-4ea6-867d-2661959990cc")
+		)
+		(pin "3"
+			(uuid "08dfda2f-5568-4a82-8abd-24f0251afeea")
+		)
+		(instances
+			(project "ESP32P4C5_Board"
+				(path "/d4a17687-8854-438f-9913-a6ddcff1a679/ee3aadd3-a8c7-4495-ba93-0e1a5bfc4c08"
+					(reference "J4")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
 		(lib_id "power:+3.3V")
 		(at 73.66 54.61 0)
 		(mirror y)
@@ -3527,85 +3554,6 @@
 			(project "ESP32P4C5_Board"
 				(path "/d4a17687-8854-438f-9913-a6ddcff1a679/ee3aadd3-a8c7-4495-ba93-0e1a5bfc4c08"
 					(reference "#PWR084")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "power:GND")
-		(at 240.03 100.33 0)
-		(unit 1)
-		(body_style 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(in_pos_files yes)
-		(dnp no)
-		(uuid "80589397-4d82-4cab-a644-2de7cb701199")
-		(property "Reference" "#PWR0102"
-			(at 240.03 106.68 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Value" "GND"
-			(at 237.49 103.378 90)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Footprint" ""
-			(at 240.03 100.33 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Datasheet" ""
-			(at 240.03 100.33 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
-			(at 240.03 100.33 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(pin "1"
-			(uuid "cd6d80a0-be60-4108-bae5-bece7f8c0cb2")
-		)
-		(instances
-			(project "ESP32P4C5_Board"
-				(path "/d4a17687-8854-438f-9913-a6ddcff1a679/ee3aadd3-a8c7-4495-ba93-0e1a5bfc4c08"
-					(reference "#PWR0102")
 					(unit 1)
 				)
 			)
