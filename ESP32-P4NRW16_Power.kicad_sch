@@ -5127,7 +5127,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "Capacitor_SMD:C_1206_3216Metric"
+		(property "Footprint" "Capacitor_SMD:C_0805_2012Metric"
 			(at 247.9548 93.98 0)
 			(hide yes)
 			(show_name no)
@@ -7374,7 +7374,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "Capacitor_SMD:C_1206_3216Metric"
+		(property "Footprint" "Capacitor_SMD:C_0805_2012Metric"
 			(at 228.9048 57.15 0)
 			(hide yes)
 			(show_name no)

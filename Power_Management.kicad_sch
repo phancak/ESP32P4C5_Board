@@ -3167,6 +3167,17 @@
 		)
 		(uuid "ab9ce3e4-2b8a-4086-911f-5ee7c5e7af52")
 	)
+	(text "VOUT: 5V5"
+		(exclude_from_sim no)
+		(at 91.948 128.27 0)
+		(effects
+			(font
+				(size 1 1)
+			)
+			(justify left)
+		)
+		(uuid "db0b1f00-aa36-4499-af4c-00877f5e21b9")
+	)
 	(text_box "ON/OFF Switch, Polarity Protection, TVS"
 		(exclude_from_sim no)
 		(at 20.32 17.526 0)
@@ -7645,8 +7656,8 @@
 				)
 			)
 		)
-		(property "Value" "5V"
-			(at 102.87 165.862 0)
+		(property "Value" "5V+"
+			(at 103.378 165.862 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
