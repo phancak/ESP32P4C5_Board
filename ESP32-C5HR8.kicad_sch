@@ -5365,6 +5365,16 @@
 		)
 		(uuid "3b83f3ac-2876-42a7-9e4d-78747dba3b13")
 	)
+	(text "BLM21PG601SH1D"
+		(exclude_from_sim no)
+		(at 235.966 109.728 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+		)
+		(uuid "42d673ec-a2c8-404e-9364-aca614688e73")
+	)
 	(text "Internal Low-Dropout (LDO) regulators and the \nPower Amplifier (PA) for the 2.4 GHz and 5 GHz radio."
 		(exclude_from_sim no)
 		(at 156.21 44.45 0)
@@ -5416,6 +5426,17 @@
 			(justify left)
 		)
 		(uuid "62ac6cc7-0da7-433d-bdff-35ac76199c43")
+	)
+	(text "Original Cap: One 2p6"
+		(exclude_from_sim no)
+		(at 197.358 115.062 0)
+		(effects
+			(font
+				(size 1 1)
+			)
+			(justify left)
+		)
+		(uuid "71536a55-ba3b-4875-bf02-ac3da27ed12a")
 	)
 	(text "Use Internal 32K"
 		(exclude_from_sim no)
@@ -5621,6 +5642,12 @@
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "27ad04da-aba6-4a1f-aea8-05ac42e7e291")
+	)
+	(junction
+		(at 217.17 113.03)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "294396df-7368-4962-a531-e840b98e80f4")
 	)
 	(junction
 		(at 245.11 31.75)
@@ -5833,12 +5860,6 @@
 		(uuid "a924a52a-f4e1-42b1-bb68-e867e416d45a")
 	)
 	(junction
-		(at 212.09 101.6)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "afb73797-5358-462b-bc9f-c4e869a8c075")
-	)
-	(junction
 		(at 247.65 123.19)
 		(diameter 0)
 		(color 0 0 0 0)
@@ -5873,6 +5894,12 @@
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "baaa7b36-395a-44db-98fd-f49942db8d83")
+	)
+	(junction
+		(at 199.39 101.6)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "c0f21078-f0b7-4099-a412-e20f6afabf7a")
 	)
 	(junction
 		(at 124.46 43.18)
@@ -5927,6 +5954,12 @@
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "e9d7b6dd-6c64-43f5-87ae-5043d4690236")
+	)
+	(junction
+		(at 207.01 101.6)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "f03a10ce-25e7-4356-8dae-15c6c5808d97")
 	)
 	(junction
 		(at 110.49 43.18)
@@ -6043,6 +6076,16 @@
 			(type default)
 		)
 		(uuid "02bd4d02-8191-403d-b53f-665255dc1b5b")
+	)
+	(wire
+		(pts
+			(xy 207.01 101.6) (xy 207.01 104.14)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "05e35ca1-c5b7-4e05-97cc-7bcd55e5fcbe")
 	)
 	(wire
 		(pts
@@ -6256,16 +6299,6 @@
 	)
 	(wire
 		(pts
-			(xy 212.09 101.6) (xy 181.61 101.6)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "1588a9aa-bc22-4123-b76f-fac77b78080e")
-	)
-	(wire
-		(pts
 			(xy 57.15 77.47) (xy 57.15 96.52)
 		)
 		(stroke
@@ -6353,6 +6386,16 @@
 			(type default)
 		)
 		(uuid "2178e6c1-b00c-4e6a-b182-69ac3f394bbb")
+	)
+	(wire
+		(pts
+			(xy 217.17 114.3) (xy 217.17 113.03)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "2183dcc8-31f5-445c-b890-5089bcac9ab9")
 	)
 	(wire
 		(pts
@@ -6556,6 +6599,16 @@
 	)
 	(wire
 		(pts
+			(xy 207.01 113.03) (xy 217.17 113.03)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "35d22c12-42f2-415c-8e0f-2310348d2ce5")
+	)
+	(wire
+		(pts
 			(xy 110.49 54.61) (xy 110.49 55.88)
 		)
 		(stroke
@@ -6603,16 +6656,6 @@
 			(type default)
 		)
 		(uuid "39207824-c799-43a4-9869-b9219a511c38")
-	)
-	(wire
-		(pts
-			(xy 212.09 101.6) (xy 217.17 101.6)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "3a80c457-a0be-4a8f-b81f-965caafd73d8")
 	)
 	(wire
 		(pts
@@ -6743,6 +6786,16 @@
 			(type default)
 		)
 		(uuid "48ecadbf-4012-44fd-afbf-ce8d8a72d918")
+	)
+	(wire
+		(pts
+			(xy 199.39 101.6) (xy 181.61 101.6)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "4ad23abc-6e9f-4008-b2ae-aef41d49519d")
 	)
 	(wire
 		(pts
@@ -7546,6 +7599,16 @@
 	)
 	(wire
 		(pts
+			(xy 207.01 101.6) (xy 217.17 101.6)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "8b81f99e-2362-4f8c-8c90-5e0965e66417")
+	)
+	(wire
+		(pts
 			(xy 279.4 99.06) (xy 279.4 101.6)
 		)
 		(stroke
@@ -7553,6 +7616,16 @@
 			(type default)
 		)
 		(uuid "8b96da00-ed78-4fdf-b8b1-f280f54cb5da")
+	)
+	(wire
+		(pts
+			(xy 207.01 111.76) (xy 207.01 113.03)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "8b9f487a-b037-45db-af7d-6b0356e94cb3")
 	)
 	(wire
 		(pts
@@ -7606,7 +7679,7 @@
 	)
 	(wire
 		(pts
-			(xy 212.09 101.6) (xy 212.09 104.14)
+			(xy 199.39 101.6) (xy 199.39 104.14)
 		)
 		(stroke
 			(width 0)
@@ -8296,7 +8369,17 @@
 	)
 	(wire
 		(pts
-			(xy 212.09 104.14) (xy 181.61 104.14)
+			(xy 199.39 101.6) (xy 207.01 101.6)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "cb2db7c8-fc84-4e53-8e93-2fbbaaed142f")
+	)
+	(wire
+		(pts
+			(xy 199.39 104.14) (xy 181.61 104.14)
 		)
 		(stroke
 			(width 0)
@@ -10902,7 +10985,7 @@
 				(justify left)
 			)
 		)
-		(property "Value" "2p6"
+		(property "Value" "0p3"
 			(at 217.932 110.49 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -10913,7 +10996,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "Capacitor_SMD:C_0603_1608Metric"
+		(property "Footprint" "Capacitor_SMD:C_0402_1005Metric"
 			(at 218.1352 111.76 0)
 			(hide yes)
 			(show_name no)
@@ -11200,7 +11283,7 @@
 	)
 	(symbol
 		(lib_id "power:GND")
-		(at 217.17 113.03 0)
+		(at 217.17 114.3 0)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -11210,7 +11293,7 @@
 		(dnp no)
 		(uuid "40835357-9374-488f-85f8-1e28a3ac8235")
 		(property "Reference" "#PWR087"
-			(at 217.17 119.38 0)
+			(at 217.17 120.65 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -11221,7 +11304,7 @@
 			)
 		)
 		(property "Value" "GND"
-			(at 216.662 117.856 0)
+			(at 216.662 119.126 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -11232,7 +11315,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 217.17 113.03 0)
+			(at 217.17 114.3 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -11243,7 +11326,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 217.17 113.03 0)
+			(at 217.17 114.3 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -11254,7 +11337,7 @@
 			)
 		)
 		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
-			(at 217.17 113.03 0)
+			(at 217.17 114.3 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -13654,6 +13737,87 @@
 			(project "ESP32P4C5_Board"
 				(path "/d4a17687-8854-438f-9913-a6ddcff1a679/e64b2c4a-3136-4c33-ae85-e0f033842593"
 					(reference "C83")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Device:C")
+		(at 207.01 107.95 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(uuid "a8a9bd9e-5dcc-425e-8975-37a606aca91e")
+		(property "Reference" "C31"
+			(at 207.772 105.41 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "0p3"
+			(at 207.772 110.49 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "Capacitor_SMD:C_0402_1005Metric"
+			(at 207.9752 111.76 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 207.01 107.95 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "Unpolarized capacitor"
+			(at 207.01 107.95 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "d54104ec-f5d0-4f53-acb6-e2be2d16a62e")
+		)
+		(pin "2"
+			(uuid "f7064727-f0e0-4f21-99d1-6ddabf6f6af3")
+		)
+		(instances
+			(project "ESP32P4C5_Board"
+				(path "/d4a17687-8854-438f-9913-a6ddcff1a679/e64b2c4a-3136-4c33-ae85-e0f033842593"
+					(reference "C31")
 					(unit 1)
 				)
 			)
