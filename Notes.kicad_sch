@@ -11,6 +11,26 @@
 		(company "Peter Hancak")
 	)
 	(lib_symbols)
+	(text_box "RF TRACE OPTIMIZATION PROCEDURE\n(Between diplexer and SMA connector)\n\nPlacing an inductor in shunt (connected between the signal line and ground) and a capacitor in series (connected in-line along the signal line) forms a classic high-pass L-network or a portion of a π-network.\nHow These Elements Physically Transform the Impedance\n1. Shunt Inductor (Signal to Ground)\nAt DC / Low Frequencies: It acts as a short circuit to ground, which provides built-in ESD protection and drains static charges that build up on the antenna.\nAt High RF Frequencies (2.4 GHz / 5 GHz): It acts as an inductive reactance (+jX). On a Smith Chart, adding a shunt inductor shifts the antenna impedance clockwise along constant-admittance circles, canceling out unwanted parasitic capacitance from wider pads (like SMA landings) or nearby enclosure plastics.\n2. Series Capacitor (In-Line on Signal Trace)\nAt DC: It acts as a DC block, preventing any accidental DC voltage from reaching the RF diplexer or antenna.\nAt High RF Frequencies: It acts as a capacitive reactance (−jX). On a Smith Chart, adding a series capacitor shifts the impedance counter-clockwise along constant-resistance circles, canceling out unwanted series inductance from traces or component legs.\nThe Common Empirical Topologies for Wi-Fi Tuning\nWhen tuning by hand using trial-and-error (monitoring RSSI and throughput), you will typically test one of two 2-element configurations within your 3-pad π-network footprint:\nTopology A: Series Cap + Shunt Inductor (High-Pass Match)\nSeries Position: Small C0G capacitor (1.5 pF−3.3 pF)\nShunt Position (Antenna Side): Small high-Q inductor (1.2 nH−3.9 nH) to ground\nBest used when: The antenna/trace looks capacitive and low-impedance (common when an antenna is detuned by being close to a plastic case or ground pour).\nTopology B: Series Inductor + Shunt Cap (Low-Pass Match)\nSeries Position: Small high-Q inductor (1.0 nH−2.7 nH)\nShunt Position (Antenna Side): Small C0G capacitor (0.5 pF−1.5 pF) to ground\nBest used when: The antenna/trace looks inductive and high-impedance (common when the trace is slightly too long or thin).\nSummary Guidelines for Hand-Tuning\nStart Simple: Begin with a 0 Ω series resistor and unpopulated shunts (DNP). If your RSSI is strong and throughput is stable, leave it as-is.\nMake Incremental Swaps: Change only one component at a time (e.g., test a 2.2 pF series cap first before adding a shunt element) and re-measure average RSSI across at least 100 packets.\nUse High-Quality Components: Ensure any test inductors are high-Q wirewound or ceramic RF inductors (like Murata LQG or LQP series) and capacitors are C0G/NP0 dielectrics."
+		(exclude_from_sim no)
+		(at 471.17 27.94 0)
+		(size 77.216 112.585)
+		(margins 0.75 0.75 0.75 0.75)
+		(stroke
+			(width 0)
+			(type dash)
+		)
+		(fill
+			(type none)
+		)
+		(effects
+			(font
+				(size 1 1)
+			)
+			(justify left top)
+		)
+		(uuid "22b6f295-7d4b-45a3-9b82-4d7aec2467df")
+	)
 	(text_box "CONTROLLED IMPEDANCE TRACE WIDTHS\n(Simulations done using ADS Controlled Impedance Line Designer)\n- Simulated is JLCPCB: JLC04161H-3313(Finished thickness1.56mm±10%)\n\n1. Microstrip Edge Coupled, 100 Ohm Differential Impedance, 0.35mm (center to center), 50mmm Length, f=1Ghz, Width = 0.1225 mm\n2. Coplanar Edge Coupled, 100 Ohm Differential Impedance, 0.35mm (center to center), 0.25mm Clearance, 50mmm Length, f=1Ghz, Width = 0.1354 mm, 0.35 - 0.1354 = 0.2146 mm (edge to edge spacing)\n3. USB Coplanar Edge Coupled, 90 Ohm Differential Impedance, 0.5mm (center to center), 0.25mm Clearance, 50mmm Length, f=240Mhz, Width = 0.1704 mm, 0.5 - 0.1704 = 0.3296 mm\n4. USB Microstrip Edge Coupled, 90 Ohm Differential Impedance, 0.5mm (center to center), 50mmm Length, f=240Mhz, Width = 0.1722 mm\n\nRF TRACE 50 Ohm\n- Coplanar single-ended , f is 2.5 GHz, L 20mm, Clearance 0.25mm, Width = 0.1472 mm\n- Coplanar single-ended , f is 5 GHz, L 20mm, Clearance 0.25mm, Width = 0.1475 mm\n\n\nSMA CONNECTOR SIGNAL PIN (MIDDLE) FOOTPRINT\n- With normal 0.35 mm clearance resulted in a veryy significant signal degradation\n- I recalculated the clearance for the middle pin using ADS:\n  - Coplanar Single-Ended, Length: 5mm, Width: 1.37 mmm (width of the pin), f: 5GHz, Clearance = 0.4046 mm\n\nESP32C5 DESIGN CONSIDERATIONS:\n- Flash memory traces NOT length matched. (at 80 MHz not needed)\n- Isolate the CLK trace on the ext flash memory bus\n\nCAN-FD INTERFACE:\n- Two parallel CAN-FD interfaces in the single connector (each row)\n- 120 Ohm shunted across CANH and CANL (to be done on the receiver and sender) \n- A 10u capacitor has been added on the shield pins.\n  - Both shield pins connected\n  - Capacitor is to be replaced by GND jumper at primary node \n\nSERIES TERMINATION\n- CSI, DSI, SDIO (near P4), UART0, UART1, NOT I2C\nSDIO\n- Array Series termination on SDIO DATA 0-3\n- Individual series termination on CLK, CMD\n- PU on the SDIO INT (Interrupt) pin (Open Drain)"
 		(exclude_from_sim no)
 		(at 113.03 29.464 0)
@@ -91,6 +111,26 @@
 		)
 		(uuid "7c53a797-9a5a-487d-93ce-3285865f5cd0")
 	)
+	(text_box "RF TRACE OPTIMIZATION\n(Between diplexer and SMA connector)\n\nOptimizing an RF trace without a Vector Network Analyzer (VNA) or Spectrum Analyzer requires relying on relative metric optimization using the ESP32-C5's built-in radio diagnostics. Since you cannot measure complex impedance (S \n11\n​	\n ) directly, you will optimize for maximum energy transfer by measuring the chip's Received Signal Strength Indicator (RSSI) and throughput/packet-loss metrics across different physical hardware configurations.\nStrategy: Empirical RSSI & Throughput Optimization\n1. Establish a Controlled RF Test Environment\nFixed Distance & Orientation: Set up a reference Wi-Fi router or access point (AP) at a fixed distance (e.g., 5 to 10 meters away through 1-2 walls to avoid receiver saturation).\nFix the Spatial Plane: Mount both the AP and your custom ESP32-C5 PCB on non-conductive surfaces (like wooden or plastic tables). Do not touch the board during measurements, as body capacitance will detune the 5 GHz antenna.\nTest Both Bands: Perform testing separately on a dedicated 2.4 GHz channel (e.g., Channel 6) and a 5 GHz Wi-Fi 6 channel (e.g., Channel 36 or 149).\n2. Run Built-In Diagnostic Firmware\nUse Espressif's Wi-Fi diagnostic APIs (esp_wifi_get_ap_info() or iPerf performance test firmware) to log key metrics:\nAverage RSSI (dBm): Sample RSSI continuously over 100+ packets to filter out multipath fading noise.\nPacket Error Rate (PER) / Retry Rate: Higher reflection on the RF trace causes phase distortion (EVM degradation), raising packet retransmission counts under heavy load.\nTX/RX Throughput (iPerf3): Run a TCP/UDP throughput test.\nStep-by-Step Trial-and-Error Tuning Procedure\nSince your series position on the π-network starts with a 0 Ω jumper and empty shunts (DNP), you can iterate through a small matrix of low-cost high-Q RF passive components (0402 C0G caps and high-Q inductors):\n1\nRecord the Baseline (Direct 0-Ohm Connection)\nEstablishes performance floor\nBoot the board with your default 0 Ω series bridge and DNP shunts. Measure and record average RSSI, packet retry rate, and iPerf throughput on both 2.4 GHz and 5 GHz.\nVerification: Confirm stable baseline readings across 3 distinct test runs without moving the board.\n\n2\nTest Series Capacitance Tweak\nAddresses SMA pad parasitic capacitance\nSwap the 0 Ω resistor for a 10 pF C0G capacitor (acts as an RF pass-through while blocking any DC offset) or a 1.8 pF−2.7 pF capacitor.\nVerification: If RSSI improves by ≥2 dBm on 5 GHz, the original trace/pad transition was overly inductive and needed small capacitive compensation.\n\n3\nTest Shunt Inductor / Capacitor Trial\nCompensates for antenna detuning\nIf the baseline RSSI is poor or drops significantly when placed inside a plastic enclosure, try placing a small 1.0 nH−2.7 nH high-Q inductor or 0.5 pF−1.2 pF capacitor in the shunt position closest to the antenna.\nVerification: Compare average RSSI against the baseline; retain the component that yields the highest dBm reading (closer to 0 dBm).\n\nSummary Tuning Matrix\nMetric Shift Observed	Likely Underlying Issue	Compensating Action\n5 GHz RSSI is 5+ dB worse than 2.4 GHz	SMA pad capacitance or long trace inductance detuning 5 GHz band	Reduce series component value or add a small shunt inductor (1.2 nH−2.2 nH)\nRSSI is good, but iPerf throughput is low / PER high	High EVM / phase noise caused by trace reflection (S \n11\n​	\n )	Tweak the series element value (1.5 pF→3.3 pF) to sharpen LO phase matching\nSignal drops drastically when placed in enclosure	Plastic case dielectric detuning the antenna	Add a small shunt capacitor (0.5 pF−1.0 pF) to pull antenna resonance back down"
+		(exclude_from_sim no)
+		(at 386.08 27.94 0)
+		(size 77.216 112.585)
+		(margins 0.75 0.75 0.75 0.75)
+		(stroke
+			(width 0)
+			(type dash)
+		)
+		(fill
+			(type none)
+		)
+		(effects
+			(font
+				(size 1 1)
+			)
+			(justify left top)
+		)
+		(uuid "834b1b77-9969-45fb-bcaa-87e89b2f4668")
+	)
 	(text_box "ESP32P4 HARDWARE CONSIDERATIONS:\n- DEBUG\n  - The P4 has both USB ports exposed and the UART0 as a last resort debug.\n  - Main flash/debug is to be done through the USB/JTAG port\n  - The MCU JTAG pins are exposed on a header but do not include the PU and PD resistors.\n- BOOT CONFIGURATION\n  - \n\n- CSI_LDO-CE Pin on the CAMERA turns the internal camera LDO ON or OFF thereby alowing the chip to turn it off when not needed (in sleep mode)\n- CSI_FLASH-LED pin is a CAMERA output pinn that is designed to send ouput signal to a flash to iluminate the surounding at the exact time of image capture\n  (Will not be used NC)\n\n- RESET CIRCUT\n  - The goal is for the ESP32P4 to reset from global reset pin, but also to reset after a firmware update without causing global reset of other devices.\n  - Implementation: GLOBAL RESET is connected through a buffer to the MCU that only pulls reset LOW and is HIGH-Z otherwise. The MCU RST (PU) pin is exposed with the JTAG pins on a headder to allow RST after upload.\n  - PU (RST) Timing Considerations: The PU has to stay low for tSTBL = 50uS after VIN stable at 3.3V\n    - Place a 100nF capacitor at PU."
 		(exclude_from_sim no)
 		(at 27.178 149.86 0)
@@ -170,5 +210,25 @@
 			(justify left top)
 		)
 		(uuid "cb9e3134-1938-43e3-b9a6-572fb83d52c3")
+	)
+	(text_box "RF TRACE OPTIMIZATION WO NETWORK ANALYZER (TTRIAL AND ERROR)\n(Between diplexer and SMA connector)\n\nEven without vector network analyzer (VNA) or spectrum analyzer equipment to measure S \n11\n​	\n  or harmonic performance, yes, it still makes complete sense to include the 3-component π-network footprint on your board.\nSince this is a non-commercial build, the justification shifts away from regulatory certification and toward flexibility, ease of bring-up, and simple troubleshooting.\nWhy the Footprint Is Still Worth It (No Equipment Required)\n1. Zero Cost & Zero Risk\nAdding three empty 0402 pads in-line with your RF trace costs nothing on your PCB fabrication order and takes up less than 1.5 mm×1.5 mm of board real estate.\nDefault state: Populate a 0 Ω resistor (or a solder bridge) across the series pad and leave the two shunt pads empty (DNP).\nIn this configuration, your circuit operates exactly as the direct trace you simulated in ADS, with zero added insertion loss or signal degradation.\n2. Emergency \"Trial and Error\" Fixing\nIf you assemble the board and discover Wi-Fi range or signal quality on 5 GHz is poor, having those physical pads gives you an easy way to experiment without cutting traces or scraping solder mask off your board:\nEnclosure / Hand Detuning: If placing the board inside a 3D-printed case or holding it in your hand degrades the signal, dropping a small high-Q capacitor (0.5 pF−2.2 pF) or inductor (1 nH−3.9 nH) into the shunt or series pads can often recover lost antenna performance through trial-and-error.\nDC Blocking / RF Attenuation: If you ever need to introduce a small series capacitance (e.g., 10 pF) for DC isolation or test different antenna types (like swapping between an SMA whip antenna and a ceramic chip antenna), the pads are already there.\n3. PCB Trace & Connector Tolerances\nEven in hobbyist or prototype PCB manufacturing, layer thickness, copper etching tolerances, and SMA solder joint geometry vary. A short trace that calculates as 50 Ω in ADS can land at 40 Ω−60 Ω in practice. Having the footprint gives you an immediate physical place to adjust the RF path if needed.\nRecommended Approach for Your PCB\n1\nPlace the 0402 pi-Network Footprint\nLayout preparation\nPlace a standard 3-component π-network footprint directly at the SMA connector launch pad on Layer 1.\nVerification: Ensure the ground pads for the two shunt positions connect directly to the Layer 2 ground plane with short, wide traces and ground vias.\n\n2\nPopulate with Default Jumper\nInitial assembly\nSolder a 0 Ω (0402) resistor in the series position and leave both shunt component pads unpopulated (DNP).\nVerification: Perform a simple continuity check between the diplexer common port pad and the SMA center pin using a multimeter to confirm a solid connection.\n\n3\nTest Wi-Fi Range and Throughput\nFunctional bring-up\nBoot the ESP32-C5 and evaluate RSSI (Received Signal Strength Indicator) and throughput across both 2.4 GHz and 5 GHz bands.\nVerification: If connection strength and data rates match expected performance, leave the default 0 Ω bridge in place-no further tuning is necessary."
+		(exclude_from_sim no)
+		(at 295.91 27.94 0)
+		(size 77.216 112.585)
+		(margins 0.75 0.75 0.75 0.75)
+		(stroke
+			(width 0)
+			(type dash)
+		)
+		(fill
+			(type none)
+		)
+		(effects
+			(font
+				(size 1 1)
+			)
+			(justify left top)
+		)
+		(uuid "d082800f-7f51-483f-9bd9-75effb10ad6e")
 	)
 )
