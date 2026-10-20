@@ -11,6 +11,26 @@
 		(company "Peter Hancak")
 	)
 	(lib_symbols)
+	(text_box "PCB RF BOARD MATERIAL\n\nFor radio frequency (RF) and high-speed designs on JLCPCB, Rogers laminates (such as Rogers RO4003C or RO4350B) and PTFE-based (Teflon) laminates significantly improve performance over standard FR4.\n\nKey RF Materials Available at JLCPCB\n\n• Rogers RO4003C & RO4350B: Hydrocarbon-ceramic composites that offer a stable dielectric constant (\\(D_{k}\\)) and a very low loss tangent (\\(D_f \\approx 0.0037\\)), making them ideal for RF front-ends, microwave circuits, and applications operating from hundreds of MHz up to the GHz range.\n• PTFE / Teflon Laminates: Polymer-based substrates featuring an extremely low loss tangent (\\(D_{f}\\) down to 0.0002-0.0009) and low dielectric constant, suited for high-frequency, low-loss, and mmWave environments.\n• Hybrid Stackups: A cost-effective approach where standard Shengyi FR4 is combined with a Rogers layer on top specifically for the RF sections.\n\nWhy They Beat Standard FR4 for RF\n\n• Lower Signal Loss (Dissipation Factor / \\(D_{f}\\)): Standard FR4 has a high loss tangent (~0.02) which wastes significant RF energy as heat at frequencies above 3 GHz. Rogers and PTFE maintain low energy loss.\n• Impedance Stability (Dielectric Constant / \\(D_{k}\\)): Rogers and PTFE maintain a tightly controlled and predictable \\(D_{k}\\) across changing temperatures and high frequencies, which is critical for 50Ω or 75Ω microstrip and coplanar waveguide routing"
+		(exclude_from_sim no)
+		(at -64.77 16.51 0)
+		(size 77.216 63.5)
+		(margins 0.75 0.75 0.75 0.75)
+		(stroke
+			(width 0)
+			(type dash)
+		)
+		(fill
+			(type none)
+		)
+		(effects
+			(font
+				(size 1 1)
+			)
+			(justify left top)
+		)
+		(uuid "1a4530dc-bf11-4d06-b148-ab8ef1a38586")
+	)
 	(text_box "RF TRACE OPTIMIZATION PROCEDURE\n(Between diplexer and SMA connector)\n\nPlacing an inductor in shunt (connected between the signal line and ground) and a capacitor in series (connected in-line along the signal line) forms a classic high-pass L-network or a portion of a π-network.\nHow These Elements Physically Transform the Impedance\n1. Shunt Inductor (Signal to Ground)\nAt DC / Low Frequencies: It acts as a short circuit to ground, which provides built-in ESD protection and drains static charges that build up on the antenna.\nAt High RF Frequencies (2.4 GHz / 5 GHz): It acts as an inductive reactance (+jX). On a Smith Chart, adding a shunt inductor shifts the antenna impedance clockwise along constant-admittance circles, canceling out unwanted parasitic capacitance from wider pads (like SMA landings) or nearby enclosure plastics.\n2. Series Capacitor (In-Line on Signal Trace)\nAt DC: It acts as a DC block, preventing any accidental DC voltage from reaching the RF diplexer or antenna.\nAt High RF Frequencies: It acts as a capacitive reactance (−jX). On a Smith Chart, adding a series capacitor shifts the impedance counter-clockwise along constant-resistance circles, canceling out unwanted series inductance from traces or component legs.\nThe Common Empirical Topologies for Wi-Fi Tuning\nWhen tuning by hand using trial-and-error (monitoring RSSI and throughput), you will typically test one of two 2-element configurations within your 3-pad π-network footprint:\nTopology A: Series Cap + Shunt Inductor (High-Pass Match)\nSeries Position: Small C0G capacitor (1.5 pF−3.3 pF)\nShunt Position (Antenna Side): Small high-Q inductor (1.2 nH−3.9 nH) to ground\nBest used when: The antenna/trace looks capacitive and low-impedance (common when an antenna is detuned by being close to a plastic case or ground pour).\nTopology B: Series Inductor + Shunt Cap (Low-Pass Match)\nSeries Position: Small high-Q inductor (1.0 nH−2.7 nH)\nShunt Position (Antenna Side): Small C0G capacitor (0.5 pF−1.5 pF) to ground\nBest used when: The antenna/trace looks inductive and high-impedance (common when the trace is slightly too long or thin).\nSummary Guidelines for Hand-Tuning\nStart Simple: Begin with a 0 Ω series resistor and unpopulated shunts (DNP). If your RSSI is strong and throughput is stable, leave it as-is.\nMake Incremental Swaps: Change only one component at a time (e.g., test a 2.2 pF series cap first before adding a shunt element) and re-measure average RSSI across at least 100 packets.\nUse High-Quality Components: Ensure any test inductors are high-Q wirewound or ceramic RF inductors (like Murata LQG or LQP series) and capacitors are C0G/NP0 dielectrics."
 		(exclude_from_sim no)
 		(at 471.17 27.94 0)
@@ -91,10 +111,30 @@
 		)
 		(uuid "6064f732-fe0b-4c1f-b077-2f11f169ae3e")
 	)
+	(text_box "PARTS FOR HAND TUNNING THE RF NETWORK\nTo properly hand-tune your RF matching network (π-network) at the antenna transition and optimize the 5 GHz/2.4 GHz performance of the ESP32-C5 without a VNA, you should stock a small kit of high-Q RF passive components in the 0402 package size.\nSince hand tuning relies on swapping values to observe changes in RSSI, packet retry rates, and throughput (iPerf3), having a tight range of picofarad-level capacitors and nanohenry-level inductors on hand is essential.\n1. Essential RF Tuning Parts Kit (0402 Size)\nA. High-Q Ceramic Capacitors (0402, C0G/NP0, ±0.1 pF or ±0.05 pF)\nSeries / High-Q Types: Murata GQM/GJM, Yageo CQ, or Johanson S-Series / L-Series (High-Q C0G).\nValues to Order (5 to 10 pcs each):\n0.3 pF & 0.5 pF (Useful for fine-tuning shunt capacitance right at the SMA landing)\n1.0 pF, 1.2 pF, 1.5 pF (Ideal for series or shunt matching in the 5 GHz Wi-Fi 6 band)\n2.2 pF, 2.7 pF, 3.3 pF (Ideal for 2.4 GHz band or series DC blocking with minimal RF impedance)\n10 pF (Standard low-loss RF DC block jumper)\nB. High-Q RF Inductors (0402, Wirewound or Multilayer)\nSeries Types: Murata LQP / LQG series, Taiyo Yuden HK series, or Coilcraft 0402HP series.\nValues to Order (5 to 10 pcs each):\n1.0 nH, 1.2 nH, 1.5 nH (Shunt matching elements to cancel unwanted pad/trace capacitance at 5 GHz)\n1.8 nH, 2.2 nH, 2.7 nH (Series/shunt elements for 5 GHz to 2.4 GHz impedance shifts)\n3.3 nH, 3.9 nH, 4.7 nH (Useful if the antenna is heavily detuned downward by a plastic enclosure)\nC. Zero-Ohm Jumpers & Bridge Hardware\n0 Ω 0402 Resistors (Order a tape of 20-50 pcs): Used as your default baseline series element across the π-network.\n2. Hand-Soldering & Rework Tools\nBecause you will be soldering, desoldering, and re-testing tiny 0402 RF passives multiple times on the same pads during empirical tuning:\nUltra-Fine Soldering Tip: A bent conical or micro-chisel tip (e.g., 0.2 mm−0.5 mm) to avoid bridging nearby ground pours.\nFine Solder Wick (Desoldering Braid): 0.8 mm−1.0 mm width (e.g., Chemtronics Soder-Wick) to clean the 0402 pads completely between component swaps.\nNo-Clean Liquid Flux Pen: Essential for clean reflow when hand-placing 0402 passives without leaving conductive residue.\nHigh-Precision Fine-Tip Tweezers: Anti-magnetic, ESD-safe tweezers (e.g., Dumont or Vetus 5-SA / 7-SA).\nRecommended Ordering Summary Checklist\nComponent Category	Recommended Series	Specific Values to Stock	Quantity\n0402 RF Caps	Murata GQM15 / Yageo CQ0402	0.3 pF,0.5 pF,1.0 pF,1.5 pF,2.2 pF,3.3 pF,10 pF	10x each\n0402 RF Inductors	Murata LQP15 / LQG15	1.0 nH,1.5 nH,2.2 nH,2.7 nH,3.9 nH	10x each\n0402 Jumpers	Standard General Purpose	0 Ω 0402 Resistors	50x\nRework Supplies	No-Clean	0.8 mm Solder wick + Liquid flux pen	1x eachTo properly hand-tune your RF matching network (π-network) at the antenna transition and optimize the 5 GHz/2.4 GHz performance of the ESP32-C5 without a VNA, you should stock a small kit of high-Q RF passive components in the 0402 package size.\nSince hand tuning relies on swapping values to observe changes in RSSI, packet retry rates, and throughput (iPerf3), having a tight range of picofarad-level capacitors and nanohenry-level inductors on hand is essential.\n1. Essential RF Tuning Parts Kit (0402 Size)\nA. High-Q Ceramic Capacitors (0402, C0G/NP0, ±0.1 pF or ±0.05 pF)\nSeries / High-Q Types: Murata GQM/GJM, Yageo CQ, or Johanson S-Series / L-Series (High-Q C0G).\nValues to Order (5 to 10 pcs each):\n0.3 pF & 0.5 pF (Useful for fine-tuning shunt capacitance right at the SMA landing)\n1.0 pF, 1.2 pF, 1.5 pF (Ideal for series or shunt matching in the 5 GHz Wi-Fi 6 band)\n2.2 pF, 2.7 pF, 3.3 pF (Ideal for 2.4 GHz band or series DC blocking with minimal RF impedance)\n10 pF (Standard low-loss RF DC block jumper)\nB. High-Q RF Inductors (0402, Wirewound or Multilayer)\nSeries Types: Murata LQP / LQG series, Taiyo Yuden HK series, or Coilcraft 0402HP series.\nValues to Order (5 to 10 pcs each):\n1.0 nH, 1.2 nH, 1.5 nH (Shunt matching elements to cancel unwanted pad/trace capacitance at 5 GHz)\n1.8 nH, 2.2 nH, 2.7 nH (Series/shunt elements for 5 GHz to 2.4 GHz impedance shifts)\n3.3 nH, 3.9 nH, 4.7 nH (Useful if the antenna is heavily detuned downward by a plastic enclosure)\nC. Zero-Ohm Jumpers & Bridge Hardware\n0 Ω 0402 Resistors (Order a tape of 20-50 pcs): Used as your default baseline series element across the π-network.\n2. Hand-Soldering & Rework Tools\nBecause you will be soldering, desoldering, and re-testing tiny 0402 RF passives multiple times on the same pads during empirical tuning:\nUltra-Fine Soldering Tip: A bent conical or micro-chisel tip (e.g., 0.2 mm−0.5 mm) to avoid bridging nearby ground pours.\nFine Solder Wick (Desoldering Braid): 0.8 mm−1.0 mm width (e.g., Chemtronics Soder-Wick) to clean the 0402 pads completely between component swaps.\nNo-Clean Liquid Flux Pen: Essential for clean reflow when hand-placing 0402 passives without leaving conductive residue.\nHigh-Precision Fine-Tip Tweezers: Anti-magnetic, ESD-safe tweezers (e.g., Dumont or Vetus 5-SA / 7-SA).\nRecommended Ordering Summary Checklist\nComponent Category	Recommended Series	Specific Values to Stock	Quantity\n0402 RF Caps	Murata GQM15 / Yageo CQ0402	0.3 pF,0.5 pF,1.0 pF,1.5 pF,2.2 pF,3.3 pF,10 pF	10x each\n0402 RF Inductors	Murata LQP15 / LQG15	1.0 nH,1.5 nH,2.2 nH,2.7 nH,3.9 nH	10x each\n0402 Jumpers	Standard General Purpose	0 Ω 0402 Resistors	50x\nRework Supplies	No-Clean	0.8 mm Solder wick + Liquid flux pen	1x each"
+		(exclude_from_sim no)
+		(at 557.53 27.94 0)
+		(size 77.216 151.2236)
+		(margins 0.75 0.75 0.75 0.75)
+		(stroke
+			(width 0)
+			(type dash)
+		)
+		(fill
+			(type none)
+		)
+		(effects
+			(font
+				(size 1 1)
+			)
+			(justify left top)
+		)
+		(uuid "78be16cf-aab8-4a0d-b111-398683c47ed8")
+	)
 	(text_box "ESP32C5 SETUP NOTES:\n1. Set GPIO0 through GPIO MATRIX to GPIO (From 32K XTAL)\n2. Set GPIO1 through GPIO MATRIX to GPI1 (From 32K XTAL)\n3. To enable programming through the JTAG pins eFuse 2: EFUSE_DIS_USB_JTAG has to be set to 1 (default 0)\n   - Set BOOT pins to Joint Download Boot 1 mode (to download through JTAG pins)\n   - In Joint Download Boot 1 mode, the USB Serial/JTAG controller is forcibly disabled, and the JTAG signal only comes from JTAG pins."
 		(exclude_from_sim no)
 		(at 194.564 29.21 0)
-		(size 77.216 63.5)
+		(size 77.216 35.56)
 		(margins 0.75 0.75 0.75 0.75)
 		(stroke
 			(width 0)
@@ -151,6 +191,26 @@
 		)
 		(uuid "9016cc18-8d46-4a93-81ec-6a52033a104b")
 	)
+	(text_box "POTENTIAL ISSUES:\n- The TVS diode USBLC6-2SC6 on the USB traces has around 2.5pF capacitance. The data sheet of ESP32P4 recommends only 1pF. "
+		(exclude_from_sim no)
+		(at 194.31 125.73 0)
+		(size 77.724 22.606)
+		(margins 0.75 0.75 0.75 0.75)
+		(stroke
+			(width 0)
+			(type dash)
+		)
+		(fill
+			(type none)
+		)
+		(effects
+			(font
+				(size 1 1)
+			)
+			(justify left top)
+		)
+		(uuid "a742b15a-0923-4ef3-8298-e5234de35b3d")
+	)
 	(text_box "ESP32C5 HARDWARE CONSIDERATIONS:\n- The C5 does not have a USB connector\n  - Programming is to be done through JTAG pins\n  - To enable programming through the JTAG pins eFuse 2: EFUSE_DIS_USB_JTAG has to be set to 1 (default 0)\n- BOOT CONFIGURATION\n  - GPIO26_BOOT is pulled to GND (for all boot configurations) \n  - GPIO27_BOOT and GPIO28_BOOT have PU R with a pull-down BTN\n  - Solder bridge allows for either both to be pulled LOW or only the GPIO28_BOOT"
 		(exclude_from_sim no)
 		(at 27.178 123.19 0)
@@ -173,8 +233,8 @@
 	)
 	(text_box "ESP32P4 SETUP NOTES:\n1. The PARLIO (Parallel interface) pins are set as general PARLIO IO to be set up with specific pin functtiin throuugh the GPIO Matrix. The function of each PARLIO pin can be determined based on the target device.\n2. GPIO45 is to be set up as CINT (SDIO Interrupt) for the ESP32C5 to let the P4 know of available information on the SDIO bus.\n3. The W25Q256JWPIQ flash memory is a 1.8V device and is powered as well as logic I/O from VDDO_FLASH (PIN71). Set up logic 1.8V output before connecting. Set the EFUSE_0PXA_TIEH_SEL_0 register.\n   (DO NOT solder on the flash until the flash votage is set to 1.8V)\n4. VDD_HP_n is CORE power with 1.3V MAX. Set to 1.2V (as per reference)\n5. BOOT CONFIGURATION\n   - The ESP32P4 can be programmed using USB-Serial-JTAG Download\n     (The USB Serial/JTAG Controller is able to put the ESP32-P4 into download mode automatically - NO NEED TO PULL GPIO35 LOW MANUALLY)\n   - GPIO35 HIGH: SPI Boot mode (default), PU is permanently on GPIO35\n   - GPIO35 LOW: Joint Download Boot mode (USB-Serial-JTAG Download Boot, UART Download Boot, SPI Slave Download Boot, USB 2.0 OTG Download)\n   - JTAG Signal Source Control\n     - eFuse 3: EFUSE_JTAG_SEL_ENABLE to 1\n     - GPIO34 can be used for JTAG signal source\n       - 1: JTAG signals come from USB Serial/JTAG Controller\n       - 0: JTAG signals come from corresponding pins MTDI, MTCK, MTMS, and MTDO\n\n"
 		(exclude_from_sim no)
-		(at 194.564 99.314 0)
-		(size 77.216 58.928)
+		(at 194.31 72.39 0)
+		(size 77.216 45.72)
 		(margins 0.75 0.75 0.75 0.75)
 		(stroke
 			(width 0)

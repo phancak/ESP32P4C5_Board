@@ -40,8 +40,8 @@
         "other_text_upright": false,
         "pads": {
           "drill": 0.0,
-          "height": 0.8,
-          "width": 0.2
+          "height": 0.62,
+          "width": 0.56
         },
         "silk_line_width": 0.1,
         "silk_text_italic": false,
@@ -1422,7 +1422,7 @@
         "uuid": "d4a17687-8854-438f-9913-a6ddcff1a679"
       }
     ],
-    "used_designators": "#PWR14,#PWR106,C31,C45,R47-49,U1,LDO1",
+    "used_designators": "L4-7,DP1-2,#PWR9-10,#PWR14,#PWR25,#PWR27,#PWR31,#PWR33,#PWR106,#PWR111,#PWR135,C1,C5-7,C18,C31,C40,C44-46,R47-49,U1,J3-4,LDO1",
     "variants": []
   },
   "sheets": [
@@ -1451,16 +1451,20 @@
       "ESP32-C5HR8"
     ],
     [
+      "8f53913a-3390-44d6-acd9-109e3e9f3ac3",
+      "ESP32-C5HR8_RF"
+    ],
+    [
       "5da627da-af30-4bd6-b01d-1e38ca6b9860",
       "Power_Management"
     ],
     [
-      "4ba82f33-f7c8-416a-88b4-ba37db88ac8a",
-      "Interface_DSI_CSI"
-    ],
-    [
       "ee3aadd3-a8c7-4495-ba93-0e1a5bfc4c08",
       "CAN-FD_BUS"
+    ],
+    [
+      "4ba82f33-f7c8-416a-88b4-ba37db88ac8a",
+      "Interface_DSI_CSI"
     ],
     [
       "85cff351-52fd-43dc-a419-ab29305f7b0a",

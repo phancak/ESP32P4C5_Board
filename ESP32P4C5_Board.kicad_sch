@@ -263,6 +263,16 @@
 	)
 	(wire
 		(pts
+			(xy 263.652 59.69) (xy 271.78 59.69)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "2860cae7-ca7f-49b7-842b-96a3ce9b84e6")
+	)
+	(wire
+		(pts
 			(xy 203.2 86.36) (xy 203.2 72.39)
 		)
 		(stroke
@@ -320,6 +330,16 @@
 			(type default)
 		)
 		(uuid "459bad96-a5f1-4783-b74d-bb9a7b4d469e")
+	)
+	(wire
+		(pts
+			(xy 263.652 57.15) (xy 274.32 57.15)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "45c9e94b-549f-41fb-a00a-8383f6067328")
 	)
 	(wire
 		(pts
@@ -613,6 +633,16 @@
 	)
 	(wire
 		(pts
+			(xy 274.32 147.32) (xy 262.89 147.32)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "a900c3c5-7698-4c74-a20d-eec6896f39bb")
+	)
+	(wire
+		(pts
 			(xy 133.35 77.47) (xy 80.01 77.47)
 		)
 		(stroke
@@ -720,6 +750,26 @@
 			(type default)
 		)
 		(uuid "b9bc30c9-9ef6-4780-b8af-8d6d2aca521c")
+	)
+	(wire
+		(pts
+			(xy 274.32 57.15) (xy 274.32 147.32)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "b9f7490c-779e-4eab-9db1-68110fea0772")
+	)
+	(wire
+		(pts
+			(xy 271.78 149.86) (xy 262.89 149.86)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "bfe96e17-be0a-4638-87ae-f97084f82a34")
 	)
 	(wire
 		(pts
@@ -1050,6 +1100,16 @@
 			(type default)
 		)
 		(uuid "f3174021-f1cf-4fd5-9810-6ea059b5c4e6")
+	)
+	(wire
+		(pts
+			(xy 271.78 59.69) (xy 271.78 149.86)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "f49adf8a-b9c9-4bf6-9d0b-38a48ae5862a")
 	)
 	(wire
 		(pts
@@ -2170,7 +2230,7 @@
 		(instances
 			(project "ESP32P4C5_Board"
 				(path "/d4a17687-8854-438f-9913-a6ddcff1a679"
-					(page "8")
+					(page "10")
 				)
 			)
 		)
@@ -2266,7 +2326,7 @@
 		(instances
 			(project "ESP32P4C5_Board"
 				(path "/d4a17687-8854-438f-9913-a6ddcff1a679"
-					(page "7")
+					(page "8")
 				)
 			)
 		)
@@ -2312,7 +2372,73 @@
 		(instances
 			(project "ESP32P4C5_Board"
 				(path "/d4a17687-8854-438f-9913-a6ddcff1a679"
-					(page "10")
+					(page "11")
+				)
+			)
+		)
+	)
+	(sheet
+		(at 220.98 143.51)
+		(size 41.91 12.7)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(stroke
+			(width 0.1524)
+			(type solid)
+		)
+		(fill
+			(color 0 255 255 1)
+		)
+		(uuid "8f53913a-3390-44d6-acd9-109e3e9f3ac3")
+		(property "Sheetname" "ESP32-C5HR8_RF"
+			(at 220.98 142.7984 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left bottom)
+			)
+		)
+		(property "Sheetfile" "vESP32-C5HR8_RF.kicad_sch"
+			(at 220.98 156.7946 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+			)
+		)
+		(pin "ANT_2G_M" bidirectional
+			(at 262.89 147.32 0)
+			(uuid "1c4354ca-8e19-42fa-a418-0224ed3d8c27")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(pin "ANT_5G_M" bidirectional
+			(at 262.89 149.86 0)
+			(uuid "99e9fdc8-0e50-4ac9-b67f-46aef71e52cb")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(instances
+			(project "ESP32P4C5_Board"
+				(path "/d4a17687-8854-438f-9913-a6ddcff1a679"
+					(page "7")
 				)
 			)
 		)
@@ -2475,6 +2601,26 @@
 				(justify left)
 			)
 		)
+		(pin "ANT_2G_M" bidirectional
+			(at 263.652 57.15 0)
+			(uuid "847d15b4-c7aa-4cb2-8c7a-b9fc4a88cdb4")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(pin "ANT_5G_M" bidirectional
+			(at 263.652 59.69 0)
+			(uuid "47d97a94-94cb-4865-869c-b192a8270936")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
 		(instances
 			(project "ESP32P4C5_Board"
 				(path "/d4a17687-8854-438f-9913-a6ddcff1a679"
@@ -2611,7 +2757,7 @@
 	)
 	(sheet
 		(at 220.98 104.902)
-		(size 42.164 53.34)
+		(size 42.164 32.258)
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
@@ -2637,7 +2783,7 @@
 			)
 		)
 		(property "Sheetfile" "Interfaces.kicad_sch"
-			(at 220.98 158.8266 0)
+			(at 220.98 137.7446 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
