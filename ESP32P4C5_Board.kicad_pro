@@ -1422,7 +1422,7 @@
         "uuid": "d4a17687-8854-438f-9913-a6ddcff1a679"
       }
     ],
-    "used_designators": "L4-7,DP1-2,#PWR9-10,#PWR14,#PWR25,#PWR27,#PWR31,#PWR33,#PWR106,#PWR111,#PWR135,C1,C5-7,C18,C31,C40,C44-46,R47-49,U1,J3-4,LDO1",
+    "used_designators": "",
     "variants": []
   },
   "sheets": [
